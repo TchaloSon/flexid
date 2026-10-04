@@ -1,0 +1,99 @@
+{
+  "evaluation": {
+    "key": "second_annotator",
+    "display_name": "Second annotateur humain",
+    "evaluation_kind": "human",
+    "gold_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_kappa_rationale_180_unique_law_refs_60_each_gold.jsonl",
+    "evaluated_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_kappa_rational_second_annotator.jsonl"
+  },
+  "validation": {
+    "aligned_instances": 180,
+    "unique_ids": 180,
+    "all_ids_aligned": true,
+    "all_spans_valid": true
+  },
+  "label_distributions": {
+    "gold": {
+      "entailment": 60,
+      "contradiction": 60,
+      "neutral": 60
+    },
+    "evaluated_system": {
+      "entailment": 64,
+      "contradiction": 65,
+      "neutral": 51
+    }
+  },
+  "label_agreement": {
+    "agreement_count": 171,
+    "disagreement_count": 9,
+    "raw_agreement": 0.95,
+    "expected_agreement": 0.3333333333333333,
+    "cohen_kappa": 0.9249999999999999,
+    "kappa_bootstrap_ci_95": [
+      0.8749999999999998,
+      0.9666666666666665
+    ],
+    "bootstrap_replicates_valid": 10000,
+    "confusion_matrix": {
+      "row_labels_gold": [
+        "entailment",
+        "contradiction",
+        "neutral"
+      ],
+      "column_labels_evaluated_system": [
+        "entailment",
+        "contradiction",
+        "neutral"
+      ],
+      "values": [
+        [
+          60,
+          0,
+          0
+        ],
+        [
+          0,
+          60,
+          0
+        ],
+        [
+          4,
+          5,
+          51
+        ]
+      ]
+    }
+  },
+  "rationale_agreement": {
+    "s_span_size": 120,
+    "macro_token_f1": 0.8529796801604822,
+    "macro_token_iou": 0.7894588374511742,
+    "exact_match_count": 57,
+    "exact_match_rate": 0.475,
+    "definition_s_span": "gold_label == candidate_label and label != neutral",
+    "macro_f1_bootstrap_ci_95": [
+      0.8153260286969877,
+      0.8881261791764866
+    ],
+    "bootstrap_replicates_valid": 10000
+  },
+  "neutral_rationale_absence_agreement": {
+    "agreement_count": 51,
+    "gold_neutral_count": 60,
+    "rate": 0.85
+  },
+  "joint_iou_at_0_50": {
+    "success_count": 150,
+    "total_instances": 180,
+    "rate": 0.8333333333333334,
+    "threshold": 0.5
+  },
+  "bootstrap": {
+    "iterations_requested": 10000,
+    "seed": 2026,
+    "kappa_method": "stratified percentile bootstrap by gold label",
+    "macro_f1_method": "percentile bootstrap on S_span",
+    "confidence_level": 0.95
+  }
+}

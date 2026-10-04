@@ -1,0 +1,51 @@
+{
+  "comparison": "Annotateur 1 vs Annotateur 2 (IAA pré-adjudication)",
+  "instances_aligned": 180,
+  "bootstrap_iterations": 10000,
+  "bootstrap_seed": 2026,
+  "span_convention": "start inclusive, end inclusive",
+  "label_agreement": {
+    "raw_agreement": 0.95,
+    "cohen_kappa": 0.9246371417938221,
+    "cohen_kappa_ci95": [
+      0.8735465159149467,
+      0.9665645026469767
+    ],
+    "confusion_matrix_a1_rows_a2_columns": {
+      "entailment": {
+        "entailment": 64,
+        "contradiction": 2,
+        "neutral": 2
+      },
+      "contradiction": {
+        "entailment": 0,
+        "contradiction": 59,
+        "neutral": 1
+      },
+      "neutral": {
+        "entailment": 0,
+        "contradiction": 4,
+        "neutral": 48
+      }
+    }
+  },
+  "rationale_agreement": {
+    "s_span_definition": "instances où A1 et A2 donnent tous deux un label non-neutral",
+    "s_span": 125,
+    "both_neutral": 48,
+    "neutral_vs_non_neutral_disagreements": 7,
+    "macro_token_f1": 0.8150666220795,
+    "macro_token_f1_ci95": [
+      0.7720615755049103,
+      0.8557701064627168
+    ],
+    "macro_iou": 0.7495879173998112,
+    "exact_match": 0.488,
+    "joint_iou_at_0_50": 0.7944444444444444,
+    "joint_exact_match": 0.6055555555555555
+  },
+  "adjudication": {
+    "instances_flagged": 71,
+    "rule": "labels différents OU spans non exactement identiques"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "audit_version": "FLEXID-DEEPSEEK-SENSITIVITY-v1.0",
+  "completed_at_utc": "2026-09-26T14:38:50.231848+00:00",
+  "model": {
+    "id": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com",
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_output_tokens": 8192,
+    "temperature_explicitly_set": false,
+    "prompt_sha256": "c0f0f7ead3222030267a6a13f36bfd7189ddce5c22c21a8ae884449831adcc34",
+    "one_current_prediction_per_unique_input": true
+  },
+  "scope": {
+    "name_identity_sensitivity": "same grammatical name category; legal content held constant",
+    "gender_counterfactual_sensitivity": "manually validated grammatical-gender counterfactual pairs",
+    "not_a_claim": "comprehensive demographic fairness",
+    "probability_metrics": "not reported because this protocol does not obtain calibrated class probabilities from the API"
+  },
+  "requests": {
+    "unique_inputs": 318,
+    "cache_entries": 318
+  },
+  "name_identity_sensitivity": {
+    "base_cases": 45,
+    "variants": 180,
+    "original_accuracy": 0.9333333333333333,
+    "variant_accuracy": 0.9277777777777778,
+    "flip_rate": {
+      "mean": 0.044444444444444446,
+      "ci95": [
+        0.011111111111111112,
+        0.08888888888888889
+      ],
+      "bootstrap_reps": 5000,
+      "resampling_unit": "base_case"
+    },
+    "all_variants_consistent_with_original_rate": {
+      "mean": 0.8888888888888888,
+      "ci95": [
+        0.8,
+        0.9777777777777777
+      ],
+      "bootstrap_reps": 5000,
+      "resampling_unit": "base_case"
+    },
+    "harmful_flip_rate": {
+      "mean": 0.022222222222222223,
+      "ci95": [
+        0.0,
+        0.05
+      ],
+      "bootstrap_reps": 5000,
+      "resampling_unit": "base_case"
+    },
+    "beneficial_flip_rate": {
+      "mean": 0.016666666666666666,
+      "ci95": [
+        0.0,
+        0.05
+      ],
+      "bootstrap_reps": 5000,
+      "resampling_unit": "base_case"
+    },
+    "by_name_category": {
+      "feminine": {
+        "n_variants": 92,
+        "flip_rate": 0.021739130434782608,
+        "harmful_flip_rate": 0.010869565217391304
+      },
+      "masculine": {
+        "n_variants": 88,
+        "flip_rate": 0.06818181818181818,
+        "harmful_flip_rate": 0.03409090909090909
+      }
+    },
+    "probability_metrics_available": false
+  },
+  "gender_counterfactual_sensitivity": {
+    "pairs": 61,
+    "original_accuracy": {
+      "mean": 0.8852459016393442,
+      "ci95": [
+        0.8032786885245902,
+        0.9508196721311475
+      ],
+      "bootstrap_reps": 5000,
+      "resampling_unit": "base_case"
+    },
+    "counterfactual_accuracy": {
+      "mean": 0.8524590163934426,
+      "ci95": [
+        0.7540983606557377,
+        0.9344262295081968
+      ],
+      "bootstrap_reps": 5000,
+      "resampling_unit": "base_case"
+    },
+    "flip_rate": {
+      "mean": 0.09836065573770492,
+      "ci95": [
+        0.03278688524590164,
+        0.18032786885245902
+      ],
+      "bootstrap_reps": 5000,
+      "resampling_unit": "base_case"
+    },
+    "harmful_flip_rate": {
+      "mean": 0.06557377049180328,
+      "ci95": [
+        0.01639344262295082,
+        0.1311475409836066
+      ],
+      "bootstrap_reps": 5000,
+      "resampling_unit": "base_case"
+    },
+    "beneficial_flip_rate": {
+      "mean": 0.03278688524590164,
+      "ci95": [
+        0.0,
+        0.08196721311475409
+      ],
+      "bootstrap_reps": 5000,
+      "resampling_unit": "base_case"
+    },
+    "correctness_discordance": {
+      "harmful_count": 4,
+      "beneficial_count": 2,
+      "exact_mcnemar_p_value": 0.6875
+    },
+    "by_direction": {
+      "feminine_to_masculine": {
+        "n": 35,
+        "flip_rate": 0.11428571428571428,
+        "harmful_flip_rate": 0.05714285714285714,
+        "beneficial_flip_rate": 0.05714285714285714,
+        "original_accuracy": 0.8857142857142857,
+        "counterfactual_accuracy": 0.8857142857142857
+      },
+      "masculine_to_feminine": {
+        "n": 26,
+        "flip_rate": 0.07692307692307693,
+        "harmful_flip_rate": 0.07692307692307693,
+        "beneficial_flip_rate": 0,
+        "original_accuracy": 0.8846153846153846,
+        "counterfactual_accuracy": 0.8076923076923077
+      }
+    },
+    "by_label": {
+      "entailment": {
+        "n": 25,
+        "flip_rate": 0.08,
+        "harmful_flip_rate": 0.04,
+        "original_accuracy": 0.92,
+        "counterfactual_accuracy": 0.92
+      },
+      "contradiction": {
+        "n": 20,
+        "flip_rate": 0.2,
+        "harmful_flip_rate": 0.15,
+        "original_accuracy": 0.95,
+        "counterfactual_accuracy": 0.85
+      },
+      "neutral": {
+        "n": 16,
+        "flip_rate": 0,
+        "harmful_flip_rate": 0,
+        "original_accuracy": 0.75,
+        "counterfactual_accuracy": 0.75
+      }
+    },
+    "probability_metrics_available": false
+  }
+}

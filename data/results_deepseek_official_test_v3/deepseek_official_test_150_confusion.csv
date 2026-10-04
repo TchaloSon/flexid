@@ -1,0 +1,4 @@
+﻿gold \\ predicted,entailment,contradiction,neutral
+entailment,49,0,1
+contradiction,1,47,2
+neutral,3,1,46

@@ -1,0 +1,31 @@
+{
+  "experiment": "FLEXID DeepSeek V4 Flash annotation",
+  "created_at_utc": "2026-09-20T09:52:43.962687+00:00",
+  "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_kappa_rationale_180_unique_law_refs_60_each.jsonl",
+  "input_sha256": "70723ca41d53577f66ad2157a210222fca3491c7839b2073066be519bb7ef135",
+  "expected_instances": 180,
+  "model": "deepseek-v4-flash",
+  "base_url": "https://api.deepseek.com",
+  "thinking": {
+    "type": "enabled"
+  },
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "max_attempts_per_instance": 4,
+  "response_format": {
+    "type": "json_object"
+  },
+  "system_prompt_sha256": "c0f0f7ead3222030267a6a13f36bfd7189ddce5c22c21a8ae884449831adcc34",
+  "prediction_schema": {
+    "id": "string",
+    "label": [
+      "contradiction",
+      "entailment",
+      "neutral"
+    ],
+    "rationale_start_token": "integer|null",
+    "rationale_end_token": "integer|null"
+  },
+  "one_request_per_instance": true,
+  "reasoning_content_saved": false
+}

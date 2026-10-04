@@ -1,0 +1,379 @@
+=== SYSTEM PROMPT ===
+Tu es chargé d'annoter des instances d'inférence juridique
+en français. Tu dois décider du label uniquement à partir de la prémisse
+juridique et des faits explicitement décrits. N'utilise aucune information
+juridique ou factuelle extérieure pour compléter le cas.
+
+DÉFINITIONS DES LABELS
+
+Entailment : l'hypothèse découle nécessairement de la prémisse et des faits
+explicitement décrits. Si la prémisse et les faits sont vrais, la conclusion
+juridique ne peut pas être fausse.
+
+Contradiction : l'hypothèse affirme une conséquence que la prémisse exclut
+nécessairement dans la situation décrite. Si la prémisse et les faits sont
+vrais, la conclusion juridique ne peut pas être vraie.
+
+Neutral : la prémisse ne suffit ni à confirmer ni à réfuter l'hypothèse.
+Une information juridique ou factuelle extérieure serait nécessaire pour
+trancher.
+
+RÈGLES POUR LE RATIONALE
+
+1. Le rationale doit provenir uniquement de la prémisse tokenisée.
+2. Pour entailment ou contradiction, sélectionne le plus petit passage
+   CONTINU qui suffit à justifier le label dans la situation décrite.
+3. Les numéros de tokens sont affichés entre crochets, par exemple [17].
+4. rationale_start_token et rationale_end_token sont des bornes inclusives.
+5. N'ajoute pas de tokens inutiles avant ou après le fondement pertinent.
+6. Pour neutral, aucun passage ne suffit à trancher : les deux bornes doivent
+   obligatoirement être null.
+7. Ne retourne jamais un rationale provenant de l'hypothèse ou des faits.
+8. Retourne exactement un objet JSON, sans commentaire, sans Markdown et sans
+   explication.
+
+SCHÉMA JSON OBLIGATOIRE
+
+Pour un label non neutre :
+{
+  "id": "FLEXID-EXEMPLE",
+  "label": "entailment",
+  "rationale_start_token": 4,
+  "rationale_end_token": 11
+}
+
+Pour neutral :
+{
+  "id": "FLEXID-EXEMPLE",
+  "label": "neutral",
+  "rationale_start_token": null,
+  "rationale_end_token": null
+}
+
+Les seules valeurs autorisées pour label sont :
+"entailment", "contradiction" et "neutral".
+
+
+=== SIX FEW-SHOT DEMONSTRATIONS ===
+
+--- DEMO 1 / entailment / FLEXID-0484 ---
+USER:
+Annote l'instance suivante.
+
+IDENTIFIANT
+FLEXID-0484
+
+PRÉMISSE TOKENISÉE
+[1] Un
+[2] même
+[3] acte
+[4] peut
+[5] être
+[6] dressé
+[7] portant
+[8] les
+[9] énonciations
+[10] relatives
+[11] à
+[12] la
+[13] naissance
+[14] et
+[15] au
+[16] mariage,
+[17] à
+[18] moins
+[19] que
+[20] la
+[21] naissance
+[22] et
+[23] le
+[24] mariage
+[25] n'aient
+[26] déjà
+[27] été
+[28] constatés
+[29] par
+[30] des
+[31] actes
+[32] portés
+[33] sur
+[34] un
+[35] registre
+[36] conservé
+[37] par
+[38] une
+[39] autorité
+[40] française.
+[41] Il
+[42] tient
+[43] lieu
+[44] à
+[45] la
+[46] fois
+[47] d'acte
+[48] de
+[49] naissance
+[50] et
+[51] d'acte
+[52] de
+[53] mariage.
+
+HYPOTHÈSE ET FAITS EXPLICITEMENT DÉCRITS
+Aïcha est née puis s’est mariée au Sénégal, sans qu’aucun acte correspondant soit détenu par une autorité française. L’administration peut dresser un acte unique regroupant les données relatives à sa naissance et à son mariage.
+
+Le dernier numéro de token valide dans la prémisse est
+53.
+
+Retourne uniquement l'objet JSON demandé.
+ASSISTANT:
+{"id":"FLEXID-0484","label":"entailment","rationale_start_token":1,"rationale_end_token":40}
+
+--- DEMO 2 / contradiction / FLEXID-0064 ---
+USER:
+Annote l'instance suivante.
+
+IDENTIFIANT
+FLEXID-0064
+
+PRÉMISSE TOKENISÉE
+[1] Le
+[2] bénéficiaire
+[3] d'un
+[4] pacte
+[5] de
+[6] préférence
+[7] est
+[8] en
+[9] droit
+[10] d'exiger
+[11] l'annulation
+[12] du
+[13] contrat
+[14] passé
+[15] avec
+[16] un
+[17] tiers
+[18] en
+[19] méconnaissance
+[20] de
+[21] ses
+[22] droits
+[23] et
+[24] d'obtenir
+[25] sa
+[26] substitution
+[27] à
+[28] l'acquéreur,
+[29] c'est
+[30] à
+[31] la
+[32] condition
+[33] que
+[34] ce
+[35] tiers
+[36] ait
+[37] eu
+[38] connaissance,
+[39] lorsqu'il
+[40] a
+[41] contracté,
+[42] de
+[43] l'existence
+[44] du
+[45] pacte
+[46] de
+[47] préférence
+[48] et
+[49] de
+[50] l'intention
+[51] du
+[52] bénéficiaire
+[53] de
+[54] s'en
+[55] prévaloir
+
+HYPOTHÈSE ET FAITS EXPLICITEMENT DÉCRITS
+Le frère de Madame TAB achète la maison de Monsieur KHA en connaissant le pacte de préférence. Il ignore toutefois que Madame TAB entend s’en prévaloir. Madame TAB dispose du droit d’obtenir sa substitution à cet acquéreur.
+
+Le dernier numéro de token valide dans la prémisse est
+55.
+
+Retourne uniquement l'objet JSON demandé.
+ASSISTANT:
+{"id":"FLEXID-0064","label":"contradiction","rationale_start_token":30,"rationale_end_token":55}
+
+--- DEMO 3 / neutral / FLEXID-0175 ---
+USER:
+Annote l'instance suivante.
+
+IDENTIFIANT
+FLEXID-0175
+
+PRÉMISSE TOKENISÉE
+[1] Toute
+[2] convention
+[3] portant
+[4] sur
+[5] la
+[6] procréation
+[7] ou
+[8] la
+[9] gestation
+[10] pour
+[11] le
+[12] compte
+[13] d'autrui
+[14] est
+[15] nulle.
+
+HYPOTHÈSE ET FAITS EXPLICITEMENT DÉCRITS
+Martine JAMBON et Martin BIFTEAK concluent avec une mère porteuse une convention de gestation pour autrui. Ils attribuent à la seule conclusion de cet accord une peine correctionnelle d’un an d’emprisonnement et de 15 000 euros d’amende.
+
+Le dernier numéro de token valide dans la prémisse est
+15.
+
+Retourne uniquement l'objet JSON demandé.
+ASSISTANT:
+{"id":"FLEXID-0175","label":"neutral","rationale_start_token":null,"rationale_end_token":null}
+
+--- DEMO 4 / entailment / FLEXID-0333 ---
+USER:
+Annote l'instance suivante.
+
+IDENTIFIANT
+FLEXID-0333
+
+PRÉMISSE TOKENISÉE
+[1] La
+[2] nationalité
+[3] française
+[4] peut
+[5] être
+[6] conférée
+[7] par
+[8] naturalisation
+[9] sur
+[10] proposition
+[11] du
+[12] ministre
+[13] des
+[14] affaires
+[15] étrangères
+[16] à
+[17] tout
+[18] étranger
+[19] francophone
+[20] qui
+[21] en
+[22] fait
+[23] la
+[24] demande
+[25] et
+[26] qui
+[27] contribue
+[28] par
+[29] son
+[30] action
+[31] émérite
+[32] au
+[33] rayonnement
+[34] de
+[35] la
+[36] France
+[37] et
+[38] à
+[39] la
+[40] prospérité
+[41] de
+[42] ses
+[43] relations
+[44] économiques
+[45] internationales.
+
+HYPOTHÈSE ET FAITS EXPLICITEMENT DÉCRITS
+Rassikatou, ressortissante togolaise francophone, sollicite sa naturalisation après avoir contribué par son œuvre littéraire au rayonnement culturel et aux relations économiques de la France. Son profil relève du mécanisme spécial prévu pour cette contribution.
+
+Le dernier numéro de token valide dans la prémisse est
+45.
+
+Retourne uniquement l'objet JSON demandé.
+ASSISTANT:
+{"id":"FLEXID-0333","label":"entailment","rationale_start_token":16,"rationale_end_token":45}
+
+--- DEMO 5 / contradiction / FLEXID-0665 ---
+USER:
+Annote l'instance suivante.
+
+IDENTIFIANT
+FLEXID-0665
+
+PRÉMISSE TOKENISÉE
+[1] Les
+[2] enfants
+[3] doivent
+[4] des
+[5] aliments
+[6] à
+[7] leurs
+[8] père
+[9] et
+[10] mère
+[11] ou
+[12] autres
+[13] ascendants
+[14] qui
+[15] sont
+[16] dans
+[17] le
+[18] besoin.
+
+HYPOTHÈSE ET FAITS EXPLICITEMENT DÉCRITS
+Le père de Nandi se trouve sans ressources suffisantes. Nandi affirme qu’aucune obligation alimentaire ne pèse sur lui malgré le lien de filiation.
+
+Le dernier numéro de token valide dans la prémisse est
+18.
+
+Retourne uniquement l'objet JSON demandé.
+ASSISTANT:
+{"id":"FLEXID-0665","label":"contradiction","rationale_start_token":3,"rationale_end_token":18}
+
+--- DEMO 6 / neutral / FLEXID-0618 ---
+USER:
+Annote l'instance suivante.
+
+IDENTIFIANT
+FLEXID-0618
+
+PRÉMISSE TOKENISÉE
+[1] Le
+[2] tribunal
+[3] judiciaire
+[4] prononcera
+[5] dans
+[6] les
+[7] dix
+[8] jours
+[9] sur
+[10] la
+[11] demande
+[12] en
+[13] mainlevée
+[14] formée
+[15] par
+[16] les
+[17] futurs
+[18] époux,
+[19] même
+[20] mineurs.
+
+HYPOTHÈSE ET FAITS EXPLICITEMENT DÉCRITS
+Les futurs époux saisissent le tribunal judiciaire d’une demande en mainlevée. Ils présentent la représentation par avocat comme une condition obligatoire de cette procédure.
+
+Le dernier numéro de token valide dans la prémisse est
+20.
+
+Retourne uniquement l'objet JSON demandé.
+ASSISTANT:
+{"id":"FLEXID-0618","label":"neutral","rationale_start_token":null,"rationale_end_token":null}
+
+Pour chaque cible, le même bloc de 6 démonstrations précède le prompt de l'instance cible.

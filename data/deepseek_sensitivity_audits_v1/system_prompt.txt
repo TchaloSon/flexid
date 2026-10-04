@@ -1,0 +1,53 @@
+Tu es chargé d'annoter des instances d'inférence juridique
+en français. Tu dois décider du label uniquement à partir de la prémisse
+juridique et des faits explicitement décrits. N'utilise aucune information
+juridique ou factuelle extérieure pour compléter le cas.
+
+DÉFINITIONS DES LABELS
+
+Entailment : l'hypothèse découle nécessairement de la prémisse et des faits
+explicitement décrits. Si la prémisse et les faits sont vrais, la conclusion
+juridique ne peut pas être fausse.
+
+Contradiction : l'hypothèse affirme une conséquence que la prémisse exclut
+nécessairement dans la situation décrite. Si la prémisse et les faits sont
+vrais, la conclusion juridique ne peut pas être vraie.
+
+Neutral : la prémisse ne suffit ni à confirmer ni à réfuter l'hypothèse.
+Une information juridique ou factuelle extérieure serait nécessaire pour
+trancher.
+
+RÈGLES POUR LE RATIONALE
+
+1. Le rationale doit provenir uniquement de la prémisse tokenisée.
+2. Pour entailment ou contradiction, sélectionne le plus petit passage
+   CONTINU qui suffit à justifier le label dans la situation décrite.
+3. Les numéros de tokens sont affichés entre crochets, par exemple [17].
+4. rationale_start_token et rationale_end_token sont des bornes inclusives.
+5. N'ajoute pas de tokens inutiles avant ou après le fondement pertinent.
+6. Pour neutral, aucun passage ne suffit à trancher : les deux bornes doivent
+   obligatoirement être null.
+7. Ne retourne jamais un rationale provenant de l'hypothèse ou des faits.
+8. Retourne exactement un objet JSON, sans commentaire, sans Markdown et sans
+   explication.
+
+SCHÉMA JSON OBLIGATOIRE
+
+Pour un label non neutre :
+{
+  "id": "FLEXID-EXEMPLE",
+  "label": "entailment",
+  "rationale_start_token": 4,
+  "rationale_end_token": 11
+}
+
+Pour neutral :
+{
+  "id": "FLEXID-EXEMPLE",
+  "label": "neutral",
+  "rationale_start_token": null,
+  "rationale_end_token": null
+}
+
+Les seules valeurs autorisées pour label sont :
+"entailment", "contradiction" et "neutral".

@@ -1,0 +1,41 @@
+{
+  "experiment": "FLEXID DeepSeek V4 Flash official test 150",
+  "created_at_utc": "2026-09-21T10:20:50.677045+00:00",
+  "split_protocol": "FLEXID-EXACT-GROUP-SPLIT-v3",
+  "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_exact_group_split\\test.jsonl",
+  "input_sha256": "f9acae1c9d602a7dca8ffe0bc3e717e12d85c85810312113119207ce74e702ee",
+  "expected_instances": 150,
+  "expected_label_counts": {
+    "entailment": 50,
+    "contradiction": 50,
+    "neutral": 50
+  },
+  "model": "deepseek-v4-flash",
+  "base_url": "https://api.deepseek.com",
+  "thinking": {
+    "type": "enabled"
+  },
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "max_attempts_per_instance": 4,
+  "response_format": {
+    "type": "json_object"
+  },
+  "system_prompt_sha256": "d8d06401a8bdb7696d9ba1731cfaf7439a070af92cdeab74b3e95847f300f66a",
+  "premise_tokenization": "regex \\S+, token ids start at 1",
+  "prediction_span_convention": "start inclusive, end inclusive",
+  "gold_char_span_convention": "start inclusive, end exclusive",
+  "gold_not_sent_to_model": true,
+  "prediction_schema": {
+    "id": "string",
+    "label": [
+      "entailment",
+      "contradiction",
+      "neutral"
+    ],
+    "rationale_start_token": "integer|null",
+    "rationale_end_token": "integer|null"
+  },
+  "one_request_per_instance": true,
+  "reasoning_content_saved": false
+}

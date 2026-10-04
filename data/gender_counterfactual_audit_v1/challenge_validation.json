@@ -1,0 +1,1102 @@
+{
+  "audit_version": "FLEXID-GENDER-COUNTERFACTUAL-v1.0",
+  "challenge_sha256": "981fdcd4f8dd6684342ca6467ccc12fbaa0626400f9c3c58913632fb91fff2ab",
+  "challenge_size": 61,
+  "unique_base_ids": 61,
+  "label_counts": {
+    "neutral": 16,
+    "entailment": 25,
+    "contradiction": 20
+  },
+  "direction_counts": {
+    "feminine_to_masculine": 35,
+    "masculine_to_feminine": 26
+  },
+  "official_test_alignment": true,
+  "gold_labels_unchanged": true,
+  "premises_unchanged": true,
+  "original_hypotheses_match_official_test": true,
+  "law_refs_match_after_whitespace_normalization": true,
+  "edit_summary": {
+    "mean_changed_original_tokens": 2.1639344262295084,
+    "mean_changed_counterfactual_tokens": 2.1639344262295084,
+    "max_changed_original_tokens": 6,
+    "max_changed_counterfactual_tokens": 6,
+    "mean_edit_blocks": 1.9180327868852458
+  },
+  "edit_reports": [
+    {
+      "changed_original_tokens": 3,
+      "changed_counterfactual_tokens": 3,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Morgan",
+          "counterfactual": "Martin"
+        },
+        {
+          "tag": "replace",
+          "original": "Excédée, Morgan",
+          "counterfactual": "Excédé, Martin"
+        }
+      ],
+      "base_id": "FLEXID-0129"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Benjamin,",
+          "counterfactual": "Béatrice,"
+        },
+        {
+          "tag": "replace",
+          "original": "Benjamin",
+          "counterfactual": "Béatrice"
+        }
+      ],
+      "base_id": "FLEXID-0227"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Louise",
+          "counterfactual": "Lucas"
+        }
+      ],
+      "base_id": "FLEXID-0232"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Tainá",
+          "counterfactual": "Thiago"
+        },
+        {
+          "tag": "replace",
+          "original": "Tainá.",
+          "counterfactual": "Thiago."
+        }
+      ],
+      "base_id": "FLEXID-0196"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Ximena",
+          "counterfactual": "Xavier"
+        },
+        {
+          "tag": "replace",
+          "original": "Ximena",
+          "counterfactual": "Xavier"
+        }
+      ],
+      "base_id": "FLEXID-0375"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Martin",
+          "counterfactual": "Martine"
+        },
+        {
+          "tag": "replace",
+          "original": "Martin",
+          "counterfactual": "Martine"
+        }
+      ],
+      "base_id": "FLEXID-0097"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Mélisande",
+          "counterfactual": "Marcel"
+        }
+      ],
+      "base_id": "FLEXID-0814"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Nari",
+          "counterfactual": "Minho"
+        },
+        {
+          "tag": "replace",
+          "original": "elle",
+          "counterfactual": "il"
+        }
+      ],
+      "base_id": "FLEXID-0165"
+    },
+    {
+      "changed_original_tokens": 6,
+      "changed_counterfactual_tokens": 6,
+      "edit_blocks": 4,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Amine",
+          "counterfactual": "Amina"
+        },
+        {
+          "tag": "replace",
+          "original": "un ressortissant sénégalais,",
+          "counterfactual": "une ressortissante sénégalaise,"
+        },
+        {
+          "tag": "replace",
+          "original": "Il",
+          "counterfactual": "Elle"
+        },
+        {
+          "tag": "replace",
+          "original": "Amine",
+          "counterfactual": "Amina"
+        }
+      ],
+      "base_id": "FLEXID-0231"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Felipe",
+          "counterfactual": "Fernanda"
+        }
+      ],
+      "base_id": "FLEXID-0446"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Élodie",
+          "counterfactual": "Émile"
+        }
+      ],
+      "base_id": "FLEXID-0527"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Salma",
+          "counterfactual": "Salim"
+        }
+      ],
+      "base_id": "FLEXID-0387"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Ulysse",
+          "counterfactual": "Yvette"
+        },
+        {
+          "tag": "replace",
+          "original": "Ulysse",
+          "counterfactual": "Yvette"
+        }
+      ],
+      "base_id": "FLEXID-0644"
+    },
+    {
+      "changed_original_tokens": 4,
+      "changed_counterfactual_tokens": 4,
+      "edit_blocks": 3,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Célestine",
+          "counterfactual": "Césaire"
+        },
+        {
+          "tag": "replace",
+          "original": "Elle",
+          "counterfactual": "Il"
+        },
+        {
+          "tag": "replace",
+          "original": "conjointe actuelle,",
+          "counterfactual": "conjoint actuel,"
+        }
+      ],
+      "base_id": "FLEXID-0609"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Élodie",
+          "counterfactual": "Émile"
+        }
+      ],
+      "base_id": "FLEXID-0501"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Yvette,",
+          "counterfactual": "Yvan,"
+        }
+      ],
+      "base_id": "FLEXID-0796"
+    },
+    {
+      "changed_original_tokens": 4,
+      "changed_counterfactual_tokens": 4,
+      "edit_blocks": 4,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Appelée",
+          "counterfactual": "Appelé"
+        },
+        {
+          "tag": "replace",
+          "original": "Hélène",
+          "counterfactual": "Hector"
+        },
+        {
+          "tag": "replace",
+          "original": "la",
+          "counterfactual": "le"
+        },
+        {
+          "tag": "replace",
+          "original": "Elle",
+          "counterfactual": "Il"
+        }
+      ],
+      "base_id": "FLEXID-0255"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Momoka.",
+          "counterfactual": "Mohamed."
+        }
+      ],
+      "base_id": "FLEXID-0449"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Salma",
+          "counterfactual": "Salim"
+        },
+        {
+          "tag": "replace",
+          "original": "Elle",
+          "counterfactual": "Il"
+        }
+      ],
+      "base_id": "FLEXID-0426"
+    },
+    {
+      "changed_original_tokens": 4,
+      "changed_counterfactual_tokens": 4,
+      "edit_blocks": 4,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Sophie",
+          "counterfactual": "Sofiane"
+        },
+        {
+          "tag": "replace",
+          "original": "elle",
+          "counterfactual": "il"
+        },
+        {
+          "tag": "replace",
+          "original": "qu'elle",
+          "counterfactual": "qu'il"
+        },
+        {
+          "tag": "replace",
+          "original": "Sophie",
+          "counterfactual": "Sofiane"
+        }
+      ],
+      "base_id": "FLEXID-0128"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Sophie",
+          "counterfactual": "Sofiane"
+        }
+      ],
+      "base_id": "FLEXID-0123"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Solène",
+          "counterfactual": "Samuel"
+        }
+      ],
+      "base_id": "FLEXID-0775"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Martin",
+          "counterfactual": "Martine"
+        }
+      ],
+      "base_id": "FLEXID-0088"
+    },
+    {
+      "changed_original_tokens": 4,
+      "changed_counterfactual_tokens": 4,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Amine, ressortissant sénégalais",
+          "counterfactual": "Amina, ressortissante sénégalaise"
+        },
+        {
+          "tag": "replace",
+          "original": "concepteur",
+          "counterfactual": "conceptrice"
+        }
+      ],
+      "base_id": "FLEXID-0229"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Murilo,",
+          "counterfactual": "Muriel,"
+        }
+      ],
+      "base_id": "FLEXID-0528"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Sophie,",
+          "counterfactual": "Sofiane,"
+        }
+      ],
+      "base_id": "FLEXID-0195"
+    },
+    {
+      "changed_original_tokens": 6,
+      "changed_counterfactual_tokens": 6,
+      "edit_blocks": 4,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Célestine",
+          "counterfactual": "Césaire"
+        },
+        {
+          "tag": "replace",
+          "original": "mariée",
+          "counterfactual": "marié"
+        },
+        {
+          "tag": "replace",
+          "original": "Elle",
+          "counterfactual": "Il"
+        },
+        {
+          "tag": "replace",
+          "original": "conjointe actuelle, dépourvue",
+          "counterfactual": "conjoint actuel, dépourvu"
+        }
+      ],
+      "base_id": "FLEXID-0608"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Pacôme",
+          "counterfactual": "Paloma"
+        }
+      ],
+      "base_id": "FLEXID-0623"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Kossi",
+          "counterfactual": "Kaori"
+        }
+      ],
+      "base_id": "FLEXID-0737"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Rafael",
+          "counterfactual": "Renata"
+        },
+        {
+          "tag": "replace",
+          "original": "Rafael",
+          "counterfactual": "Renata"
+        }
+      ],
+      "base_id": "FLEXID-0127"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Amaury",
+          "counterfactual": "Aurore"
+        }
+      ],
+      "base_id": "FLEXID-0124"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Benjamin,",
+          "counterfactual": "Béatrice,"
+        }
+      ],
+      "base_id": "FLEXID-0096"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Yetunde",
+          "counterfactual": "Youssef"
+        },
+        {
+          "tag": "replace",
+          "original": "Yetunde.",
+          "counterfactual": "Youssef."
+        }
+      ],
+      "base_id": "FLEXID-0815"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Amine",
+          "counterfactual": "Amina"
+        }
+      ],
+      "base_id": "FLEXID-0373"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Yanis",
+          "counterfactual": "Yara"
+        }
+      ],
+      "base_id": "FLEXID-0425"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Minho",
+          "counterfactual": "Minji"
+        }
+      ],
+      "base_id": "FLEXID-0386"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Élodie",
+          "counterfactual": "Émile"
+        }
+      ],
+      "base_id": "FLEXID-0499"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "requis",
+          "counterfactual": "requise"
+        },
+        {
+          "tag": "replace",
+          "original": "Bertrand",
+          "counterfactual": "Bertille"
+        }
+      ],
+      "base_id": "FLEXID-0254"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Donghyun,",
+          "counterfactual": "Daphné,"
+        }
+      ],
+      "base_id": "FLEXID-0798"
+    },
+    {
+      "changed_original_tokens": 6,
+      "changed_counterfactual_tokens": 6,
+      "edit_blocks": 4,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Amine",
+          "counterfactual": "Amina"
+        },
+        {
+          "tag": "replace",
+          "original": "un ressortissant sénégalais,",
+          "counterfactual": "une ressortissante sénégalaise,"
+        },
+        {
+          "tag": "replace",
+          "original": "Il",
+          "counterfactual": "Elle"
+        },
+        {
+          "tag": "replace",
+          "original": "Amine",
+          "counterfactual": "Amina"
+        }
+      ],
+      "base_id": "FLEXID-0228"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Sofia",
+          "counterfactual": "Sami"
+        },
+        {
+          "tag": "replace",
+          "original": "Sofia.",
+          "counterfactual": "Sami."
+        }
+      ],
+      "base_id": "FLEXID-0445"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Chloé, âgée",
+          "counterfactual": "Charles, âgé"
+        }
+      ],
+      "base_id": "FLEXID-0562"
+    },
+    {
+      "changed_original_tokens": 5,
+      "changed_counterfactual_tokens": 5,
+      "edit_blocks": 4,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Célestine",
+          "counterfactual": "Césaire"
+        },
+        {
+          "tag": "replace",
+          "original": "mariée",
+          "counterfactual": "marié"
+        },
+        {
+          "tag": "replace",
+          "original": "Elle",
+          "counterfactual": "Il"
+        },
+        {
+          "tag": "replace",
+          "original": "conjointe actuelle,",
+          "counterfactual": "conjoint actuel,"
+        }
+      ],
+      "base_id": "FLEXID-0607"
+    },
+    {
+      "changed_original_tokens": 5,
+      "changed_counterfactual_tokens": 5,
+      "edit_blocks": 4,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Sofia",
+          "counterfactual": "Sami"
+        },
+        {
+          "tag": "replace",
+          "original": "mariée",
+          "counterfactual": "marié"
+        },
+        {
+          "tag": "replace",
+          "original": "qu’épouse soumise",
+          "counterfactual": "qu’époux soumis"
+        },
+        {
+          "tag": "replace",
+          "original": "elle",
+          "counterfactual": "il"
+        }
+      ],
+      "base_id": "FLEXID-0622"
+    },
+    {
+      "changed_original_tokens": 4,
+      "changed_counterfactual_tokens": 4,
+      "edit_blocks": 4,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Rina",
+          "counterfactual": "Riku"
+        },
+        {
+          "tag": "replace",
+          "original": "elle",
+          "counterfactual": "il"
+        },
+        {
+          "tag": "replace",
+          "original": "qu'elle",
+          "counterfactual": "qu'il"
+        },
+        {
+          "tag": "replace",
+          "original": "elle",
+          "counterfactual": "il"
+        }
+      ],
+      "base_id": "FLEXID-0163"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Sofia.",
+          "counterfactual": "Sami."
+        }
+      ],
+      "base_id": "FLEXID-0374"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Yasmine",
+          "counterfactual": "Yassine"
+        }
+      ],
+      "base_id": "FLEXID-0736"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Julien",
+          "counterfactual": "Julie"
+        },
+        {
+          "tag": "replace",
+          "original": "Ils",
+          "counterfactual": "Elles"
+        }
+      ],
+      "base_id": "FLEXID-0125"
+    },
+    {
+      "changed_original_tokens": 5,
+      "changed_counterfactual_tokens": 5,
+      "edit_blocks": 5,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Hyunwoo",
+          "counterfactual": "Hyejin"
+        },
+        {
+          "tag": "replace",
+          "original": "convoqué",
+          "counterfactual": "convoquée"
+        },
+        {
+          "tag": "replace",
+          "original": "qu'il",
+          "counterfactual": "qu'elle"
+        },
+        {
+          "tag": "replace",
+          "original": "Il",
+          "counterfactual": "Elle"
+        },
+        {
+          "tag": "replace",
+          "original": "tenu",
+          "counterfactual": "tenue"
+        }
+      ],
+      "base_id": "FLEXID-0253"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Julien",
+          "counterfactual": "Julie"
+        },
+        {
+          "tag": "replace",
+          "original": "Il",
+          "counterfactual": "Elle"
+        }
+      ],
+      "base_id": "FLEXID-0044"
+    },
+    {
+      "changed_original_tokens": 6,
+      "changed_counterfactual_tokens": 6,
+      "edit_blocks": 6,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Naliaka",
+          "counterfactual": "Nadine"
+        },
+        {
+          "tag": "replace",
+          "original": "qu'il",
+          "counterfactual": "qu'elle"
+        },
+        {
+          "tag": "replace",
+          "original": "il",
+          "counterfactual": "elle"
+        },
+        {
+          "tag": "replace",
+          "original": "tenu",
+          "counterfactual": "tenue"
+        },
+        {
+          "tag": "replace",
+          "original": "gardien",
+          "counterfactual": "gardienne"
+        },
+        {
+          "tag": "replace",
+          "original": "condamné",
+          "counterfactual": "condamnée"
+        }
+      ],
+      "base_id": "FLEXID-0035"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Kaori",
+          "counterfactual": "Kamel"
+        },
+        {
+          "tag": "replace",
+          "original": "Kaori",
+          "counterfactual": "Kamel"
+        }
+      ],
+      "base_id": "FLEXID-0033"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Yara",
+          "counterfactual": "Yanis"
+        }
+      ],
+      "base_id": "FLEXID-0643"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Domitille",
+          "counterfactual": "Damien"
+        },
+        {
+          "tag": "replace",
+          "original": "Domitille.",
+          "counterfactual": "Damien."
+        }
+      ],
+      "base_id": "FLEXID-0802"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Benjamin,",
+          "counterfactual": "Béatrice,"
+        },
+        {
+          "tag": "replace",
+          "original": "Benjamin",
+          "counterfactual": "Béatrice"
+        }
+      ],
+      "base_id": "FLEXID-0095"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Élodie",
+          "counterfactual": "Émile"
+        }
+      ],
+      "base_id": "FLEXID-0500"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Antoine",
+          "counterfactual": "Anissa"
+        }
+      ],
+      "base_id": "FLEXID-0526"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Martin",
+          "counterfactual": "Martine"
+        }
+      ],
+      "base_id": "FLEXID-0087"
+    },
+    {
+      "changed_original_tokens": 2,
+      "changed_counterfactual_tokens": 2,
+      "edit_blocks": 2,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Quitterie",
+          "counterfactual": "Raphaël"
+        },
+        {
+          "tag": "replace",
+          "original": "Elle",
+          "counterfactual": "Lui"
+        }
+      ],
+      "base_id": "FLEXID-0742"
+    },
+    {
+      "changed_original_tokens": 1,
+      "changed_counterfactual_tokens": 1,
+      "edit_blocks": 1,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Sofia",
+          "counterfactual": "Sami"
+        }
+      ],
+      "base_id": "FLEXID-0448"
+    },
+    {
+      "changed_original_tokens": 5,
+      "changed_counterfactual_tokens": 5,
+      "edit_blocks": 3,
+      "edits": [
+        {
+          "tag": "replace",
+          "original": "Nora",
+          "counterfactual": "Nabil"
+        },
+        {
+          "tag": "replace",
+          "original": "elle",
+          "counterfactual": "il"
+        },
+        {
+          "tag": "replace",
+          "original": "la dernière descendante,",
+          "counterfactual": "le dernier descendant,"
+        }
+      ],
+      "base_id": "FLEXID-0424"
+    }
+  ]
+}

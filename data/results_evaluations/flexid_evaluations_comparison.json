@@ -1,0 +1,43 @@
+{
+  "gold_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_kappa_rationale_180_unique_law_refs_60_each_gold.jsonl",
+  "bootstrap_iterations": 10000,
+  "bootstrap_seed": 2026,
+  "systems": [
+    {
+      "system_key": "second_annotator",
+      "system_name": "Second annotateur humain",
+      "evaluation_kind": "human",
+      "instances": 180,
+      "raw_agreement": 0.95,
+      "cohen_kappa": 0.9249999999999999,
+      "kappa_ci_low": 0.8749999999999998,
+      "kappa_ci_high": 0.9666666666666665,
+      "s_span_size": 120,
+      "macro_token_f1": 0.8529796801604822,
+      "macro_f1_ci_low": 0.8153260286969877,
+      "macro_f1_ci_high": 0.8881261791764866,
+      "macro_token_iou": 0.7894588374511742,
+      "exact_match_rate": 0.475,
+      "nra": 0.85,
+      "joint_iou_at_0_50": 0.8333333333333334
+    },
+    {
+      "system_key": "deepseek_v4_flash",
+      "system_name": "DeepSeek-V4-Flash",
+      "evaluation_kind": "model",
+      "instances": 180,
+      "raw_agreement": 0.9166666666666666,
+      "cohen_kappa": 0.8749999999999998,
+      "kappa_ci_low": 0.8083333333333333,
+      "kappa_ci_high": 0.9333333333333332,
+      "s_span_size": 110,
+      "macro_token_f1": 0.8762051801688007,
+      "macro_f1_ci_low": 0.8411765608879349,
+      "macro_f1_ci_high": 0.9085108584416769,
+      "macro_token_iou": 0.8192193602748067,
+      "exact_match_rate": 0.5,
+      "nra": 0.9166666666666666,
+      "joint_iou_at_0_50": 0.8388888888888889
+    }
+  ]
+}

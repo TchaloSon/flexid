@@ -1,0 +1,153 @@
+{
+  "version": "FLEXID-JOINT-2.2.0-VSCODE",
+  "arguments": {
+    "debug": false,
+    "command": "train",
+    "train": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_exact_group_split\\train.jsonl",
+    "validation": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_exact_group_split\\validation.jsonl",
+    "test": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_exact_group_split\\test.jsonl",
+    "group_by": "premise",
+    "official_split_dir": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_exact_group_split",
+    "output": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\results_mdeberta_joint_final_run02",
+    "device": "auto",
+    "precision": "auto",
+    "eval_batch_size": 4,
+    "window_batch_budget": 8,
+    "model": "microsoft/mdeberta-v3-base",
+    "revision": null,
+    "seeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "epochs": 8,
+    "patience": 3,
+    "batch_size": 2,
+    "grad_accum": 8,
+    "encoder_lr": 2e-05,
+    "head_lr": 5e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0,
+    "gradient_checkpointing": true,
+    "deterministic": true,
+    "log_every": 10,
+    "max_length": 512,
+    "stride": 128,
+    "min_premise_tokens": 32,
+    "max_windows": 64,
+    "alignment_policy": "expand",
+    "max_span_tokens": 0,
+    "span_loss_weight": 0.05
+  },
+  "settings": {
+    "max_length": 512,
+    "stride": 128,
+    "min_premise_tokens": 32,
+    "max_windows": 64,
+    "alignment_policy": "expand",
+    "max_span_tokens": 0,
+    "span_loss_weight": 0.05
+  },
+  "source_model": "microsoft/mdeberta-v3-base",
+  "resolved_revision": "a0484667b22365f84929a935b5e50a51f71f159d",
+  "source_script_sha256": "43d1ab133007180a4ec2c98922a51d02f8797783b0bf0184c137a1024a6b0786",
+  "split_report": {
+    "train": {
+      "instances": 701,
+      "labels": {
+        "contradiction": 233,
+        "entailment": 236,
+        "neutral": 232
+      },
+      "unique_premises": 249
+    },
+    "validation": {
+      "instances": 151,
+      "labels": {
+        "neutral": 50,
+        "entailment": 51,
+        "contradiction": 50
+      },
+      "unique_premises": 53
+    },
+    "test": {
+      "instances": 150,
+      "labels": {
+        "neutral": 50,
+        "entailment": 50,
+        "contradiction": 50
+      },
+      "unique_premises": 50
+    },
+    "official_law_ref_check": {
+      "train": {
+        "instances": 701,
+        "labels": {
+          "contradiction": 233,
+          "entailment": 236,
+          "neutral": 232
+        },
+        "unique_premises": 249
+      },
+      "validation": {
+        "instances": 151,
+        "labels": {
+          "neutral": 50,
+          "entailment": 51,
+          "contradiction": 50
+        },
+        "unique_premises": 53
+      },
+      "test": {
+        "instances": 150,
+        "labels": {
+          "neutral": 50,
+          "entailment": 50,
+          "contradiction": 50
+        },
+        "unique_premises": 50
+      }
+    }
+  },
+  "tokenization": {
+    "train": {
+      "instances": 701,
+      "windows": 706,
+      "multi_window_instances": 5,
+      "max_windows": 2,
+      "adapted_stride_instances": 0,
+      "expanded_boundary_instances": 0
+    },
+    "validation": {
+      "instances": 151,
+      "windows": 151,
+      "multi_window_instances": 0,
+      "max_windows": 1,
+      "adapted_stride_instances": 0,
+      "expanded_boundary_instances": 0
+    },
+    "test": {
+      "instances": 150,
+      "windows": 150,
+      "multi_window_instances": 0,
+      "max_windows": 1,
+      "adapted_stride_instances": 0,
+      "expanded_boundary_instances": 0
+    }
+  },
+  "data_sha256": {
+    "train": "6f50032ad860baa697efe5eb0b41e7b45c2b6a0949da5cb5b88d1deb39bcd712",
+    "validation": "01ba50651fa1f5266bf32533564215c03a5a14845f7e402669671b499872f19a",
+    "test": "f9acae1c9d602a7dca8ffe0bc3e717e12d85c85810312113119207ce74e702ee"
+  },
+  "environment": {
+    "python": "3.13.1",
+    "torch": "2.12.0+cpu",
+    "transformers": "5.9.0",
+    "numpy": "2.2.1",
+    "cuda": null,
+    "device": "cpu",
+    "precision": "fp32"
+  }
+}

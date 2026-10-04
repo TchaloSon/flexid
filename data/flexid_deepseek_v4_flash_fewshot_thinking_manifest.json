@@ -1,0 +1,56 @@
+{
+  "experiment": "FLEXID-DEEPSEEK-FEWSHOT-THINKING-180-v1.0",
+  "created_at_utc": "2026-09-26T16:08:15.265392+00:00",
+  "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_kappa_rationale_180_unique_law_refs_60_each.jsonl",
+  "input_sha256": "70723ca41d53577f66ad2157a210222fca3491c7839b2073066be519bb7ef135",
+  "expected_instances": 180,
+  "model": "deepseek-v4-flash",
+  "base_url": "https://api.deepseek.com",
+  "thinking": {
+    "type": "enabled"
+  },
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "temperature_explicitly_set": false,
+  "response_format": {
+    "type": "json_object"
+  },
+  "system_prompt_sha256": "c0f0f7ead3222030267a6a13f36bfd7189ddce5c22c21a8ae884449831adcc34",
+  "few_shot": {
+    "total": 6,
+    "per_label": 2,
+    "selection_seed": 2026,
+    "source_split": "train",
+    "target_ids_excluded": true,
+    "target_law_refs_excluded": true,
+    "unique_demo_law_refs": true,
+    "written_chain_of_thought_in_demos": false,
+    "demo_ids": [
+      "FLEXID-0484",
+      "FLEXID-0064",
+      "FLEXID-0175",
+      "FLEXID-0333",
+      "FLEXID-0665",
+      "FLEXID-0618"
+    ],
+    "demo_labels": [
+      "entailment",
+      "contradiction",
+      "neutral",
+      "entailment",
+      "contradiction",
+      "neutral"
+    ],
+    "demo_law_refs": [
+      "Code civil, art. 98-2",
+      "Cass. ch. mixte, 26 mai 2006",
+      "Code civil, art. 16-7",
+      "Code civil, art. 21-21",
+      "Code civil, art. 205",
+      "Code civil, art. 177"
+    ],
+    "demo_fingerprint": "aa28ff0fd7da13348faecf6b89484eb43b2fda66b6be5f92c74e979fe76705ca"
+  },
+  "one_request_per_target": true,
+  "reasoning_content_saved": false
+}

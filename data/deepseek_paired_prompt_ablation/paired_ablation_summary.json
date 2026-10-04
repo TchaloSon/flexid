@@ -1,0 +1,71 @@
+{
+  "protocol_version": "FLEXID-DEEPSEEK-PAIRED-ABLATION-v1.0",
+  "n_paired_instances": 180,
+  "conditions": {
+    "zero_shot_thinking": {
+      "accuracy": 0.9166666666666666,
+      "macro_f1": 0.9173464343097268,
+      "joint_iou_at_0_50": 0.8388888888888889
+    },
+    "few_shot_thinking": {
+      "accuracy": 0.95,
+      "macro_f1": 0.9496559079271449,
+      "joint_iou_at_0_50": 0.8611111111111112
+    }
+  },
+  "observed_deltas_few_minus_zero": {
+    "accuracy": 0.033333333333333326,
+    "macro_f1": 0.032309473617418094,
+    "joint_iou_at_0_50": 0.022222222222222254
+  },
+  "paired_correctness_transitions": {
+    "both_correct": 162,
+    "zero_correct_few_wrong": 3,
+    "zero_wrong_few_correct": 9,
+    "both_wrong": 6
+  },
+  "exact_mcnemar_test_accuracy": {
+    "discordant_pairs": 12,
+    "zero_correct_few_wrong": 3,
+    "zero_wrong_few_correct": 9,
+    "two_sided_exact_p_value": 0.14599609375,
+    "null_hypothesis": "Among discordant pairs, improvements and degradations are equally likely."
+  },
+  "paired_bootstrap": {
+    "accuracy_delta": {
+      "observed": 0.033333333333333326,
+      "ci95_percentile": [
+        0.0,
+        0.07222222222222219
+      ],
+      "bootstrap_fraction_delta_gt_0": 0.94765,
+      "bootstrap_fraction_delta_lt_0": 0.0244
+    },
+    "macro_f1_delta": {
+      "observed": 0.032309473617418094,
+      "ci95_percentile": [
+        -0.003956261704090618,
+        0.07138102328870878
+      ],
+      "bootstrap_fraction_delta_gt_0": 0.95355,
+      "bootstrap_fraction_delta_lt_0": 0.0463
+    },
+    "joint_iou_at_0_50_delta": {
+      "observed": 0.022222222222222254,
+      "ci95_percentile": [
+        -0.02777777777777779,
+        0.0722222222222223
+      ],
+      "bootstrap_fraction_delta_gt_0": 0.77205,
+      "bootstrap_fraction_delta_lt_0": 0.16755
+    },
+    "bootstrap_reps": 20000,
+    "bootstrap_seed": 20260926,
+    "resampling_unit": "paired_instance"
+  },
+  "joint_transitions": {
+    "zero_fail_to_few_pass": 13,
+    "zero_pass_to_few_fail": 9
+  },
+  "interpretation_guardrail": "The bootstrap CIs quantify uncertainty of the paired deltas. The exact McNemar p-value tests paired correctness changes. A CI including zero does not prove equality; a p-value above 0.05 does not prove absence of an effect."
+}

@@ -1,0 +1,93 @@
+{
+  "selection_protocol": {
+    "total": 6,
+    "per_label": 2,
+    "selection_seed": 2026,
+    "source_split": "train",
+    "target_ids_excluded": true,
+    "target_law_refs_excluded": true,
+    "unique_demo_law_refs": true,
+    "written_chain_of_thought_in_demos": false,
+    "demo_ids": [
+      "FLEXID-0484",
+      "FLEXID-0064",
+      "FLEXID-0175",
+      "FLEXID-0333",
+      "FLEXID-0665",
+      "FLEXID-0618"
+    ],
+    "demo_labels": [
+      "entailment",
+      "contradiction",
+      "neutral",
+      "entailment",
+      "contradiction",
+      "neutral"
+    ],
+    "demo_law_refs": [
+      "Code civil, art. 98-2",
+      "Cass. ch. mixte, 26 mai 2006",
+      "Code civil, art. 16-7",
+      "Code civil, art. 21-21",
+      "Code civil, art. 205",
+      "Code civil, art. 177"
+    ],
+    "demo_fingerprint": "aa28ff0fd7da13348faecf6b89484eb43b2fda66b6be5f92c74e979fe76705ca"
+  },
+  "demos": [
+    {
+      "id": "FLEXID-0484",
+      "label": "entailment",
+      "law_ref": "Code civil, art. 98-2",
+      "premise": "Un même acte peut être dressé portant les énonciations relatives à la naissance et au mariage, à moins que la naissance et le mariage n'aient déjà été constatés par des actes portés sur un registre conservé par une autorité française. Il tient lieu à la fois d'acte de naissance et d'acte de mariage.",
+      "hypothesis_facts": "Aïcha est née puis s’est mariée au Sénégal, sans qu’aucun acte correspondant soit détenu par une autorité française. L’administration peut dresser un acte unique regroupant les données relatives à sa naissance et à son mariage.",
+      "rationale_start_token": 1,
+      "rationale_end_token": 40
+    },
+    {
+      "id": "FLEXID-0064",
+      "label": "contradiction",
+      "law_ref": "Cass. ch. mixte, 26 mai 2006",
+      "premise": "Le bénéficiaire d'un pacte de préférence est en droit d'exiger l'annulation du contrat passé avec un tiers en méconnaissance de ses droits et d'obtenir sa substitution à l'acquéreur, c'est à la condition que ce tiers ait eu connaissance, lorsqu'il a contracté, de l'existence du pacte de préférence et de l'intention du bénéficiaire de s'en prévaloir ",
+      "hypothesis_facts": "Le frère de Madame TAB achète la maison de Monsieur KHA en connaissant le pacte de préférence. Il ignore toutefois que Madame TAB entend s’en prévaloir. Madame TAB dispose du droit d’obtenir sa substitution à cet acquéreur.",
+      "rationale_start_token": 30,
+      "rationale_end_token": 55
+    },
+    {
+      "id": "FLEXID-0175",
+      "label": "neutral",
+      "law_ref": "Code civil, art. 16-7",
+      "premise": "Toute convention portant sur la procréation ou la gestation pour le compte d'autrui est nulle.",
+      "hypothesis_facts": "Martine JAMBON et Martin BIFTEAK concluent avec une mère porteuse une convention de gestation pour autrui. Ils attribuent à la seule conclusion de cet accord une peine correctionnelle d’un an d’emprisonnement et de 15 000 euros d’amende.",
+      "rationale_start_token": null,
+      "rationale_end_token": null
+    },
+    {
+      "id": "FLEXID-0333",
+      "label": "entailment",
+      "law_ref": "Code civil, art. 21-21",
+      "premise": "La nationalité française peut être conférée par naturalisation sur proposition du ministre des affaires étrangères à tout étranger francophone qui en fait la demande et qui contribue par son action émérite au rayonnement de la France et à la prospérité de ses relations économiques internationales.",
+      "hypothesis_facts": "Rassikatou, ressortissante togolaise francophone, sollicite sa naturalisation après avoir contribué par son œuvre littéraire au rayonnement culturel et aux relations économiques de la France. Son profil relève du mécanisme spécial prévu pour cette contribution.",
+      "rationale_start_token": 16,
+      "rationale_end_token": 45
+    },
+    {
+      "id": "FLEXID-0665",
+      "label": "contradiction",
+      "law_ref": "Code civil, art. 205",
+      "premise": "Les enfants doivent des aliments à leurs père et mère ou autres ascendants qui sont dans le besoin.",
+      "hypothesis_facts": "Le père de Nandi se trouve sans ressources suffisantes. Nandi affirme qu’aucune obligation alimentaire ne pèse sur lui malgré le lien de filiation.",
+      "rationale_start_token": 3,
+      "rationale_end_token": 18
+    },
+    {
+      "id": "FLEXID-0618",
+      "label": "neutral",
+      "law_ref": "Code civil, art. 177",
+      "premise": "Le tribunal judiciaire prononcera dans les dix jours sur la demande en mainlevée formée par les futurs époux, même mineurs.",
+      "hypothesis_facts": "Les futurs époux saisissent le tribunal judiciaire d’une demande en mainlevée. Ils présentent la représentation par avocat comme une condition obligatoire de cette procédure.",
+      "rationale_start_token": null,
+      "rationale_end_token": null
+    }
+  ]
+}

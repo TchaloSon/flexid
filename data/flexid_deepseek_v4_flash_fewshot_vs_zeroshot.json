@@ -1,0 +1,77 @@
+{
+  "same_180_target_ids": true,
+  "n_compared": 180,
+  "zero_shot": {
+    "accuracy": 0.9166666666666666,
+    "macro_f1": 0.9173464343097268,
+    "rationale": {
+      "conditional_non_neutral_subset_n": 110,
+      "macro_token_f1": 0.8762051801688009,
+      "macro_token_f1_ci95": [
+        0.8411765608879347,
+        0.9085108584416771
+      ],
+      "macro_iou": 0.8192193602748066,
+      "exact_match": 0.5,
+      "neutral_rationale_agreement": 0.9166666666666666,
+      "joint_iou_at_0_50": 0.8388888888888889,
+      "bootstrap_reps": 10000,
+      "bootstrap_seed": 2027
+    }
+  },
+  "few_shot_thinking": {
+    "accuracy": 0.95,
+    "macro_f1": 0.9496559079271449,
+    "rationale": {
+      "conditional_non_neutral_subset_n": 117,
+      "macro_token_f1": 0.8761693178333385,
+      "macro_token_f1_ci95": [
+        0.843423905579011,
+        0.9077495518629138
+      ],
+      "macro_iou": 0.8180563988284539,
+      "exact_match": 0.5299145299145299,
+      "neutral_rationale_agreement": 0.9,
+      "joint_iou_at_0_50": 0.8611111111111112,
+      "bootstrap_reps": 10000,
+      "bootstrap_seed": 2027
+    }
+  },
+  "delta_few_minus_zero": {
+    "accuracy": 0.033333333333333326,
+    "macro_f1": 0.032309473617418094,
+    "macro_token_f1": -3.5862335462377715e-05,
+    "macro_iou": -0.0011629614463526394,
+    "joint_iou_at_0_50": 0.022222222222222254
+  },
+  "prediction_label_changed_n": 12,
+  "prediction_label_changed_rate": 0.06666666666666667,
+  "backend_comparability": {
+    "zero_shot": {
+      "successful_calls": 180,
+      "model_returned_values": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "first_timestamp_utc": "2026-09-20T09:52:46.139350+00:00",
+      "last_timestamp_utc": "2026-09-20T10:20:01.254426+00:00"
+    },
+    "few_shot": {
+      "successful_calls": 180,
+      "model_returned_values": [
+        "deepseek-flash"
+      ],
+      "system_fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ],
+      "first_timestamp_utc": "2026-09-26T16:08:16.927036+00:00",
+      "last_timestamp_utc": "2026-09-26T16:21:54.942298+00:00"
+    },
+    "model_returned_match": true,
+    "system_fingerprint_match": true,
+    "strict_prompt_ablation_supported": true,
+    "interpretation": "Si strict_prompt_ablation_supported=false, la différence peut aussi refléter un changement de backend/version entre les deux dates; ne pas l'attribuer uniquement au few-shot."
+  }
+}

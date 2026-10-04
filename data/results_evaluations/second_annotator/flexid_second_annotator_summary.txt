@@ -1,0 +1,31 @@
+FLEXID — Accord inter-annotateurs
+============================================================
+Système évalué : Second annotateur humain
+Gold : C:\Users\TETEREOU Aboudouraza\Desktop\GIT_FLEXID_V2\flexid\data\flexid_kappa_rationale_180_unique_law_refs_60_each_gold.jsonl
+Second annotateur humain : C:\Users\TETEREOU Aboudouraza\Desktop\GIT_FLEXID_V2\flexid\data\flexid_kappa_rational_second_annotator.jsonl
+
+A. LABELS
+Instances alignées : 180
+Accord brut : 0.9500 (171/180)
+Cohen's kappa : 0.9250
+IC bootstrap 95 % de kappa : [0.8750, 0.9667]
+Accord attendu p_e : 0.3333
+
+Matrice de confusion — lignes=gold, colonnes=système évalué
+                         entailment  contradiction  neutral
+entailment                       60              0        0
+contradiction                     0             60        0
+neutral                           4              5       51
+
+B. RATIONALE SPANS
+S_span : N=120
+Macro-F1 token : 0.8530
+IC bootstrap 95 % du Macro-F1 : [0.8153, 0.8881]
+Macro-IoU : 0.7895
+Exact Match strict : 0.4750 (57/120)
+
+C. NEUTRAL
+NRA : 0.8500 (51/60)
+
+D. BOUT-EN-BOUT
+Joint IoU@0.50 : 0.8333 (150/180)

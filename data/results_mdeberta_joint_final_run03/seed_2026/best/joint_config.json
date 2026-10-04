@@ -1,0 +1,17 @@
+{
+  "version": "FLEXID-JOINT-2.2.0-VSCODE",
+  "settings": {
+    "max_length": 512,
+    "stride": 128,
+    "min_premise_tokens": 32,
+    "max_windows": 64,
+    "alignment_policy": "expand",
+    "max_span_tokens": 0,
+    "span_loss_weight": 0.05
+  },
+  "labels": [
+    "entailment",
+    "contradiction",
+    "neutral"
+  ]
+}

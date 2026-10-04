@@ -1,0 +1,119 @@
+{
+  "seed": 2028,
+  "best_epoch": 7,
+  "validation": {
+    "n": 151,
+    "accuracy": 0.7350993377483444,
+    "macro_f1": 0.7361511555686313,
+    "cohen_kappa": 0.6027099914490561,
+    "per_class": {
+      "entailment": {
+        "precision": 0.7916666666666666,
+        "recall": 0.7450980392156863,
+        "f1": 0.7676767676767676,
+        "support": 51
+      },
+      "contradiction": {
+        "precision": 0.6226415094339622,
+        "recall": 0.66,
+        "f1": 0.6407766990291263,
+        "support": 50
+      },
+      "neutral": {
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1": 0.8,
+        "support": 50
+      }
+    },
+    "confusion_matrix": {
+      "entailment": {
+        "entailment": 38,
+        "contradiction": 12,
+        "neutral": 1
+      },
+      "contradiction": {
+        "entailment": 8,
+        "contradiction": 33,
+        "neutral": 9
+      },
+      "neutral": {
+        "entailment": 2,
+        "contradiction": 8,
+        "neutral": 40
+      }
+    },
+    "nonneutral_count": 101,
+    "conditional_span_count": 71,
+    "rationale_s_span": 71,
+    "conditional_token_f1": 0.6681454677908206,
+    "conditional_token_iou": 0.5649750284668583,
+    "conditional_exact_match": 0.23943661971830985,
+    "no_rationale_agreement": 0.8,
+    "e2e_nonneutral_token_f1": 0.46968641795196303,
+    "e2e_nonneutral_char_f1": 0.4656981259825556,
+    "e2e_nonneutral_char_exact": 0.16831683168316833,
+    "joint_exact_match": 0.37748344370860926,
+    "joint_token_iou_at_0_50": 0.5231788079470199,
+    "neutral_recall": 0.8,
+    "joint_char_exact": 0.37748344370860926
+  },
+  "checkpoint": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\results_mdeberta_joint_final_run03\\seed_2028\\best",
+  "test": {
+    "n": 150,
+    "accuracy": 0.6733333333333333,
+    "macro_f1": 0.674515960230246,
+    "cohen_kappa": 0.51,
+    "per_class": {
+      "entailment": {
+        "precision": 0.6875,
+        "recall": 0.66,
+        "f1": 0.673469387755102,
+        "support": 50
+      },
+      "contradiction": {
+        "precision": 0.5925925925925926,
+        "recall": 0.64,
+        "f1": 0.6153846153846154,
+        "support": 50
+      },
+      "neutral": {
+        "precision": 0.75,
+        "recall": 0.72,
+        "f1": 0.7346938775510204,
+        "support": 50
+      }
+    },
+    "confusion_matrix": {
+      "entailment": {
+        "entailment": 33,
+        "contradiction": 15,
+        "neutral": 2
+      },
+      "contradiction": {
+        "entailment": 8,
+        "contradiction": 32,
+        "neutral": 10
+      },
+      "neutral": {
+        "entailment": 7,
+        "contradiction": 7,
+        "neutral": 36
+      }
+    },
+    "nonneutral_count": 100,
+    "conditional_span_count": 65,
+    "rationale_s_span": 65,
+    "conditional_token_f1": 0.6778960537467552,
+    "conditional_token_iou": 0.5844090476415269,
+    "conditional_exact_match": 0.23076923076923078,
+    "no_rationale_agreement": 0.72,
+    "e2e_nonneutral_token_f1": 0.4406324349353909,
+    "e2e_nonneutral_char_f1": 0.43882286455316155,
+    "e2e_nonneutral_char_exact": 0.15,
+    "joint_exact_match": 0.34,
+    "joint_token_iou_at_0_50": 0.47333333333333333,
+    "neutral_recall": 0.72,
+    "joint_char_exact": 0.34
+  }
+}

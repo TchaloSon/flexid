@@ -1,0 +1,1460 @@
+{
+  "contradiction": {
+    "most_positive": [
+      {
+        "feature": "hypothesis_word__administration",
+        "coefficient": 0.14708128298396475
+      },
+      {
+        "feature": "absdiff_word__administration",
+        "coefficient": 0.13579916284305493
+      },
+      {
+        "feature": "hypothesis_word__sans",
+        "coefficient": 0.11463527544370289
+      },
+      {
+        "feature": "hypothesis_word__comme",
+        "coefficient": 0.10472512523874065
+      },
+      {
+        "feature": "absdiff_word__malgre",
+        "coefficient": 0.09821195124049208
+      },
+      {
+        "feature": "absdiff_word__comme",
+        "coefficient": 0.0975137791146216
+      },
+      {
+        "feature": "absdiff_word__sans",
+        "coefficient": 0.0966616335436847
+      },
+      {
+        "feature": "absdiff_word__mais",
+        "coefficient": 0.09235563099914931
+      },
+      {
+        "feature": "hypothesis_word__malgre",
+        "coefficient": 0.08988278763881109
+      },
+      {
+        "feature": "absdiff_word__civil",
+        "coefficient": 0.08669827043357063
+      },
+      {
+        "feature": "absdiff_char__’adm",
+        "coefficient": 0.08558618893838386
+      },
+      {
+        "feature": "absdiff_char__’admi",
+        "coefficient": 0.08558618893838386
+      },
+      {
+        "feature": "hypothesis_char__’adm",
+        "coefficient": 0.08558618893838386
+      },
+      {
+        "feature": "hypothesis_char__’admi",
+        "coefficient": 0.08558618893838386
+      },
+      {
+        "feature": "hypothesis_word__officier",
+        "coefficient": 0.08231059604117325
+      },
+      {
+        "feature": "hypothesis_char__l’adm",
+        "coefficient": 0.0813049258610111
+      },
+      {
+        "feature": "absdiff_char__l’adm",
+        "coefficient": 0.0813049258610111
+      },
+      {
+        "feature": "absdiff_word__tient",
+        "coefficient": 0.08064218516716294
+      },
+      {
+        "feature": "absdiff_word__refuse",
+        "coefficient": 0.08005969893069795
+      },
+      {
+        "feature": "hypothesis_word__le",
+        "coefficient": 0.07931980542084961
+      },
+      {
+        "feature": "absdiff_word__officier",
+        "coefficient": 0.07911536322115167
+      },
+      {
+        "feature": "absdiff_word__aucune",
+        "coefficient": 0.07861159370394297
+      },
+      {
+        "feature": "hypothesis_word__et",
+        "coefficient": 0.0784949002515469
+      },
+      {
+        "feature": "absdiff_word__le tribunal",
+        "coefficient": 0.07816512232331811
+      },
+      {
+        "feature": "absdiff_char__l’ad",
+        "coefficient": 0.07785020091810838
+      },
+      {
+        "feature": "absdiff_char__ l’ad",
+        "coefficient": 0.07785020091810838
+      },
+      {
+        "feature": "hypothesis_char__ l’ad",
+        "coefficient": 0.07785020091810838
+      },
+      {
+        "feature": "hypothesis_char__l’ad",
+        "coefficient": 0.07785020091810838
+      },
+      {
+        "feature": "hypothesis_char__ini",
+        "coefficient": 0.07760438843879942
+      },
+      {
+        "feature": "hypothesis_word__refuse",
+        "coefficient": 0.07669895511403743
+      },
+      {
+        "feature": "absdiff_word__que",
+        "coefficient": 0.07658145455385384
+      },
+      {
+        "feature": "hypothesis_char__ l’",
+        "coefficient": 0.0756042948789506
+      },
+      {
+        "feature": "hypothesis_char__’ad",
+        "coefficient": 0.07552715911695565
+      },
+      {
+        "feature": "absdiff_char__’ad",
+        "coefficient": 0.07552715911695565
+      },
+      {
+        "feature": "hypothesis_char__nistr",
+        "coefficient": 0.07534355765809606
+      },
+      {
+        "feature": "absdiff_word__reconnait",
+        "coefficient": 0.0750797845730786
+      },
+      {
+        "feature": "hypothesis_word__reconnait",
+        "coefficient": 0.0750797845730786
+      },
+      {
+        "feature": "hypothesis_word__le fondement",
+        "coefficient": 0.074919255623151
+      },
+      {
+        "feature": "hypothesis_word__mais",
+        "coefficient": 0.0745576886242668
+      },
+      {
+        "feature": "hypothesis_char__trati",
+        "coefficient": 0.07405056253816358
+      },
+      {
+        "feature": "hypothesis_word__absence",
+        "coefficient": 0.07403311399390698
+      },
+      {
+        "feature": "absdiff_word__le notaire",
+        "coefficient": 0.07367445006141421
+      },
+      {
+        "feature": "absdiff_word__et conclusion",
+        "coefficient": 0.07364674136140034
+      },
+      {
+        "feature": "hypothesis_word__et conclusion",
+        "coefficient": 0.07364674136140034
+      },
+      {
+        "feature": "hypothesis_word__le tribunal",
+        "coefficient": 0.07335777970758214
+      },
+      {
+        "feature": "absdiff_char__ mai",
+        "coefficient": 0.07324186619713949
+      },
+      {
+        "feature": "absdiff_word__tribunal",
+        "coefficient": 0.07292700415668402
+      },
+      {
+        "feature": "hypothesis_char__ mai",
+        "coefficient": 0.07284627823115152
+      },
+      {
+        "feature": "absdiff_word__et",
+        "coefficient": 0.07233091695903114
+      },
+      {
+        "feature": "hypothesis_word__autorise",
+        "coefficient": 0.07201150663977457
+      },
+      {
+        "feature": "absdiff_char__ l’",
+        "coefficient": 0.07164396461691781
+      },
+      {
+        "feature": "hypothesis_word__cette",
+        "coefficient": 0.07163916708340695
+      },
+      {
+        "feature": "hypothesis_word__fondement",
+        "coefficient": 0.07147293417101036
+      },
+      {
+        "feature": "hypothesis_char__istra",
+        "coefficient": 0.07137035321394151
+      },
+      {
+        "feature": "hypothesis_char__strat",
+        "coefficient": 0.07137035321394151
+      },
+      {
+        "feature": "absdiff_word__respecte",
+        "coefficient": 0.07098333149241884
+      },
+      {
+        "feature": "hypothesis_word__respecte",
+        "coefficient": 0.07098333149241884
+      },
+      {
+        "feature": "hypothesis_word__toute",
+        "coefficient": 0.07089241420362259
+      },
+      {
+        "feature": "absdiff_word__toute",
+        "coefficient": 0.07063741242105366
+      },
+      {
+        "feature": "hypothesis_word__tient",
+        "coefficient": 0.07042209098629816
+      }
+    ],
+    "most_negative": [
+      {
+        "feature": "hypothesis_word__elle",
+        "coefficient": -0.14784405071749396
+      },
+      {
+        "feature": "hypothesis_word__leur",
+        "coefficient": -0.13309728672771068
+      },
+      {
+        "feature": "hypothesis_word__un",
+        "coefficient": -0.12371993888152338
+      },
+      {
+        "feature": "absdiff_word__elle",
+        "coefficient": -0.12291828542746976
+      },
+      {
+        "feature": "hypothesis_word__doit",
+        "coefficient": -0.10828516924863478
+      },
+      {
+        "feature": "hypothesis_word__dans",
+        "coefficient": -0.10599135939251231
+      },
+      {
+        "feature": "hypothesis_word__par",
+        "coefficient": -0.09972188969935357
+      },
+      {
+        "feature": "hypothesis_word__son",
+        "coefficient": -0.09672051899028583
+      },
+      {
+        "feature": "absdiff_word__leur",
+        "coefficient": -0.09000216213274967
+      },
+      {
+        "feature": "absdiff_word__la",
+        "coefficient": -0.08507909766666996
+      },
+      {
+        "feature": "absdiff_word__etablir",
+        "coefficient": -0.07939172133797004
+      },
+      {
+        "feature": "hypothesis_word__souhaite",
+        "coefficient": -0.0789292463301111
+      },
+      {
+        "feature": "absdiff_word__souhaite",
+        "coefficient": -0.0789292463301111
+      },
+      {
+        "feature": "absdiff_word__son",
+        "coefficient": -0.07845894776563818
+      },
+      {
+        "feature": "hypothesis_word__etre",
+        "coefficient": -0.07809346239929588
+      },
+      {
+        "feature": "hypothesis_word__son mariage",
+        "coefficient": -0.07773326704605518
+      },
+      {
+        "feature": "absdiff_word__son mariage",
+        "coefficient": -0.07773326704605518
+      },
+      {
+        "feature": "hypothesis_word__constitue",
+        "coefficient": -0.07737590336270692
+      },
+      {
+        "feature": "absdiff_word__constitue",
+        "coefficient": -0.07647840202223703
+      },
+      {
+        "feature": "hypothesis_word__etablir",
+        "coefficient": -0.07502016124602132
+      },
+      {
+        "feature": "absdiff_word__de son",
+        "coefficient": -0.0718351495554997
+      },
+      {
+        "feature": "hypothesis_char__ elle",
+        "coefficient": -0.06879576290827423
+      },
+      {
+        "feature": "hypothesis_char__ ell",
+        "coefficient": -0.06879576290827423
+      },
+      {
+        "feature": "absdiff_word__apres",
+        "coefficient": -0.06871218612989699
+      },
+      {
+        "feature": "absdiff_word__un",
+        "coefficient": -0.06837194561808292
+      },
+      {
+        "feature": "hypothesis_char__ el",
+        "coefficient": -0.06714773403109897
+      },
+      {
+        "feature": "hypothesis_word__ce",
+        "coefficient": -0.06531770422575447
+      },
+      {
+        "feature": "absdiff_char__ el",
+        "coefficient": -0.06487639090139269
+      },
+      {
+        "feature": "hypothesis_char__ un",
+        "coefficient": -0.06278596053022861
+      },
+      {
+        "feature": "hypothesis_word__ils",
+        "coefficient": -0.06158599017612731
+      },
+      {
+        "feature": "hypothesis_word__dans les",
+        "coefficient": -0.06114269141691902
+      },
+      {
+        "feature": "hypothesis_word__dans un",
+        "coefficient": -0.061129009209269836
+      },
+      {
+        "feature": "hypothesis_word__jours",
+        "coefficient": -0.060686887542887626
+      },
+      {
+        "feature": "hypothesis_char__ a ",
+        "coefficient": -0.06063511313949983
+      },
+      {
+        "feature": "absdiff_word__porte",
+        "coefficient": -0.060033547707597654
+      },
+      {
+        "feature": "absdiff_word__moins",
+        "coefficient": -0.05908714519148917
+      },
+      {
+        "feature": "absdiff_char__ ell",
+        "coefficient": -0.05870284779103581
+      },
+      {
+        "feature": "absdiff_char__ elle",
+        "coefficient": -0.05870284779103581
+      },
+      {
+        "feature": "absdiff_word__mention",
+        "coefficient": -0.05851196438921697
+      },
+      {
+        "feature": "absdiff_word__entraine",
+        "coefficient": -0.05816343191853469
+      },
+      {
+        "feature": "hypothesis_word__entraine",
+        "coefficient": -0.05806841025725773
+      },
+      {
+        "feature": "absdiff_word__etre",
+        "coefficient": -0.057887086115230336
+      },
+      {
+        "feature": "hypothesis_char__ un ",
+        "coefficient": -0.057715571884468644
+      },
+      {
+        "feature": "absdiff_word__par le",
+        "coefficient": -0.057593596122191795
+      },
+      {
+        "feature": "absdiff_char__ d’un",
+        "coefficient": -0.057303162375899
+      },
+      {
+        "feature": "absdiff_char__d’un",
+        "coefficient": -0.057303162375899
+      },
+      {
+        "feature": "hypothesis_char__un ",
+        "coefficient": -0.05700308205431141
+      },
+      {
+        "feature": "absdiff_word__de acte",
+        "coefficient": -0.056888142685354075
+      },
+      {
+        "feature": "absdiff_word__la dissolution",
+        "coefficient": -0.05668070658782102
+      },
+      {
+        "feature": "hypothesis_word__porte",
+        "coefficient": -0.055833501723150374
+      },
+      {
+        "feature": "hypothesis_word__et la",
+        "coefficient": -0.05577980414152412
+      },
+      {
+        "feature": "absdiff_char__ d’u",
+        "coefficient": -0.05576713061876248
+      },
+      {
+        "feature": "absdiff_char__d’u",
+        "coefficient": -0.05576713061876248
+      },
+      {
+        "feature": "hypothesis_word__avocat",
+        "coefficient": -0.055744865698144845
+      },
+      {
+        "feature": "hypothesis_char__d’un",
+        "coefficient": -0.05572485202400173
+      },
+      {
+        "feature": "hypothesis_char__ d’un",
+        "coefficient": -0.05572485202400173
+      },
+      {
+        "feature": "hypothesis_char__oin",
+        "coefficient": -0.05553206412099398
+      },
+      {
+        "feature": "hypothesis_word__par le",
+        "coefficient": -0.055420764822988806
+      },
+      {
+        "feature": "hypothesis_word__aide",
+        "coefficient": -0.0553815031024035
+      },
+      {
+        "feature": "absdiff_word__constitue une",
+        "coefficient": -0.055029328702816314
+      }
+    ]
+  },
+  "entailment": {
+    "most_positive": [
+      {
+        "feature": "hypothesis_word__leur",
+        "coefficient": 0.11974111361130824
+      },
+      {
+        "feature": "hypothesis_word__et",
+        "coefficient": 0.11336176068886936
+      },
+      {
+        "feature": "hypothesis_word__pas",
+        "coefficient": 0.10502845869337026
+      },
+      {
+        "feature": "hypothesis_word__ne",
+        "coefficient": 0.09633398209194201
+      },
+      {
+        "feature": "hypothesis_word__elle",
+        "coefficient": 0.09631049080995759
+      },
+      {
+        "feature": "hypothesis_word__devient",
+        "coefficient": 0.08565427405182707
+      },
+      {
+        "feature": "hypothesis_word__peut",
+        "coefficient": 0.0831578878709673
+      },
+      {
+        "feature": "hypothesis_word__dans le",
+        "coefficient": 0.08103553422086708
+      },
+      {
+        "feature": "hypothesis_word__ni",
+        "coefficient": 0.07915510672431597
+      },
+      {
+        "feature": "absdiff_word__afin",
+        "coefficient": 0.0791478990051847
+      },
+      {
+        "feature": "absdiff_word__dispose",
+        "coefficient": 0.07841667837596024
+      },
+      {
+        "feature": "absdiff_word__dans le",
+        "coefficient": 0.07829037675305348
+      },
+      {
+        "feature": "hypothesis_word__afin",
+        "coefficient": 0.07648423371830604
+      },
+      {
+        "feature": "absdiff_word__leur",
+        "coefficient": 0.07536334641579115
+      },
+      {
+        "feature": "absdiff_word__devient",
+        "coefficient": 0.0750870398993027
+      },
+      {
+        "feature": "hypothesis_word__de nationalite",
+        "coefficient": 0.07476955849162738
+      },
+      {
+        "feature": "hypothesis_word__demander",
+        "coefficient": 0.07166011127207185
+      },
+      {
+        "feature": "hypothesis_word__union",
+        "coefficient": 0.06940118827477815
+      },
+      {
+        "feature": "hypothesis_word__son mariage",
+        "coefficient": 0.06735077639023024
+      },
+      {
+        "feature": "absdiff_word__son mariage",
+        "coefficient": 0.06735077639023024
+      },
+      {
+        "feature": "absdiff_word__ainsi",
+        "coefficient": 0.0669413437623856
+      },
+      {
+        "feature": "absdiff_word__et la",
+        "coefficient": 0.06656740497640794
+      },
+      {
+        "feature": "hypothesis_word__ainsi",
+        "coefficient": 0.0655132322545474
+      },
+      {
+        "feature": "hypothesis_word__porte",
+        "coefficient": 0.06414976885549373
+      },
+      {
+        "feature": "hypothesis_word__dispose",
+        "coefficient": 0.06369594115215474
+      },
+      {
+        "feature": "hypothesis_word__et la",
+        "coefficient": 0.06363739436214916
+      },
+      {
+        "feature": "absdiff_word__une adoption",
+        "coefficient": 0.06361185581580468
+      },
+      {
+        "feature": "hypothesis_word__une action",
+        "coefficient": 0.061757974145624256
+      },
+      {
+        "feature": "absdiff_word__nouveau",
+        "coefficient": 0.059892863152822017
+      },
+      {
+        "feature": "hypothesis_char__ et",
+        "coefficient": 0.059147844392141984
+      },
+      {
+        "feature": "hypothesis_word__entre",
+        "coefficient": 0.058420782210626666
+      },
+      {
+        "feature": "hypothesis_char__ ad",
+        "coefficient": 0.05831363906287546
+      },
+      {
+        "feature": "hypothesis_word__elle ne",
+        "coefficient": 0.05806731837033321
+      },
+      {
+        "feature": "hypothesis_word__service",
+        "coefficient": 0.05788469173202903
+      },
+      {
+        "feature": "absdiff_word__elle ne",
+        "coefficient": 0.057685832062791445
+      },
+      {
+        "feature": "hypothesis_word__dans",
+        "coefficient": 0.05768247735231239
+      },
+      {
+        "feature": "absdiff_word__elle",
+        "coefficient": 0.05727066842681191
+      },
+      {
+        "feature": "hypothesis_char__et ",
+        "coefficient": 0.05684365646336671
+      },
+      {
+        "feature": "hypothesis_word__qualite",
+        "coefficient": 0.05597250098824346
+      },
+      {
+        "feature": "absdiff_word__canadienne",
+        "coefficient": 0.05595207604539233
+      },
+      {
+        "feature": "hypothesis_word__canadienne",
+        "coefficient": 0.05595207604539233
+      },
+      {
+        "feature": "hypothesis_char__rte",
+        "coefficient": 0.055862798976875495
+      },
+      {
+        "feature": "hypothesis_char__ ado",
+        "coefficient": 0.05576459873414857
+      },
+      {
+        "feature": "hypothesis_char__ adop",
+        "coefficient": 0.05576459873414857
+      },
+      {
+        "feature": "absdiff_word__qualite",
+        "coefficient": 0.05575042052059229
+      },
+      {
+        "feature": "hypothesis_char__ ne",
+        "coefficient": 0.0556436167487928
+      },
+      {
+        "feature": "hypothesis_word__dix",
+        "coefficient": 0.054900460034174314
+      },
+      {
+        "feature": "absdiff_word__pas",
+        "coefficient": 0.05469197631117295
+      },
+      {
+        "feature": "hypothesis_char__ane",
+        "coefficient": 0.054284504901613476
+      },
+      {
+        "feature": "hypothesis_char__ et ",
+        "coefficient": 0.054279699137629235
+      },
+      {
+        "feature": "absdiff_word__remet",
+        "coefficient": 0.05396951888890259
+      },
+      {
+        "feature": "hypothesis_word__une adoption",
+        "coefficient": 0.05394606723423772
+      },
+      {
+        "feature": "hypothesis_word__saisit le",
+        "coefficient": 0.05355827290505931
+      },
+      {
+        "feature": "absdiff_word__saisit le",
+        "coefficient": 0.05355827290505931
+      },
+      {
+        "feature": "absdiff_char__ir ",
+        "coefficient": 0.05353733124811426
+      },
+      {
+        "feature": "absdiff_word__etablissant",
+        "coefficient": 0.05350690944495284
+      },
+      {
+        "feature": "absdiff_char__ane",
+        "coefficient": 0.052942398301486664
+      },
+      {
+        "feature": "hypothesis_word__nouveau",
+        "coefficient": 0.05286946164247985
+      },
+      {
+        "feature": "hypothesis_char__ell",
+        "coefficient": 0.052762436917447614
+      },
+      {
+        "feature": "absdiff_word__etablir sa",
+        "coefficient": 0.05206455391052334
+      }
+    ],
+    "most_negative": [
+      {
+        "feature": "hypothesis_word__comme",
+        "coefficient": -0.19766407555306825
+      },
+      {
+        "feature": "absdiff_word__comme",
+        "coefficient": -0.19209392359736457
+      },
+      {
+        "feature": "absdiff_word__considere",
+        "coefficient": -0.16381646289426932
+      },
+      {
+        "feature": "hypothesis_word__considere",
+        "coefficient": -0.16381646289426932
+      },
+      {
+        "feature": "hypothesis_word__que",
+        "coefficient": -0.12221203204071214
+      },
+      {
+        "feature": "absdiff_word__considere que",
+        "coefficient": -0.12168743179450996
+      },
+      {
+        "feature": "hypothesis_word__considere que",
+        "coefficient": -0.12168743179450996
+      },
+      {
+        "feature": "absdiff_word__que",
+        "coefficient": -0.10446052002054623
+      },
+      {
+        "feature": "absdiff_char__comm",
+        "coefficient": -0.10372145083915295
+      },
+      {
+        "feature": "absdiff_word__une",
+        "coefficient": -0.10309644746933745
+      },
+      {
+        "feature": "absdiff_char__ comm",
+        "coefficient": -0.10254301384241628
+      },
+      {
+        "feature": "hypothesis_word__seul",
+        "coefficient": -0.10187235436748254
+      },
+      {
+        "feature": "hypothesis_word__administration",
+        "coefficient": -0.09557575937776462
+      },
+      {
+        "feature": "absdiff_word__qu",
+        "coefficient": -0.09223987128369679
+      },
+      {
+        "feature": "absdiff_word__pour",
+        "coefficient": -0.09098793881216145
+      },
+      {
+        "feature": "hypothesis_char__comme",
+        "coefficient": -0.0904637023162492
+      },
+      {
+        "feature": "hypothesis_char__omme",
+        "coefficient": -0.08925196840402666
+      },
+      {
+        "feature": "hypothesis_char__dere",
+        "coefficient": -0.08924154020169099
+      },
+      {
+        "feature": "hypothesis_char__idere",
+        "coefficient": -0.08924154020169099
+      },
+      {
+        "feature": "hypothesis_word__par un",
+        "coefficient": -0.08912775373747493
+      },
+      {
+        "feature": "absdiff_word__par un",
+        "coefficient": -0.08891142118624269
+      },
+      {
+        "feature": "absdiff_char__idere",
+        "coefficient": -0.08849976531862219
+      },
+      {
+        "feature": "absdiff_char__dere",
+        "coefficient": -0.08849976531862219
+      },
+      {
+        "feature": "absdiff_word__administration",
+        "coefficient": -0.0880606226597511
+      },
+      {
+        "feature": "hypothesis_char__omme ",
+        "coefficient": -0.08772186699400057
+      },
+      {
+        "feature": "absdiff_char__comme",
+        "coefficient": -0.08620897818865135
+      },
+      {
+        "feature": "hypothesis_char__sider",
+        "coefficient": -0.08608929155916373
+      },
+      {
+        "feature": "absdiff_char__omm",
+        "coefficient": -0.08472128097979496
+      },
+      {
+        "feature": "hypothesis_char__nside",
+        "coefficient": -0.0846275280091012
+      },
+      {
+        "feature": "hypothesis_char__nsid",
+        "coefficient": -0.0846275280091012
+      },
+      {
+        "feature": "hypothesis_char__onsid",
+        "coefficient": -0.0846275280091012
+      },
+      {
+        "feature": "hypothesis_word__apres",
+        "coefficient": -0.08365500183713874
+      },
+      {
+        "feature": "absdiff_char__omme",
+        "coefficient": -0.08360857692374107
+      },
+      {
+        "feature": "hypothesis_char__ider",
+        "coefficient": -0.08345040256179091
+      },
+      {
+        "feature": "absdiff_char__sider",
+        "coefficient": -0.08295836084874755
+      },
+      {
+        "feature": "absdiff_char__me ",
+        "coefficient": -0.08205628402799924
+      },
+      {
+        "feature": "absdiff_char__omme ",
+        "coefficient": -0.08185605974618734
+      },
+      {
+        "feature": "absdiff_char__onsid",
+        "coefficient": -0.08149659729868505
+      },
+      {
+        "feature": "absdiff_char__nsid",
+        "coefficient": -0.08149659729868505
+      },
+      {
+        "feature": "absdiff_char__nside",
+        "coefficient": -0.08149659729868505
+      },
+      {
+        "feature": "absdiff_word__seul",
+        "coefficient": -0.08126593365168894
+      },
+      {
+        "feature": "absdiff_char__ com",
+        "coefficient": -0.08029775476670226
+      },
+      {
+        "feature": "absdiff_char__com",
+        "coefficient": -0.08002970297800148
+      },
+      {
+        "feature": "absdiff_word__du",
+        "coefficient": -0.07940227338017898
+      },
+      {
+        "feature": "absdiff_char__ider",
+        "coefficient": -0.07893612671356079
+      },
+      {
+        "feature": "hypothesis_char__me ",
+        "coefficient": -0.07742027451315857
+      },
+      {
+        "feature": "hypothesis_char__comm",
+        "coefficient": -0.07717939910762313
+      },
+      {
+        "feature": "absdiff_word__jour",
+        "coefficient": -0.0758457017668062
+      },
+      {
+        "feature": "hypothesis_char__consi",
+        "coefficient": -0.07580187745171645
+      },
+      {
+        "feature": "absdiff_char__aire",
+        "coefficient": -0.07493122573641696
+      },
+      {
+        "feature": "absdiff_char__ire",
+        "coefficient": -0.074887452540124
+      },
+      {
+        "feature": "hypothesis_char__mme ",
+        "coefficient": -0.074251439450162
+      },
+      {
+        "feature": "absdiff_word__affirme",
+        "coefficient": -0.07418479045615706
+      },
+      {
+        "feature": "absdiff_word__officier",
+        "coefficient": -0.0741648792922843
+      },
+      {
+        "feature": "absdiff_char__dere ",
+        "coefficient": -0.0738437083750032
+      },
+      {
+        "feature": "hypothesis_char__dere ",
+        "coefficient": -0.0738437083750032
+      },
+      {
+        "feature": "hypothesis_word__affirme",
+        "coefficient": -0.07356936250505983
+      },
+      {
+        "feature": "absdiff_char__consi",
+        "coefficient": -0.07270967266217897
+      },
+      {
+        "feature": "absdiff_char__air",
+        "coefficient": -0.07269174233494362
+      },
+      {
+        "feature": "hypothesis_char__onsi",
+        "coefficient": -0.07251843342853355
+      }
+    ]
+  },
+  "neutral": {
+    "most_positive": [
+      {
+        "feature": "hypothesis_word__un",
+        "coefficient": 0.1892637872917479
+      },
+      {
+        "feature": "hypothesis_word__par",
+        "coefficient": 0.16028861476363662
+      },
+      {
+        "feature": "absdiff_word__une",
+        "coefficient": 0.13298331993428322
+      },
+      {
+        "feature": "absdiff_word__jours",
+        "coefficient": 0.12254968011882084
+      },
+      {
+        "feature": "hypothesis_word__par un",
+        "coefficient": 0.1168408366526193
+      },
+      {
+        "feature": "hypothesis_word__apres",
+        "coefficient": 0.11246941496627573
+      },
+      {
+        "feature": "absdiff_word__un",
+        "coefficient": 0.11193881532619601
+      },
+      {
+        "feature": "absdiff_word__par un",
+        "coefficient": 0.10700486476425075
+      },
+      {
+        "feature": "hypothesis_word__considere",
+        "coefficient": 0.10641780869714818
+      },
+      {
+        "feature": "absdiff_word__considere",
+        "coefficient": 0.10641780869714818
+      },
+      {
+        "feature": "absdiff_word__apres",
+        "coefficient": 0.10613257701503492
+      },
+      {
+        "feature": "hypothesis_word__doit",
+        "coefficient": 0.10609407468865323
+      },
+      {
+        "feature": "hypothesis_word__jours",
+        "coefficient": 0.10476029854804442
+      },
+      {
+        "feature": "absdiff_word__ecrit",
+        "coefficient": 0.10115363520860168
+      },
+      {
+        "feature": "hypothesis_word__epoux",
+        "coefficient": 0.10028787682723965
+      },
+      {
+        "feature": "hypothesis_word__une",
+        "coefficient": 0.09853347285744708
+      },
+      {
+        "feature": "hypothesis_word__ils",
+        "coefficient": 0.09774048791931521
+      },
+      {
+        "feature": "absdiff_word__comme",
+        "coefficient": 0.09458014448274626
+      },
+      {
+        "feature": "hypothesis_word__comme",
+        "coefficient": 0.09293895031433017
+      },
+      {
+        "feature": "hypothesis_word__ecrit",
+        "coefficient": 0.09223902892348086
+      },
+      {
+        "feature": "absdiff_word__acte",
+        "coefficient": 0.09113298721880427
+      },
+      {
+        "feature": "absdiff_word__pour",
+        "coefficient": 0.08987372437456385
+      },
+      {
+        "feature": "hypothesis_word__considere que",
+        "coefficient": 0.08981529998246657
+      },
+      {
+        "feature": "absdiff_word__considere que",
+        "coefficient": 0.08981529998246657
+      },
+      {
+        "feature": "hypothesis_char__ un",
+        "coefficient": 0.08848999253191794
+      },
+      {
+        "feature": "hypothesis_word__un delai",
+        "coefficient": 0.08710890583025958
+      },
+      {
+        "feature": "hypothesis_word__par le",
+        "coefficient": 0.08652115187315068
+      },
+      {
+        "feature": "absdiff_word__deux",
+        "coefficient": 0.08619578537185156
+      },
+      {
+        "feature": "absdiff_word__de acte",
+        "coefficient": 0.08588747536720312
+      },
+      {
+        "feature": "hypothesis_word__de acte",
+        "coefficient": 0.08588403085656125
+      },
+      {
+        "feature": "hypothesis_word__proches",
+        "coefficient": 0.08570624784749235
+      },
+      {
+        "feature": "absdiff_word__proches",
+        "coefficient": 0.08570624784749235
+      },
+      {
+        "feature": "absdiff_word__delai",
+        "coefficient": 0.08518333493932595
+      },
+      {
+        "feature": "absdiff_word__du",
+        "coefficient": 0.08452564985834751
+      },
+      {
+        "feature": "absdiff_word__invoque",
+        "coefficient": 0.08413265691152234
+      },
+      {
+        "feature": "hypothesis_word__invoque",
+        "coefficient": 0.08413265691152234
+      },
+      {
+        "feature": "absdiff_word__selon",
+        "coefficient": 0.08378740094986091
+      },
+      {
+        "feature": "absdiff_word__moins",
+        "coefficient": 0.08350105572709184
+      },
+      {
+        "feature": "hypothesis_word__etre",
+        "coefficient": 0.08306028070391243
+      },
+      {
+        "feature": "absdiff_word__doit",
+        "coefficient": 0.08214831552929724
+      },
+      {
+        "feature": "absdiff_word__par le",
+        "coefficient": 0.08100854872093881
+      },
+      {
+        "feature": "absdiff_word__preuve",
+        "coefficient": 0.08058375384991018
+      },
+      {
+        "feature": "hypothesis_word__son",
+        "coefficient": 0.07992557068990884
+      },
+      {
+        "feature": "hypothesis_word__constitue",
+        "coefficient": 0.07924584242149701
+      },
+      {
+        "feature": "absdiff_word__un delai",
+        "coefficient": 0.07894564478454376
+      },
+      {
+        "feature": "hypothesis_char__un ",
+        "coefficient": 0.07862055991013202
+      },
+      {
+        "feature": "absdiff_word__constitue",
+        "coefficient": 0.0785166033805575
+      },
+      {
+        "feature": "hypothesis_char__ un ",
+        "coefficient": 0.07822427365897741
+      },
+      {
+        "feature": "absdiff_char__ com",
+        "coefficient": 0.07822349230305084
+      },
+      {
+        "feature": "hypothesis_char__ d’un",
+        "coefficient": 0.07739922682087955
+      },
+      {
+        "feature": "hypothesis_char__d’un",
+        "coefficient": 0.07739922682087955
+      },
+      {
+        "feature": "hypothesis_word__selon",
+        "coefficient": 0.07726987835652672
+      },
+      {
+        "feature": "absdiff_char__com",
+        "coefficient": 0.0770081065211265
+      },
+      {
+        "feature": "hypothesis_word__aussi",
+        "coefficient": 0.07610533651729061
+      },
+      {
+        "feature": "absdiff_char__d’un",
+        "coefficient": 0.07605309961226996
+      },
+      {
+        "feature": "absdiff_char__ d’un",
+        "coefficient": 0.07605309961226996
+      },
+      {
+        "feature": "hypothesis_char__ d’u",
+        "coefficient": 0.07574785313625182
+      },
+      {
+        "feature": "hypothesis_char__d’u",
+        "coefficient": 0.07574785313625182
+      },
+      {
+        "feature": "absdiff_word__aussi",
+        "coefficient": 0.07473989711267866
+      },
+      {
+        "feature": "hypothesis_word__comme une",
+        "coefficient": 0.0743073547384879
+      }
+    ],
+    "most_negative": [
+      {
+        "feature": "hypothesis_word__et",
+        "coefficient": -0.19185666094041823
+      },
+      {
+        "feature": "hypothesis_word__pas",
+        "coefficient": -0.148430924578467
+      },
+      {
+        "feature": "hypothesis_word__ne",
+        "coefficient": -0.12591709571333073
+      },
+      {
+        "feature": "hypothesis_word__sans",
+        "coefficient": -0.1213094414471504
+      },
+      {
+        "feature": "absdiff_word__pas",
+        "coefficient": -0.10245147959058791
+      },
+      {
+        "feature": "hypothesis_word__aucune",
+        "coefficient": -0.09951676652033212
+      },
+      {
+        "feature": "absdiff_word__sans",
+        "coefficient": -0.08829143259505635
+      },
+      {
+        "feature": "hypothesis_char__ et ",
+        "coefficient": -0.08784619598859733
+      },
+      {
+        "feature": "hypothesis_word__absence",
+        "coefficient": -0.0828221585213594
+      },
+      {
+        "feature": "hypothesis_word__divorce",
+        "coefficient": -0.081214836611728
+      },
+      {
+        "feature": "hypothesis_word__etat",
+        "coefficient": -0.08107393797508831
+      },
+      {
+        "feature": "absdiff_word__aucune",
+        "coefficient": -0.08082506871256344
+      },
+      {
+        "feature": "hypothesis_word__ni",
+        "coefficient": -0.08069491865065263
+      },
+      {
+        "feature": "hypothesis_char__ ma",
+        "coefficient": -0.07928199302343165
+      },
+      {
+        "feature": "absdiff_word__reconnait",
+        "coefficient": -0.07906489319407867
+      },
+      {
+        "feature": "hypothesis_word__reconnait",
+        "coefficient": -0.07906489319407867
+      },
+      {
+        "feature": "absdiff_word__et",
+        "coefficient": -0.07892176635467046
+      },
+      {
+        "feature": "hypothesis_word__faits",
+        "coefficient": -0.07845420611447276
+      },
+      {
+        "feature": "hypothesis_char__et ",
+        "coefficient": -0.0776035671861511
+      },
+      {
+        "feature": "hypothesis_char__as ",
+        "coefficient": -0.07428402488115375
+      },
+      {
+        "feature": "hypothesis_word__age",
+        "coefficient": -0.0716601232958413
+      },
+      {
+        "feature": "absdiff_word__sa",
+        "coefficient": -0.07143573293200389
+      },
+      {
+        "feature": "hypothesis_word__le",
+        "coefficient": -0.07111587180633125
+      },
+      {
+        "feature": "hypothesis_word__malgre",
+        "coefficient": -0.06977698638867476
+      },
+      {
+        "feature": "absdiff_word__absence de",
+        "coefficient": -0.06962117645425124
+      },
+      {
+        "feature": "hypothesis_word__adoption",
+        "coefficient": -0.06873417884384352
+      },
+      {
+        "feature": "hypothesis_word__civil",
+        "coefficient": -0.06848389666175564
+      },
+      {
+        "feature": "hypothesis_char__ pas",
+        "coefficient": -0.06836091019415425
+      },
+      {
+        "feature": "hypothesis_word__absence de",
+        "coefficient": -0.0682112818772943
+      },
+      {
+        "feature": "absdiff_word__soit",
+        "coefficient": -0.06811676731673356
+      },
+      {
+        "feature": "hypothesis_char__ pas ",
+        "coefficient": -0.06808934493438001
+      },
+      {
+        "feature": "absdiff_word__de ce",
+        "coefficient": -0.06753668866908936
+      },
+      {
+        "feature": "hypothesis_char__pas ",
+        "coefficient": -0.06753373062452443
+      },
+      {
+        "feature": "hypothesis_char__ san",
+        "coefficient": -0.06696737034059214
+      },
+      {
+        "feature": "hypothesis_word__aucun",
+        "coefficient": -0.06670291268153619
+      },
+      {
+        "feature": "hypothesis_char__ure ",
+        "coefficient": -0.06606803719885382
+      },
+      {
+        "feature": "hypothesis_char__pas",
+        "coefficient": -0.06580283709375973
+      },
+      {
+        "feature": "hypothesis_word__age de",
+        "coefficient": -0.06509562977651179
+      },
+      {
+        "feature": "hypothesis_word__dans le",
+        "coefficient": -0.0650327256679375
+      },
+      {
+        "feature": "hypothesis_word__alors",
+        "coefficient": -0.06419880469989674
+      },
+      {
+        "feature": "hypothesis_char__aucu",
+        "coefficient": -0.06323974211396066
+      },
+      {
+        "feature": "hypothesis_char__aucun",
+        "coefficient": -0.06323974211396066
+      },
+      {
+        "feature": "hypothesis_char__ucun",
+        "coefficient": -0.06323974211396066
+      },
+      {
+        "feature": "hypothesis_char__ucu",
+        "coefficient": -0.06323974211396066
+      },
+      {
+        "feature": "hypothesis_char__ ne",
+        "coefficient": -0.06317996071266799
+      },
+      {
+        "feature": "hypothesis_word__filiation",
+        "coefficient": -0.06285607668763203
+      },
+      {
+        "feature": "hypothesis_char__auc",
+        "coefficient": -0.06279850542654836
+      },
+      {
+        "feature": "hypothesis_word__ainsi",
+        "coefficient": -0.062382403357193736
+      },
+      {
+        "feature": "absdiff_word__alors",
+        "coefficient": -0.06229594414298651
+      },
+      {
+        "feature": "hypothesis_word__sont",
+        "coefficient": -0.061960952970813554
+      },
+      {
+        "feature": "hypothesis_word__faits et",
+        "coefficient": -0.061535689872704795
+      },
+      {
+        "feature": "absdiff_word__faits et",
+        "coefficient": -0.061535689872704795
+      },
+      {
+        "feature": "hypothesis_word__en",
+        "coefficient": -0.06135865708545445
+      },
+      {
+        "feature": "hypothesis_word__le divorce",
+        "coefficient": -0.060496007925160494
+      },
+      {
+        "feature": "absdiff_word__malgre",
+        "coefficient": -0.06031504301115973
+      },
+      {
+        "feature": "absdiff_word__reste",
+        "coefficient": -0.05984343578562926
+      },
+      {
+        "feature": "hypothesis_word__adopter",
+        "coefficient": -0.05951716267622084
+      },
+      {
+        "feature": "hypothesis_word__de ce",
+        "coefficient": -0.05911849874971319
+      },
+      {
+        "feature": "hypothesis_word__juridique",
+        "coefficient": -0.05884099700603061
+      },
+      {
+        "feature": "hypothesis_word__ans",
+        "coefficient": -0.05880236691203154
+      }
+    ]
+  }
+}

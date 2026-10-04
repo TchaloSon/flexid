@@ -1,0 +1,579 @@
+{
+  "runs": [
+    {
+      "seed": 2026,
+      "best_epoch": 8,
+      "validation": {
+        "n": 151,
+        "accuracy": 0.7152317880794702,
+        "macro_f1": 0.7133681751484833,
+        "cohen_kappa": 0.5728008421606684,
+        "per_class": {
+          "entailment": {
+            "precision": 0.6923076923076923,
+            "recall": 0.7058823529411765,
+            "f1": 0.6990291262135923,
+            "support": 51
+          },
+          "contradiction": {
+            "precision": 0.6170212765957447,
+            "recall": 0.58,
+            "f1": 0.5979381443298969,
+            "support": 50
+          },
+          "neutral": {
+            "precision": 0.8269230769230769,
+            "recall": 0.86,
+            "f1": 0.8431372549019608,
+            "support": 50
+          }
+        },
+        "confusion_matrix": {
+          "entailment": {
+            "entailment": 36,
+            "contradiction": 13,
+            "neutral": 2
+          },
+          "contradiction": {
+            "entailment": 14,
+            "contradiction": 29,
+            "neutral": 7
+          },
+          "neutral": {
+            "entailment": 2,
+            "contradiction": 5,
+            "neutral": 43
+          }
+        },
+        "nonneutral_count": 101,
+        "conditional_span_count": 65,
+        "rationale_s_span": 65,
+        "conditional_token_f1": 0.7004144017303873,
+        "conditional_token_iou": 0.607044563765428,
+        "conditional_exact_match": 0.2923076923076923,
+        "no_rationale_agreement": 0.86,
+        "e2e_nonneutral_token_f1": 0.45076174368787303,
+        "e2e_nonneutral_char_f1": 0.44896807256276483,
+        "e2e_nonneutral_char_exact": 0.18811881188118812,
+        "joint_exact_match": 0.4105960264900662,
+        "joint_token_iou_at_0_50": 0.5364238410596026,
+        "neutral_recall": 0.86,
+        "joint_char_exact": 0.4105960264900662
+      },
+      "checkpoint": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\results_mdeberta_joint_final_run03\\seed_2026\\best",
+      "test": {
+        "n": 150,
+        "accuracy": 0.5266666666666666,
+        "macro_f1": 0.5276115596996593,
+        "cohen_kappa": 0.2899999999999999,
+        "per_class": {
+          "entailment": {
+            "precision": 0.5434782608695652,
+            "recall": 0.5,
+            "f1": 0.5208333333333334,
+            "support": 50
+          },
+          "contradiction": {
+            "precision": 0.3584905660377358,
+            "recall": 0.38,
+            "f1": 0.36893203883495146,
+            "support": 50
+          },
+          "neutral": {
+            "precision": 0.6862745098039216,
+            "recall": 0.7,
+            "f1": 0.693069306930693,
+            "support": 50
+          }
+        },
+        "confusion_matrix": {
+          "entailment": {
+            "entailment": 25,
+            "contradiction": 23,
+            "neutral": 2
+          },
+          "contradiction": {
+            "entailment": 17,
+            "contradiction": 19,
+            "neutral": 14
+          },
+          "neutral": {
+            "entailment": 4,
+            "contradiction": 11,
+            "neutral": 35
+          }
+        },
+        "nonneutral_count": 100,
+        "conditional_span_count": 44,
+        "rationale_s_span": 44,
+        "conditional_token_f1": 0.7202690912500271,
+        "conditional_token_iou": 0.6284817753227403,
+        "conditional_exact_match": 0.25,
+        "no_rationale_agreement": 0.7,
+        "e2e_nonneutral_token_f1": 0.31691840015001194,
+        "e2e_nonneutral_char_f1": 0.31412000993585276,
+        "e2e_nonneutral_char_exact": 0.11,
+        "joint_exact_match": 0.30666666666666664,
+        "joint_token_iou_at_0_50": 0.4,
+        "neutral_recall": 0.7,
+        "joint_char_exact": 0.30666666666666664
+      }
+    },
+    {
+      "seed": 2027,
+      "best_epoch": 7,
+      "validation": {
+        "n": 151,
+        "accuracy": 0.7019867549668874,
+        "macro_f1": 0.699597787833082,
+        "cohen_kappa": 0.5529016975917884,
+        "per_class": {
+          "entailment": {
+            "precision": 0.6981132075471698,
+            "recall": 0.7254901960784313,
+            "f1": 0.7115384615384616,
+            "support": 51
+          },
+          "contradiction": {
+            "precision": 0.6086956521739131,
+            "recall": 0.56,
+            "f1": 0.5833333333333334,
+            "support": 50
+          },
+          "neutral": {
+            "precision": 0.7884615384615384,
+            "recall": 0.82,
+            "f1": 0.803921568627451,
+            "support": 50
+          }
+        },
+        "confusion_matrix": {
+          "entailment": {
+            "entailment": 37,
+            "contradiction": 12,
+            "neutral": 2
+          },
+          "contradiction": {
+            "entailment": 13,
+            "contradiction": 28,
+            "neutral": 9
+          },
+          "neutral": {
+            "entailment": 3,
+            "contradiction": 6,
+            "neutral": 41
+          }
+        },
+        "nonneutral_count": 101,
+        "conditional_span_count": 65,
+        "rationale_s_span": 65,
+        "conditional_token_f1": 0.6101537155708113,
+        "conditional_token_iou": 0.5174453818176039,
+        "conditional_exact_match": 0.2153846153846154,
+        "no_rationale_agreement": 0.82,
+        "e2e_nonneutral_token_f1": 0.39267318328814593,
+        "e2e_nonneutral_char_f1": 0.3884529923116502,
+        "e2e_nonneutral_char_exact": 0.13861386138613863,
+        "joint_exact_match": 0.36423841059602646,
+        "joint_token_iou_at_0_50": 0.4768211920529801,
+        "neutral_recall": 0.82,
+        "joint_char_exact": 0.36423841059602646
+      },
+      "checkpoint": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\results_mdeberta_joint_final_run03\\seed_2027\\best",
+      "test": {
+        "n": 150,
+        "accuracy": 0.64,
+        "macro_f1": 0.6385955069312949,
+        "cohen_kappa": 0.46,
+        "per_class": {
+          "entailment": {
+            "precision": 0.7021276595744681,
+            "recall": 0.66,
+            "f1": 0.6804123711340206,
+            "support": 50
+          },
+          "contradiction": {
+            "precision": 0.5416666666666666,
+            "recall": 0.52,
+            "f1": 0.5306122448979592,
+            "support": 50
+          },
+          "neutral": {
+            "precision": 0.6727272727272727,
+            "recall": 0.74,
+            "f1": 0.7047619047619048,
+            "support": 50
+          }
+        },
+        "confusion_matrix": {
+          "entailment": {
+            "entailment": 33,
+            "contradiction": 14,
+            "neutral": 3
+          },
+          "contradiction": {
+            "entailment": 9,
+            "contradiction": 26,
+            "neutral": 15
+          },
+          "neutral": {
+            "entailment": 5,
+            "contradiction": 8,
+            "neutral": 37
+          }
+        },
+        "nonneutral_count": 100,
+        "conditional_span_count": 59,
+        "rationale_s_span": 59,
+        "conditional_token_f1": 0.6531794242931231,
+        "conditional_token_iou": 0.576366876276173,
+        "conditional_exact_match": 0.23728813559322035,
+        "no_rationale_agreement": 0.74,
+        "e2e_nonneutral_token_f1": 0.38537586033294263,
+        "e2e_nonneutral_char_f1": 0.3850989660306648,
+        "e2e_nonneutral_char_exact": 0.14,
+        "joint_exact_match": 0.34,
+        "joint_token_iou_at_0_50": 0.4666666666666667,
+        "neutral_recall": 0.74,
+        "joint_char_exact": 0.34
+      }
+    },
+    {
+      "seed": 2028,
+      "best_epoch": 7,
+      "validation": {
+        "n": 151,
+        "accuracy": 0.7350993377483444,
+        "macro_f1": 0.7361511555686313,
+        "cohen_kappa": 0.6027099914490561,
+        "per_class": {
+          "entailment": {
+            "precision": 0.7916666666666666,
+            "recall": 0.7450980392156863,
+            "f1": 0.7676767676767676,
+            "support": 51
+          },
+          "contradiction": {
+            "precision": 0.6226415094339622,
+            "recall": 0.66,
+            "f1": 0.6407766990291263,
+            "support": 50
+          },
+          "neutral": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8,
+            "support": 50
+          }
+        },
+        "confusion_matrix": {
+          "entailment": {
+            "entailment": 38,
+            "contradiction": 12,
+            "neutral": 1
+          },
+          "contradiction": {
+            "entailment": 8,
+            "contradiction": 33,
+            "neutral": 9
+          },
+          "neutral": {
+            "entailment": 2,
+            "contradiction": 8,
+            "neutral": 40
+          }
+        },
+        "nonneutral_count": 101,
+        "conditional_span_count": 71,
+        "rationale_s_span": 71,
+        "conditional_token_f1": 0.6681454677908206,
+        "conditional_token_iou": 0.5649750284668583,
+        "conditional_exact_match": 0.23943661971830985,
+        "no_rationale_agreement": 0.8,
+        "e2e_nonneutral_token_f1": 0.46968641795196303,
+        "e2e_nonneutral_char_f1": 0.4656981259825556,
+        "e2e_nonneutral_char_exact": 0.16831683168316833,
+        "joint_exact_match": 0.37748344370860926,
+        "joint_token_iou_at_0_50": 0.5231788079470199,
+        "neutral_recall": 0.8,
+        "joint_char_exact": 0.37748344370860926
+      },
+      "checkpoint": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\results_mdeberta_joint_final_run03\\seed_2028\\best",
+      "test": {
+        "n": 150,
+        "accuracy": 0.6733333333333333,
+        "macro_f1": 0.674515960230246,
+        "cohen_kappa": 0.51,
+        "per_class": {
+          "entailment": {
+            "precision": 0.6875,
+            "recall": 0.66,
+            "f1": 0.673469387755102,
+            "support": 50
+          },
+          "contradiction": {
+            "precision": 0.5925925925925926,
+            "recall": 0.64,
+            "f1": 0.6153846153846154,
+            "support": 50
+          },
+          "neutral": {
+            "precision": 0.75,
+            "recall": 0.72,
+            "f1": 0.7346938775510204,
+            "support": 50
+          }
+        },
+        "confusion_matrix": {
+          "entailment": {
+            "entailment": 33,
+            "contradiction": 15,
+            "neutral": 2
+          },
+          "contradiction": {
+            "entailment": 8,
+            "contradiction": 32,
+            "neutral": 10
+          },
+          "neutral": {
+            "entailment": 7,
+            "contradiction": 7,
+            "neutral": 36
+          }
+        },
+        "nonneutral_count": 100,
+        "conditional_span_count": 65,
+        "rationale_s_span": 65,
+        "conditional_token_f1": 0.6778960537467552,
+        "conditional_token_iou": 0.5844090476415269,
+        "conditional_exact_match": 0.23076923076923078,
+        "no_rationale_agreement": 0.72,
+        "e2e_nonneutral_token_f1": 0.4406324349353909,
+        "e2e_nonneutral_char_f1": 0.43882286455316155,
+        "e2e_nonneutral_char_exact": 0.15,
+        "joint_exact_match": 0.34,
+        "joint_token_iou_at_0_50": 0.47333333333333333,
+        "neutral_recall": 0.72,
+        "joint_char_exact": 0.34
+      }
+    }
+  ],
+  "aggregate": {
+    "validation": {
+      "accuracy": {
+        "values": [
+          0.7152317880794702,
+          0.7019867549668874,
+          0.7350993377483444
+        ],
+        "mean": 0.717439293598234,
+        "std": 0.016666301181613108
+      },
+      "macro_f1": {
+        "values": [
+          0.7133681751484833,
+          0.699597787833082,
+          0.7361511555686313
+        ],
+        "mean": 0.7163723728500655,
+        "std": 0.01846093378123702
+      },
+      "cohen_kappa": {
+        "values": [
+          0.5728008421606684,
+          0.5529016975917884,
+          0.6027099914490561
+        ],
+        "mean": 0.5761375104005043,
+        "std": 0.025071229536064447
+      },
+      "conditional_token_f1": {
+        "values": [
+          0.7004144017303873,
+          0.6101537155708113,
+          0.6681454677908206
+        ],
+        "mean": 0.6595711950306731,
+        "std": 0.04573714553318148
+      },
+      "conditional_token_iou": {
+        "values": [
+          0.607044563765428,
+          0.5174453818176039,
+          0.5649750284668583
+        ],
+        "mean": 0.5631549913499634,
+        "std": 0.044827310344922315
+      },
+      "conditional_exact_match": {
+        "values": [
+          0.2923076923076923,
+          0.2153846153846154,
+          0.23943661971830985
+        ],
+        "mean": 0.24904297580353918,
+        "std": 0.03935100378332895
+      },
+      "no_rationale_agreement": {
+        "values": [
+          0.86,
+          0.82,
+          0.8
+        ],
+        "mean": 0.8266666666666667,
+        "std": 0.030550504633038912
+      },
+      "joint_token_iou_at_0_50": {
+        "values": [
+          0.5364238410596026,
+          0.4768211920529801,
+          0.5231788079470199
+        ],
+        "mean": 0.5121412803532008,
+        "std": 0.031296792226838455
+      },
+      "joint_exact_match": {
+        "values": [
+          0.4105960264900662,
+          0.36423841059602646,
+          0.37748344370860926
+        ],
+        "mean": 0.3841059602649006,
+        "std": 0.023877823016317818
+      },
+      "e2e_nonneutral_token_f1": {
+        "values": [
+          0.45076174368787303,
+          0.39267318328814593,
+          0.46968641795196303
+        ],
+        "mean": 0.437707114975994,
+        "std": 0.04013199566991158
+      },
+      "e2e_nonneutral_char_exact": {
+        "values": [
+          0.18811881188118812,
+          0.13861386138613863,
+          0.16831683168316833
+        ],
+        "mean": 0.16501650165016502,
+        "std": 0.02491694533092656
+      },
+      "rationale_s_span": {
+        "values": [
+          65,
+          65,
+          71
+        ]
+      }
+    },
+    "test": {
+      "accuracy": {
+        "values": [
+          0.5266666666666666,
+          0.64,
+          0.6733333333333333
+        ],
+        "mean": 0.6133333333333333,
+        "std": 0.07688375063113867
+      },
+      "macro_f1": {
+        "values": [
+          0.5276115596996593,
+          0.6385955069312949,
+          0.674515960230246
+        ],
+        "mean": 0.6135743422870668,
+        "std": 0.07658178460918715
+      },
+      "cohen_kappa": {
+        "values": [
+          0.2899999999999999,
+          0.46,
+          0.51
+        ],
+        "mean": 0.42,
+        "std": 0.115325625946708
+      },
+      "conditional_token_f1": {
+        "values": [
+          0.7202690912500271,
+          0.6531794242931231,
+          0.6778960537467552
+        ],
+        "mean": 0.6837815230966352,
+        "std": 0.03392985286143098
+      },
+      "conditional_token_iou": {
+        "values": [
+          0.6284817753227403,
+          0.576366876276173,
+          0.5844090476415269
+        ],
+        "mean": 0.5964192330801468,
+        "std": 0.028056622950045185
+      },
+      "conditional_exact_match": {
+        "values": [
+          0.25,
+          0.23728813559322035,
+          0.23076923076923078
+        ],
+        "mean": 0.23935245545415038,
+        "std": 0.009780167875243639
+      },
+      "no_rationale_agreement": {
+        "values": [
+          0.7,
+          0.74,
+          0.72
+        ],
+        "mean": 0.72,
+        "std": 0.020000000000000018
+      },
+      "joint_token_iou_at_0_50": {
+        "values": [
+          0.4,
+          0.4666666666666667,
+          0.47333333333333333
+        ],
+        "mean": 0.44666666666666666,
+        "std": 0.04055175020198812
+      },
+      "joint_exact_match": {
+        "values": [
+          0.30666666666666664,
+          0.34,
+          0.34
+        ],
+        "mean": 0.3288888888888889,
+        "std": 0.019245008972987553
+      },
+      "e2e_nonneutral_token_f1": {
+        "values": [
+          0.31691840015001194,
+          0.38537586033294263,
+          0.4406324349353909
+        ],
+        "mean": 0.38097556513944847,
+        "std": 0.06197428941958032
+      },
+      "e2e_nonneutral_char_exact": {
+        "values": [
+          0.11,
+          0.14,
+          0.15
+        ],
+        "mean": 0.13333333333333333,
+        "std": 0.020816659994661327
+      },
+      "rationale_s_span": {
+        "values": [
+          44,
+          59,
+          65
+        ]
+      }
+    }
+  }
+}

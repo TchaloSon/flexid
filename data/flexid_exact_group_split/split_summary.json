@@ -1,0 +1,147 @@
+{
+  "protocol_version": "FLEXID-EXACT-GROUP-SPLIT-v3",
+  "source": {
+    "path": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_shuffled.jsonl",
+    "sha256": "1114bdaf990f25c305415ff1252ec429912c343744f5edac03bb4495d2dd3d07",
+    "instances": 1002
+  },
+  "grouping": {
+    "method": "transitive connected components over exact equality of pre-normalized law_ref strings OR exact premise strings",
+    "same_exact_law_ref_linked": true,
+    "law_ref_locations_accepted": [
+      "law_ref",
+      "meta.law_ref"
+    ],
+    "same_exact_premise_linked": true,
+    "transitive_components": true,
+    "normalization_applied_in_split_script": false,
+    "input_law_refs_pre_normalized_upstream": true,
+    "normalization_verified_by_split_script": false,
+    "grouping_uses_exact_pre_normalized_law_ref": true,
+    "strip_applied_in_split_script": false,
+    "case_conversion_applied_in_split_script": false,
+    "regex_applied_in_split_script": false,
+    "typographical_correction_applied_in_split_script": false,
+    "law_ref_modified_by_split_script": false,
+    "premise_modified_by_split_script": false,
+    "groups": 335,
+    "singletons": 15,
+    "multi_instance_groups": 320,
+    "largest_group": 7,
+    "preprocessing_note": "Legal-reference canonicalisation is an upstream preprocessing step. This split script performs no additional normalization and groups by exact equality of the resulting canonical law_ref strings, with exact premise equality as an additional linking criterion.",
+    "remaining_limitation": "The split script does not infer semantic equivalence beyond the upstream canonical law_ref strings and exact premise equality."
+  },
+  "stratification": {
+    "seed": 2026,
+    "requested_ratios": {
+      "train": 0.7,
+      "validation": 0.15,
+      "test": 0.15
+    },
+    "rounding_policy": "largest remainder independently within each label; total targets are sums of label targets",
+    "target_instances_derived_from_target_labels": true,
+    "target_instances": {
+      "train": 701,
+      "validation": 151,
+      "test": 150
+    },
+    "target_labels": {
+      "train": {
+        "entailment": 236,
+        "contradiction": 233,
+        "neutral": 232
+      },
+      "validation": {
+        "entailment": 51,
+        "contradiction": 50,
+        "neutral": 50
+      },
+      "test": {
+        "entailment": 50,
+        "contradiction": 50,
+        "neutral": 50
+      }
+    },
+    "actual_instances": {
+      "train": 701,
+      "validation": 151,
+      "test": 150
+    },
+    "actual_labels": {
+      "train": {
+        "entailment": 236,
+        "contradiction": 233,
+        "neutral": 232
+      },
+      "validation": {
+        "entailment": 51,
+        "contradiction": 50,
+        "neutral": 50
+      },
+      "test": {
+        "entailment": 50,
+        "contradiction": 50,
+        "neutral": 50
+      }
+    },
+    "optimisation_score": 0.0,
+    "group_constraints_may_prevent_exact_targets": true
+  },
+  "validation": {
+    "id_overlap_train_validation": 0,
+    "id_overlap_train_test": 0,
+    "id_overlap_validation_test": 0,
+    "group_overlap_train_validation": 0,
+    "group_overlap_train_test": 0,
+    "group_overlap_validation_test": 0,
+    "all_instances_covered": true,
+    "each_instance_exactly_once": true,
+    "statistics": {
+      "train": {
+        "instances": 701,
+        "groups": 234,
+        "label_distribution": {
+          "entailment": 236,
+          "contradiction": 233,
+          "neutral": 232
+        },
+        "proportion": 0.6996007984031936
+      },
+      "validation": {
+        "instances": 151,
+        "groups": 51,
+        "label_distribution": {
+          "entailment": 51,
+          "contradiction": 50,
+          "neutral": 50
+        },
+        "proportion": 0.1506986027944112
+      },
+      "test": {
+        "instances": 150,
+        "groups": 50,
+        "label_distribution": {
+          "entailment": 50,
+          "contradiction": 50,
+          "neutral": 50
+        },
+        "proportion": 0.1497005988023952
+      }
+    }
+  },
+  "records_preserved_exactly": true,
+  "ordering": {
+    "source_file_is_shuffled_input": true,
+    "source_order_preserved_within_each_split": true,
+    "split_files_are_source_order_subsequences": true,
+    "sorting_by_id_applied_to_split_files": false
+  },
+  "outputs": {
+    "train": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_exact_group_split\\train.jsonl",
+    "validation": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_exact_group_split\\validation.jsonl",
+    "test": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_exact_group_split\\test.jsonl",
+    "split_membership": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_exact_group_split\\split_membership.jsonl",
+    "group_membership": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_exact_group_split\\group_membership.jsonl",
+    "group_audit": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_exact_group_split\\group_audit.jsonl"
+  }
+}

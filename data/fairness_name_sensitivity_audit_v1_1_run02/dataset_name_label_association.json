@@ -1,0 +1,187 @@
+{
+  "eligible_instances": 350,
+  "eligibility_reasons": {
+    "no_inventory_name": 349,
+    "multiple_inventory_names": 139,
+    "eligible": 350,
+    "ambiguous_or_uncertain_name": 141,
+    "name_legally_relevant_context": 23
+  },
+  "category_label_counts": {
+    "feminine": {
+      "neutral": 61,
+      "entailment": 93,
+      "contradiction": 41
+    },
+    "masculine": {
+      "neutral": 40,
+      "contradiction": 81,
+      "entailment": 34
+    }
+  },
+  "exact_name_label_counts_min_frequency_3": {
+    "Amina": {
+      "contradiction": 2,
+      "entailment": 1
+    },
+    "Amine": {
+      "contradiction": 2,
+      "neutral": 1,
+      "entailment": 2
+    },
+    "Azzedine": {
+      "entailment": 2,
+      "contradiction": 1
+    },
+    "Aïcha": {
+      "entailment": 3
+    },
+    "Bernard": {
+      "entailment": 1,
+      "contradiction": 3,
+      "neutral": 2
+    },
+    "Chaewon": {
+      "contradiction": 1,
+      "neutral": 1,
+      "entailment": 1
+    },
+    "Clara": {
+      "entailment": 2,
+      "contradiction": 1
+    },
+    "Eva": {
+      "entailment": 2,
+      "contradiction": 1,
+      "neutral": 1
+    },
+    "Hamza": {
+      "neutral": 1,
+      "contradiction": 1,
+      "entailment": 1
+    },
+    "Inès": {
+      "neutral": 2,
+      "entailment": 3,
+      "contradiction": 1
+    },
+    "Julie": {
+      "neutral": 2,
+      "entailment": 1,
+      "contradiction": 1
+    },
+    "Julien": {
+      "entailment": 3,
+      "neutral": 3
+    },
+    "Leïla": {
+      "neutral": 1,
+      "entailment": 2
+    },
+    "Lucas": {
+      "entailment": 2,
+      "contradiction": 1
+    },
+    "Marina": {
+      "entailment": 3,
+      "contradiction": 2,
+      "neutral": 1
+    },
+    "Martin": {
+      "entailment": 3,
+      "contradiction": 2,
+      "neutral": 3
+    },
+    "Maya": {
+      "neutral": 1,
+      "entailment": 2
+    },
+    "Moussa": {
+      "neutral": 2,
+      "entailment": 1,
+      "contradiction": 1
+    },
+    "Nora": {
+      "neutral": 2,
+      "contradiction": 1,
+      "entailment": 1
+    },
+    "Octavien": {
+      "neutral": 1,
+      "contradiction": 1,
+      "entailment": 1
+    },
+    "Rachid": {
+      "contradiction": 2,
+      "neutral": 1
+    },
+    "Rosalie": {
+      "contradiction": 1,
+      "neutral": 1,
+      "entailment": 1
+    },
+    "Salissou": {
+      "neutral": 4
+    },
+    "Salma": {
+      "neutral": 4,
+      "entailment": 2
+    },
+    "Sofia": {
+      "neutral": 11,
+      "contradiction": 6,
+      "entailment": 7
+    },
+    "Sophie": {
+      "entailment": 4,
+      "neutral": 1
+    },
+    "Tom": {
+      "entailment": 1,
+      "contradiction": 2
+    },
+    "Virginie": {
+      "contradiction": 1,
+      "neutral": 1,
+      "entailment": 1
+    },
+    "Yasmine": {
+      "entailment": 2,
+      "neutral": 1
+    },
+    "Yetunde": {
+      "neutral": 1,
+      "contradiction": 1,
+      "entailment": 1
+    },
+    "Yuna": {
+      "contradiction": 1,
+      "neutral": 1,
+      "entailment": 1
+    },
+    "Élodie": {
+      "entailment": 2,
+      "contradiction": 2,
+      "neutral": 1
+    }
+  },
+  "category_label_permutation_test": {
+    "n": 350,
+    "groups": 2,
+    "labels": 3,
+    "chi_square_statistic": 40.85269722901492,
+    "cramers_v": 0.34164600404936657,
+    "permutation_reps": 5000,
+    "permutation_p_value": 0.0001999600079984003
+  },
+  "exact_name_label_permutation_test_min_frequency_3": {
+    "n": 148,
+    "groups": 32,
+    "labels": 3,
+    "chi_square_statistic": 48.19688303510521,
+    "cramers_v": 0.40351865824399136,
+    "permutation_reps": 5000,
+    "permutation_p_value": 0.937612477504499
+  },
+  "interpretation_warning": "These tests describe association in the manually reviewed FLEXID name inventory. They do not establish demographic identity or comprehensive fairness."
+}

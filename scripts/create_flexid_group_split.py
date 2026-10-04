@@ -44,7 +44,13 @@ SPLIT_RATIOS = {
 SPLIT_SEED = 2026
 
 # Identifiant écrit dans le terminal et dans split_summary.json.
-PROTOCOL_VERSION = "FLEXID-EXACT-GROUP-SPLIT-v2"
+PROTOCOL_VERSION = "FLEXID-EXACT-GROUP-SPLIT-v3"
+
+# Précondition méthodologique :
+# les références juridiques de flexid_shuffled.jsonl ont été canonisées en amont.
+# Ce script ne modifie ni ne normalise law_ref ; il utilise leur égalité exacte
+# (ainsi que l'égalité exacte des prémisses) pour construire les composantes
+# group-disjoint. Il conserve aussi l'ordre shufflé de la source dans chaque split.
 
 # Recherche déterministe de la meilleure allocation groupée.
 GREEDY_RESTARTS = 500
@@ -391,10 +397,12 @@ def validate_source(
         label_index_by_id[record_id] = LABELS.index(label)
         fingerprints_by_id[record_id] = record_fingerprint(record)
 
-    sorted_ids = sorted(records_by_id)
-
+    # IMPORTANT :
+    # conserver exactement l'ordre de la source (flexid_shuffled.jsonl).
+    # Les dictionnaires ci-dessus servent uniquement aux contrôles d'unicité
+    # et aux recherches par ID ; ils ne doivent pas réordonner le corpus.
     return (
-        [records_by_id[record_id] for record_id in sorted_ids],
+        list(records),
         label_index_by_id,
         fingerprints_by_id,
     )
@@ -1175,11 +1183,21 @@ def write_outputs(
         for record_id in group.member_ids:
             split_by_id[record_id] = split_name
 
+    # L'ordre shufflé de la source est conservé à l'intérieur de chaque split.
+    # Chaque fichier train/validation/test est donc une sous-séquence de
+    # flexid_shuffled.jsonl, et non un nouveau tri par ID.
+    expected_ids_by_split: dict[str, list[str]] = {}
+
     for split_name in SPLIT_NAMES:
         split_records = [
-            record_by_id[record_id]
-            for record_id in sorted(split_by_id)
-            if split_by_id[record_id] == split_name
+            record
+            for record in records
+            if split_by_id[record["id"]] == split_name
+        ]
+
+        expected_ids_by_split[split_name] = [
+            record["id"]
+            for record in split_records
         ]
 
         write_jsonl(
@@ -1187,18 +1205,36 @@ def write_outputs(
             split_records,
         )
 
+    # Audit de membership également écrit dans l'ordre source.
+    group_by_member_id = {
+        record_id: group.group_id
+        for group in groups
+        for record_id in group.member_ids
+    }
+
+    position_within_split = {
+        split_name: {
+            record_id: position
+            for position, record_id in enumerate(
+                expected_ids_by_split[split_name],
+                start=1,
+            )
+        }
+        for split_name in SPLIT_NAMES
+    }
+
     membership_rows = [
         {
-            "id": record_id,
-            "label": record_by_id[record_id]["label"],
-            "split": split_by_id[record_id],
-            "exact_group": next(
-                group.group_id
-                for group in groups
-                if record_id in group.member_ids
-            ),
+            "id": record["id"],
+            "label": record["label"],
+            "split": split_by_id[record["id"]],
+            "exact_group": group_by_member_id[record["id"]],
+            "source_position": source_position,
+            "position_within_split": position_within_split[
+                split_by_id[record["id"]]
+            ][record["id"]],
         }
-        for record_id in sorted(split_by_id)
+        for source_position, record in enumerate(records, start=1)
     ]
 
     write_jsonl(
@@ -1255,6 +1291,17 @@ def write_outputs(
             output_directory / f"{split_name}.jsonl"
         )
 
+        written_order = [
+            record["id"]
+            for record in written
+        ]
+
+        if written_order != expected_ids_by_split[split_name]:
+            raise RuntimeError(
+                f"{split_name}: l'ordre shufflé de la source "
+                "n'a pas été conservé dans le split."
+            )
+
         for record in written:
             record_id = record["id"]
 
@@ -1284,29 +1331,40 @@ def write_outputs(
         },
         "grouping": {
             "method": (
-                "connected components over exact decoded JSON string "
-                "equality"
+                "transitive connected components over exact equality of "
+                "pre-normalized law_ref strings OR exact premise strings"
             ),
             "same_exact_law_ref_linked": True,
             "law_ref_locations_accepted": ["law_ref", "meta.law_ref"],
             "same_exact_premise_linked": True,
             "transitive_components": True,
-            "normalization_applied": False,
-            "strip_applied": False,
-            "case_conversion_applied": False,
-            "regex_applied": False,
-            "typographical_correction_applied": False,
-            "law_ref_modified": False,
-            "premise_modified": False,
+            "normalization_applied_in_split_script": False,
+            "input_law_refs_pre_normalized_upstream": True,
+            "normalization_verified_by_split_script": False,
+            "grouping_uses_exact_pre_normalized_law_ref": True,
+            "strip_applied_in_split_script": False,
+            "case_conversion_applied_in_split_script": False,
+            "regex_applied_in_split_script": False,
+            "typographical_correction_applied_in_split_script": False,
+            "law_ref_modified_by_split_script": False,
+            "premise_modified_by_split_script": False,
             "groups": len(groups),
             "singletons": sum(group.size == 1 for group in groups),
             "multi_instance_groups": sum(
                 group.size > 1 for group in groups
             ),
             "largest_group": max(group.size for group in groups),
-            "limitation": (
-                "Differently written references are not recognized as "
-                "equivalent."
+            "preprocessing_note": (
+                "Legal-reference canonicalisation is an upstream preprocessing "
+                "step. This split script performs no additional normalization "
+                "and groups by exact equality of the resulting canonical "
+                "law_ref strings, with exact premise equality as an additional "
+                "linking criterion."
+            ),
+            "remaining_limitation": (
+                "The split script does not infer semantic equivalence beyond "
+                "the upstream canonical law_ref strings and exact premise "
+                "equality."
             ),
         },
         "stratification": {
@@ -1348,6 +1406,12 @@ def write_outputs(
         },
         "validation": validation,
         "records_preserved_exactly": True,
+        "ordering": {
+            "source_file_is_shuffled_input": True,
+            "source_order_preserved_within_each_split": True,
+            "split_files_are_source_order_subsequences": True,
+            "sorting_by_id_applied_to_split_files": False,
+        },
         "outputs": {
             split_name: str(
                 output_directory / f"{split_name}.jsonl"
@@ -1454,8 +1518,11 @@ def main() -> int:
         "Plus grand groupe          : "
         f"{max(group.size for group in groups)}"
     )
-    print("Normalisation appliquée     : NON")
-    print("Modification de law_ref     : NON")
+    print("Normalisation dans ce script: NON")
+    print("law_ref pré-normalisées      : OUI (étape amont)")
+    print("Groupement law_ref exacte    : OUI")
+    print("Modification de law_ref      : NON")
+    print("Ordre shufflé dans les splits: CONSERVÉ")
     print("")
     print(
         "Cibles stratifiées         : "
