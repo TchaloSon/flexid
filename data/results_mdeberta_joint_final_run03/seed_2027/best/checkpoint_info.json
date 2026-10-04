@@ -1,0 +1,62 @@
+{
+  "seed": 2027,
+  "epoch": 7,
+  "selection": "validation_macro_f1_then_joint_iou_at_0_50",
+  "validation": {
+    "n": 151,
+    "accuracy": 0.7019867549668874,
+    "macro_f1": 0.699597787833082,
+    "cohen_kappa": 0.5529016975917884,
+    "per_class": {
+      "entailment": {
+        "precision": 0.6981132075471698,
+        "recall": 0.7254901960784313,
+        "f1": 0.7115384615384616,
+        "support": 51
+      },
+      "contradiction": {
+        "precision": 0.6086956521739131,
+        "recall": 0.56,
+        "f1": 0.5833333333333334,
+        "support": 50
+      },
+      "neutral": {
+        "precision": 0.7884615384615384,
+        "recall": 0.82,
+        "f1": 0.803921568627451,
+        "support": 50
+      }
+    },
+    "confusion_matrix": {
+      "entailment": {
+        "entailment": 37,
+        "contradiction": 12,
+        "neutral": 2
+      },
+      "contradiction": {
+        "entailment": 13,
+        "contradiction": 28,
+        "neutral": 9
+      },
+      "neutral": {
+        "entailment": 3,
+        "contradiction": 6,
+        "neutral": 41
+      }
+    },
+    "nonneutral_count": 101,
+    "conditional_span_count": 65,
+    "rationale_s_span": 65,
+    "conditional_token_f1": 0.6101537155708113,
+    "conditional_token_iou": 0.5174453818176039,
+    "conditional_exact_match": 0.2153846153846154,
+    "no_rationale_agreement": 0.82,
+    "e2e_nonneutral_token_f1": 0.39267318328814593,
+    "e2e_nonneutral_char_f1": 0.3884529923116502,
+    "e2e_nonneutral_char_exact": 0.13861386138613863,
+    "joint_exact_match": 0.36423841059602646,
+    "joint_token_iou_at_0_50": 0.4768211920529801,
+    "neutral_recall": 0.82,
+    "joint_char_exact": 0.36423841059602646
+  }
+}

@@ -1,0 +1,464 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 2.081015716899525,
+    "train_label_loss": 1.1012109165841883,
+    "train_span_loss_raw": 3.901595950126648,
+    "train_span_loss_normalized": 0.9798048070885919,
+    "validation_loss": 1.9948710441589355,
+    "validation": {
+      "classification": {
+        "accuracy": 0.33774834437086093,
+        "macro_precision": 0.11258278145695365,
+        "macro_recall": 0.3333333333333333,
+        "macro_f1": 0.16831683168316833,
+        "cohen_kappa": 0.0,
+        "per_class": {
+          "entailment": {
+            "precision": 0.33774834437086093,
+            "recall": 1.0,
+            "f1": 0.504950495049505,
+            "support": 51
+          },
+          "contradiction": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 50
+          },
+          "neutral": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 50
+          }
+        },
+        "confusion_matrix_gold_rows_pred_columns": {
+          "entailment": {
+            "entailment": 51,
+            "contradiction": 0,
+            "neutral": 0
+          },
+          "contradiction": {
+            "entailment": 50,
+            "contradiction": 0,
+            "neutral": 0
+          },
+          "neutral": {
+            "entailment": 50,
+            "contradiction": 0,
+            "neutral": 0
+          }
+        }
+      },
+      "rationale": {
+        "s_span_definition": "instances où gold et modèle donnent tous deux un label non-neutral",
+        "s_span": 101,
+        "both_neutral": 0,
+        "neutral_vs_non_neutral_disagreements": 50,
+        "macro_token_f1": 0.6552456601273066,
+        "macro_iou": 0.5769503459207799,
+        "exact_match": 0.32673267326732675,
+        "joint_iou_at_0_50": 0.2251655629139073,
+        "joint_exact_match": 0.15894039735099338
+      }
+    },
+    "learning_rate_after_epoch": 1.943217665615142e-05
+  },
+  {
+    "epoch": 2,
+    "train_loss": 1.91962930560112,
+    "train_label_loss": 1.1013963222503662,
+    "train_span_loss_raw": 3.2700556733391504,
+    "train_span_loss_normalized": 0.8182329819961027,
+    "validation_loss": 1.77092604637146,
+    "validation": {
+      "classification": {
+        "accuracy": 0.3509933774834437,
+        "macro_precision": 0.28160919540229884,
+        "macro_recall": 0.346797385620915,
+        "macro_f1": 0.20578231292517007,
+        "cohen_kappa": 0.020389249304911945,
+        "per_class": {
+          "entailment": {
+            "precision": 0.3448275862068966,
+            "recall": 0.9803921568627451,
+            "f1": 0.5102040816326531,
+            "support": 51
+          },
+          "contradiction": {
+            "precision": 0.5,
+            "recall": 0.06,
+            "f1": 0.10714285714285712,
+            "support": 50
+          },
+          "neutral": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 50
+          }
+        },
+        "confusion_matrix_gold_rows_pred_columns": {
+          "entailment": {
+            "entailment": 50,
+            "contradiction": 1,
+            "neutral": 0
+          },
+          "contradiction": {
+            "entailment": 47,
+            "contradiction": 3,
+            "neutral": 0
+          },
+          "neutral": {
+            "entailment": 48,
+            "contradiction": 2,
+            "neutral": 0
+          }
+        }
+      },
+      "rationale": {
+        "s_span_definition": "instances où gold et modèle donnent tous deux un label non-neutral",
+        "s_span": 101,
+        "both_neutral": 0,
+        "neutral_vs_non_neutral_disagreements": 50,
+        "macro_token_f1": 0.630278593791686,
+        "macro_iou": 0.5369266041619603,
+        "exact_match": 0.25742574257425743,
+        "joint_iou_at_0_50": 0.1986754966887417,
+        "joint_exact_match": 0.12582781456953643
+      }
+    },
+    "learning_rate_after_epoch": 1.665615141955836e-05
+  },
+  {
+    "epoch": 3,
+    "train_loss": 1.7367607869885184,
+    "train_label_loss": 1.0995831110260703,
+    "train_span_loss_raw": 2.5639794821088966,
+    "train_span_loss_normalized": 0.6371776827357032,
+    "validation_loss": 1.6464877367019652,
+    "validation": {
+      "classification": {
+        "accuracy": 0.36423841059602646,
+        "macro_precision": 0.6476190476190476,
+        "macro_recall": 0.3603921568627451,
+        "macro_f1": 0.2472778291072101,
+        "cohen_kappa": 0.04069882866785778,
+        "per_class": {
+          "entailment": {
+            "precision": 0.34285714285714286,
+            "recall": 0.9411764705882353,
+            "f1": 0.5026178010471205,
+            "support": 51
+          },
+          "contradiction": {
+            "precision": 0.6,
+            "recall": 0.12,
+            "f1": 0.19999999999999998,
+            "support": 50
+          },
+          "neutral": {
+            "precision": 1.0,
+            "recall": 0.02,
+            "f1": 0.0392156862745098,
+            "support": 50
+          }
+        },
+        "confusion_matrix_gold_rows_pred_columns": {
+          "entailment": {
+            "entailment": 48,
+            "contradiction": 3,
+            "neutral": 0
+          },
+          "contradiction": {
+            "entailment": 44,
+            "contradiction": 6,
+            "neutral": 0
+          },
+          "neutral": {
+            "entailment": 48,
+            "contradiction": 1,
+            "neutral": 1
+          }
+        }
+      },
+      "rationale": {
+        "s_span_definition": "instances où gold et modèle donnent tous deux un label non-neutral",
+        "s_span": 101,
+        "both_neutral": 1,
+        "neutral_vs_non_neutral_disagreements": 49,
+        "macro_token_f1": 0.6614693105218912,
+        "macro_iou": 0.5689343978760603,
+        "exact_match": 0.297029702970297,
+        "joint_iou_at_0_50": 0.23178807947019867,
+        "joint_exact_match": 0.1456953642384106
+      }
+    },
+    "learning_rate_after_epoch": 1.38801261829653e-05
+  },
+  {
+    "epoch": 4,
+    "train_loss": 1.6439536213874817,
+    "train_label_loss": 1.099790020422502,
+    "train_span_loss_raw": 2.205167596990412,
+    "train_span_loss_normalized": 0.5441635955463756,
+    "validation_loss": 1.6099494695663452,
+    "validation": {
+      "classification": {
+        "accuracy": 0.33774834437086093,
+        "macro_precision": 0.11258278145695365,
+        "macro_recall": 0.3333333333333333,
+        "macro_f1": 0.16831683168316833,
+        "cohen_kappa": 0.0,
+        "per_class": {
+          "entailment": {
+            "precision": 0.33774834437086093,
+            "recall": 1.0,
+            "f1": 0.504950495049505,
+            "support": 51
+          },
+          "contradiction": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 50
+          },
+          "neutral": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 50
+          }
+        },
+        "confusion_matrix_gold_rows_pred_columns": {
+          "entailment": {
+            "entailment": 51,
+            "contradiction": 0,
+            "neutral": 0
+          },
+          "contradiction": {
+            "entailment": 50,
+            "contradiction": 0,
+            "neutral": 0
+          },
+          "neutral": {
+            "entailment": 50,
+            "contradiction": 0,
+            "neutral": 0
+          }
+        }
+      },
+      "rationale": {
+        "s_span_definition": "instances où gold et modèle donnent tous deux un label non-neutral",
+        "s_span": 101,
+        "both_neutral": 0,
+        "neutral_vs_non_neutral_disagreements": 50,
+        "macro_token_f1": 0.6720165824192454,
+        "macro_iou": 0.5709017026200464,
+        "exact_match": 0.27722772277227725,
+        "joint_iou_at_0_50": 0.2119205298013245,
+        "joint_exact_match": 0.12582781456953643
+      }
+    },
+    "learning_rate_after_epoch": 1.110410094637224e-05
+  },
+  {
+    "epoch": 5,
+    "train_loss": 1.5901080261577258,
+    "train_label_loss": 1.0977667407556013,
+    "train_span_loss_raw": 1.9961785511537031,
+    "train_span_loss_normalized": 0.4923412867567756,
+    "validation_loss": 1.5897070646286011,
+    "validation": {
+      "classification": {
+        "accuracy": 0.3708609271523179,
+        "macro_precision": 0.3833505331957344,
+        "macro_recall": 0.3688888888888889,
+        "macro_f1": 0.31150676711506764,
+        "cohen_kappa": 0.0535101609923463,
+        "per_class": {
+          "entailment": {
+            "precision": 0.35789473684210527,
+            "recall": 0.6666666666666666,
+            "f1": 0.4657534246575342,
+            "support": 51
+          },
+          "contradiction": {
+            "precision": 0.4,
+            "recall": 0.04,
+            "f1": 0.07272727272727272,
+            "support": 50
+          },
+          "neutral": {
+            "precision": 0.39215686274509803,
+            "recall": 0.4,
+            "f1": 0.396039603960396,
+            "support": 50
+          }
+        },
+        "confusion_matrix_gold_rows_pred_columns": {
+          "entailment": {
+            "entailment": 34,
+            "contradiction": 3,
+            "neutral": 14
+          },
+          "contradiction": {
+            "entailment": 31,
+            "contradiction": 2,
+            "neutral": 17
+          },
+          "neutral": {
+            "entailment": 30,
+            "contradiction": 0,
+            "neutral": 20
+          }
+        }
+      },
+      "rationale": {
+        "s_span_definition": "instances où gold et modèle donnent tous deux un label non-neutral",
+        "s_span": 70,
+        "both_neutral": 20,
+        "neutral_vs_non_neutral_disagreements": 61,
+        "macro_token_f1": 0.6417854021036573,
+        "macro_iou": 0.548171440036013,
+        "exact_match": 0.3,
+        "joint_iou_at_0_50": 0.2582781456953642,
+        "joint_exact_match": 0.2185430463576159
+      }
+    },
+    "learning_rate_after_epoch": 8.32807570977918e-06
+  },
+  {
+    "epoch": 6,
+    "train_loss": 1.5630171732469038,
+    "train_label_loss": 1.097517493096265,
+    "train_span_loss_raw": 1.8873652490702542,
+    "train_span_loss_normalized": 0.4654996801506389,
+    "validation_loss": 1.5833423614501954,
+    "validation": {
+      "classification": {
+        "accuracy": 0.33112582781456956,
+        "macro_precision": 0.11037527593818985,
+        "macro_recall": 0.3333333333333333,
+        "macro_f1": 0.1658374792703151,
+        "cohen_kappa": 0.0,
+        "per_class": {
+          "entailment": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 51
+          },
+          "contradiction": {
+            "precision": 0.33112582781456956,
+            "recall": 1.0,
+            "f1": 0.49751243781094534,
+            "support": 50
+          },
+          "neutral": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 50
+          }
+        },
+        "confusion_matrix_gold_rows_pred_columns": {
+          "entailment": {
+            "entailment": 0,
+            "contradiction": 51,
+            "neutral": 0
+          },
+          "contradiction": {
+            "entailment": 0,
+            "contradiction": 50,
+            "neutral": 0
+          },
+          "neutral": {
+            "entailment": 0,
+            "contradiction": 50,
+            "neutral": 0
+          }
+        }
+      },
+      "rationale": {
+        "s_span_definition": "instances où gold et modèle donnent tous deux un label non-neutral",
+        "s_span": 101,
+        "both_neutral": 0,
+        "neutral_vs_non_neutral_disagreements": 50,
+        "macro_token_f1": 0.6438104322834549,
+        "macro_iou": 0.5583489689682002,
+        "exact_match": 0.3069306930693069,
+        "joint_iou_at_0_50": 0.1456953642384106,
+        "joint_exact_match": 0.0728476821192053
+      }
+    },
+    "learning_rate_after_epoch": 5.55205047318612e-06
+  },
+  {
+    "epoch": 7,
+    "train_loss": 1.5542971058325334,
+    "train_label_loss": 1.1005378067493439,
+    "train_span_loss_raw": 1.8442142687060616,
+    "train_span_loss_normalized": 0.45375929230993445,
+    "validation_loss": 1.5883815288543701,
+    "validation": {
+      "classification": {
+        "accuracy": 0.3443708609271523,
+        "macro_precision": 0.5562593144560357,
+        "macro_recall": 0.3427450980392157,
+        "macro_f1": 0.28964603784747667,
+        "cohen_kappa": 0.014113302116995255,
+        "per_class": {
+          "entailment": {
+            "precision": 0.3409090909090909,
+            "recall": 0.5882352941176471,
+            "f1": 0.4316546762589928,
+            "support": 51
+          },
+          "contradiction": {
+            "precision": 0.32786885245901637,
+            "recall": 0.4,
+            "f1": 0.36036036036036034,
+            "support": 50
+          },
+          "neutral": {
+            "precision": 1.0,
+            "recall": 0.04,
+            "f1": 0.07692307692307693,
+            "support": 50
+          }
+        },
+        "confusion_matrix_gold_rows_pred_columns": {
+          "entailment": {
+            "entailment": 30,
+            "contradiction": 21,
+            "neutral": 0
+          },
+          "contradiction": {
+            "entailment": 30,
+            "contradiction": 20,
+            "neutral": 0
+          },
+          "neutral": {
+            "entailment": 28,
+            "contradiction": 20,
+            "neutral": 2
+          }
+        }
+      },
+      "rationale": {
+        "s_span_definition": "instances où gold et modèle donnent tous deux un label non-neutral",
+        "s_span": 101,
+        "both_neutral": 2,
+        "neutral_vs_non_neutral_disagreements": 48,
+        "macro_token_f1": 0.6440108404245569,
+        "macro_iou": 0.558864973786063,
+        "exact_match": 0.3069306930693069,
+        "joint_iou_at_0_50": 0.18543046357615894,
+        "joint_exact_match": 0.10596026490066225
+      }
+    },
+    "learning_rate_after_epoch": 2.77602523659306e-06
+  }
+]

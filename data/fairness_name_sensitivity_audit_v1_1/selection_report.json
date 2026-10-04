@@ -1,0 +1,16 @@
+{
+  "eligible_test_by_label": {
+    "entailment": 17,
+    "contradiction": 16,
+    "neutral": 15
+  },
+  "selected_per_label": 15,
+  "selected_total": 45,
+  "exclusion_reasons_on_test": {
+    "ambiguous_or_uncertain_name": 33,
+    "eligible": 48,
+    "no_inventory_name": 46,
+    "multiple_inventory_names": 17,
+    "name_legally_relevant_context": 6
+  }
+}

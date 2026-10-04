@@ -1,0 +1,127 @@
+{
+  "created_at_utc": "2026-09-21T03:14:54.163417+00:00",
+  "run_signature": {
+    "training_script_version": "FLEXID-ENCODER-TRAIN-v3.0",
+    "model_key": "camembert_base",
+    "model_id": "almanach/camembert-base",
+    "seed": 2028,
+    "split_file_sha256": {
+      "train": "6f50032ad860baa697efe5eb0b41e7b45c2b6a0949da5cb5b88d1deb39bcd712",
+      "validation": "01ba50651fa1f5266bf32533564215c03a5a14845f7e402669671b499872f19a",
+      "test": "f9acae1c9d602a7dca8ffe0bc3e717e12d85c85810312113119207ce74e702ee"
+    },
+    "training_configuration": {
+      "max_length": 512,
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "num_train_epochs_max": 8,
+      "warmup_ratio": 0.1,
+      "preferred_per_device_train_batch_size": 16,
+      "preferred_per_device_eval_batch_size": 32,
+      "preferred_gradient_accumulation_steps": 1,
+      "auto_oom_batch_fallback": true,
+      "fallback_per_device_train_batch_size": 8,
+      "fallback_per_device_eval_batch_size": 16,
+      "fallback_gradient_accumulation_steps": 2,
+      "early_stopping_patience": 2
+    }
+  },
+  "model_key": "camembert_base",
+  "model_display_name": "CamemBERT-base",
+  "model_id": "almanach/camembert-base",
+  "seed": 2028,
+  "effective_max_length": 512,
+  "tokenizer_backend": "fast",
+  "training_configuration": {
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "num_train_epochs_max": 8,
+    "warmup_ratio": 0.1,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 32,
+    "gradient_accumulation_steps": 1,
+    "effective_train_batch_size": 16,
+    "batch_fallback_used": false,
+    "early_stopping_patience": 2,
+    "precision": "fp32"
+  },
+  "split_sizes": {
+    "train": 701,
+    "validation": 151,
+    "test": 150
+  },
+  "best_model_checkpoint": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\results_encoder_baselines_exact_group_v3\\camembert_base\\seed_2028\\checkpoints\\checkpoint-352",
+  "best_validation_metric": 0.6322902032332789,
+  "validation_metrics": {
+    "validation_loss": 0.7723308801651001,
+    "validation_accuracy": 0.6622516556291391,
+    "validation_macro_precision": 0.6565371762740183,
+    "validation_macro_recall": 0.6607843137254902,
+    "validation_macro_f1": 0.6322902032332789,
+    "validation_weighted_precision": 0.6564465800262245,
+    "validation_weighted_recall": 0.6622516556291391,
+    "validation_weighted_f1": 0.6330286896548634,
+    "validation_runtime": 18.4899,
+    "validation_samples_per_second": 8.167,
+    "validation_steps_per_second": 0.27,
+    "epoch": 8.0
+  },
+  "test": {
+    "accuracy": 0.6,
+    "macro_precision": 0.6050461280402571,
+    "macro_recall": 0.6,
+    "macro_f1": 0.5816956304761183,
+    "weighted_precision": 0.6050461280402571,
+    "weighted_recall": 0.6,
+    "weighted_f1": 0.5816956304761183,
+    "per_class": {
+      "entailment": {
+        "precision": 0.5753424657534246,
+        "recall": 0.84,
+        "f1": 0.6829268292682927,
+        "support": 50
+      },
+      "contradiction": {
+        "precision": 0.6071428571428571,
+        "recall": 0.34,
+        "f1": 0.4358974358974359,
+        "support": 50
+      },
+      "neutral": {
+        "precision": 0.6326530612244898,
+        "recall": 0.62,
+        "f1": 0.6262626262626263,
+        "support": 50
+      }
+    },
+    "confusion_matrix": {
+      "row_labels_gold": [
+        "entailment",
+        "contradiction",
+        "neutral"
+      ],
+      "column_labels_prediction": [
+        "entailment",
+        "contradiction",
+        "neutral"
+      ],
+      "values": [
+        [
+          42,
+          5,
+          3
+        ],
+        [
+          18,
+          17,
+          15
+        ],
+        [
+          13,
+          6,
+          31
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,1981 @@
+{
+  "audit_version": "FLEXID-GENDER-COUNTERFACTUAL-v1.0",
+  "audit_seed": 2026,
+  "scope": {
+    "claim": "controlled gender-category / grammatical-gender sensitivity",
+    "not_a_claim": "comprehensive demographic fairness",
+    "source_split": "official FLEXID test split",
+    "challenge_pairs": 61,
+    "counterfactuals_per_pair": 1
+  },
+  "challenge": {
+    "path": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\gender_counterfactual_challenge.jsonl",
+    "sha256": "981fdcd4f8dd6684342ca6467ccc12fbaa0626400f9c3c58913632fb91fff2ab",
+    "validation": {
+      "challenge_size": 61,
+      "unique_base_ids": 61,
+      "label_counts": {
+        "neutral": 16,
+        "entailment": 25,
+        "contradiction": 20
+      },
+      "direction_counts": {
+        "feminine_to_masculine": 35,
+        "masculine_to_feminine": 26
+      },
+      "official_test_alignment": true,
+      "gold_labels_unchanged": true,
+      "premises_unchanged": true,
+      "original_hypotheses_match_official_test": true,
+      "law_refs_match_after_whitespace_normalization": true,
+      "edit_summary": {
+        "mean_changed_original_tokens": 2.1639344262295084,
+        "mean_changed_counterfactual_tokens": 2.1639344262295084,
+        "max_changed_original_tokens": 6,
+        "max_changed_counterfactual_tokens": 6,
+        "mean_edit_blocks": 1.9180327868852458
+      },
+      "edit_reports": [
+        {
+          "changed_original_tokens": 3,
+          "changed_counterfactual_tokens": 3,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Morgan",
+              "counterfactual": "Martin"
+            },
+            {
+              "tag": "replace",
+              "original": "Excédée, Morgan",
+              "counterfactual": "Excédé, Martin"
+            }
+          ],
+          "base_id": "FLEXID-0129"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Benjamin,",
+              "counterfactual": "Béatrice,"
+            },
+            {
+              "tag": "replace",
+              "original": "Benjamin",
+              "counterfactual": "Béatrice"
+            }
+          ],
+          "base_id": "FLEXID-0227"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Louise",
+              "counterfactual": "Lucas"
+            }
+          ],
+          "base_id": "FLEXID-0232"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Tainá",
+              "counterfactual": "Thiago"
+            },
+            {
+              "tag": "replace",
+              "original": "Tainá.",
+              "counterfactual": "Thiago."
+            }
+          ],
+          "base_id": "FLEXID-0196"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Ximena",
+              "counterfactual": "Xavier"
+            },
+            {
+              "tag": "replace",
+              "original": "Ximena",
+              "counterfactual": "Xavier"
+            }
+          ],
+          "base_id": "FLEXID-0375"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Martin",
+              "counterfactual": "Martine"
+            },
+            {
+              "tag": "replace",
+              "original": "Martin",
+              "counterfactual": "Martine"
+            }
+          ],
+          "base_id": "FLEXID-0097"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Mélisande",
+              "counterfactual": "Marcel"
+            }
+          ],
+          "base_id": "FLEXID-0814"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Nari",
+              "counterfactual": "Minho"
+            },
+            {
+              "tag": "replace",
+              "original": "elle",
+              "counterfactual": "il"
+            }
+          ],
+          "base_id": "FLEXID-0165"
+        },
+        {
+          "changed_original_tokens": 6,
+          "changed_counterfactual_tokens": 6,
+          "edit_blocks": 4,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Amine",
+              "counterfactual": "Amina"
+            },
+            {
+              "tag": "replace",
+              "original": "un ressortissant sénégalais,",
+              "counterfactual": "une ressortissante sénégalaise,"
+            },
+            {
+              "tag": "replace",
+              "original": "Il",
+              "counterfactual": "Elle"
+            },
+            {
+              "tag": "replace",
+              "original": "Amine",
+              "counterfactual": "Amina"
+            }
+          ],
+          "base_id": "FLEXID-0231"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Felipe",
+              "counterfactual": "Fernanda"
+            }
+          ],
+          "base_id": "FLEXID-0446"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Élodie",
+              "counterfactual": "Émile"
+            }
+          ],
+          "base_id": "FLEXID-0527"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Salma",
+              "counterfactual": "Salim"
+            }
+          ],
+          "base_id": "FLEXID-0387"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Ulysse",
+              "counterfactual": "Yvette"
+            },
+            {
+              "tag": "replace",
+              "original": "Ulysse",
+              "counterfactual": "Yvette"
+            }
+          ],
+          "base_id": "FLEXID-0644"
+        },
+        {
+          "changed_original_tokens": 4,
+          "changed_counterfactual_tokens": 4,
+          "edit_blocks": 3,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Célestine",
+              "counterfactual": "Césaire"
+            },
+            {
+              "tag": "replace",
+              "original": "Elle",
+              "counterfactual": "Il"
+            },
+            {
+              "tag": "replace",
+              "original": "conjointe actuelle,",
+              "counterfactual": "conjoint actuel,"
+            }
+          ],
+          "base_id": "FLEXID-0609"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Élodie",
+              "counterfactual": "Émile"
+            }
+          ],
+          "base_id": "FLEXID-0501"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Yvette,",
+              "counterfactual": "Yvan,"
+            }
+          ],
+          "base_id": "FLEXID-0796"
+        },
+        {
+          "changed_original_tokens": 4,
+          "changed_counterfactual_tokens": 4,
+          "edit_blocks": 4,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Appelée",
+              "counterfactual": "Appelé"
+            },
+            {
+              "tag": "replace",
+              "original": "Hélène",
+              "counterfactual": "Hector"
+            },
+            {
+              "tag": "replace",
+              "original": "la",
+              "counterfactual": "le"
+            },
+            {
+              "tag": "replace",
+              "original": "Elle",
+              "counterfactual": "Il"
+            }
+          ],
+          "base_id": "FLEXID-0255"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Momoka.",
+              "counterfactual": "Mohamed."
+            }
+          ],
+          "base_id": "FLEXID-0449"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Salma",
+              "counterfactual": "Salim"
+            },
+            {
+              "tag": "replace",
+              "original": "Elle",
+              "counterfactual": "Il"
+            }
+          ],
+          "base_id": "FLEXID-0426"
+        },
+        {
+          "changed_original_tokens": 4,
+          "changed_counterfactual_tokens": 4,
+          "edit_blocks": 4,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Sophie",
+              "counterfactual": "Sofiane"
+            },
+            {
+              "tag": "replace",
+              "original": "elle",
+              "counterfactual": "il"
+            },
+            {
+              "tag": "replace",
+              "original": "qu'elle",
+              "counterfactual": "qu'il"
+            },
+            {
+              "tag": "replace",
+              "original": "Sophie",
+              "counterfactual": "Sofiane"
+            }
+          ],
+          "base_id": "FLEXID-0128"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Sophie",
+              "counterfactual": "Sofiane"
+            }
+          ],
+          "base_id": "FLEXID-0123"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Solène",
+              "counterfactual": "Samuel"
+            }
+          ],
+          "base_id": "FLEXID-0775"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Martin",
+              "counterfactual": "Martine"
+            }
+          ],
+          "base_id": "FLEXID-0088"
+        },
+        {
+          "changed_original_tokens": 4,
+          "changed_counterfactual_tokens": 4,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Amine, ressortissant sénégalais",
+              "counterfactual": "Amina, ressortissante sénégalaise"
+            },
+            {
+              "tag": "replace",
+              "original": "concepteur",
+              "counterfactual": "conceptrice"
+            }
+          ],
+          "base_id": "FLEXID-0229"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Murilo,",
+              "counterfactual": "Muriel,"
+            }
+          ],
+          "base_id": "FLEXID-0528"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Sophie,",
+              "counterfactual": "Sofiane,"
+            }
+          ],
+          "base_id": "FLEXID-0195"
+        },
+        {
+          "changed_original_tokens": 6,
+          "changed_counterfactual_tokens": 6,
+          "edit_blocks": 4,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Célestine",
+              "counterfactual": "Césaire"
+            },
+            {
+              "tag": "replace",
+              "original": "mariée",
+              "counterfactual": "marié"
+            },
+            {
+              "tag": "replace",
+              "original": "Elle",
+              "counterfactual": "Il"
+            },
+            {
+              "tag": "replace",
+              "original": "conjointe actuelle, dépourvue",
+              "counterfactual": "conjoint actuel, dépourvu"
+            }
+          ],
+          "base_id": "FLEXID-0608"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Pacôme",
+              "counterfactual": "Paloma"
+            }
+          ],
+          "base_id": "FLEXID-0623"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Kossi",
+              "counterfactual": "Kaori"
+            }
+          ],
+          "base_id": "FLEXID-0737"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Rafael",
+              "counterfactual": "Renata"
+            },
+            {
+              "tag": "replace",
+              "original": "Rafael",
+              "counterfactual": "Renata"
+            }
+          ],
+          "base_id": "FLEXID-0127"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Amaury",
+              "counterfactual": "Aurore"
+            }
+          ],
+          "base_id": "FLEXID-0124"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Benjamin,",
+              "counterfactual": "Béatrice,"
+            }
+          ],
+          "base_id": "FLEXID-0096"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Yetunde",
+              "counterfactual": "Youssef"
+            },
+            {
+              "tag": "replace",
+              "original": "Yetunde.",
+              "counterfactual": "Youssef."
+            }
+          ],
+          "base_id": "FLEXID-0815"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Amine",
+              "counterfactual": "Amina"
+            }
+          ],
+          "base_id": "FLEXID-0373"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Yanis",
+              "counterfactual": "Yara"
+            }
+          ],
+          "base_id": "FLEXID-0425"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Minho",
+              "counterfactual": "Minji"
+            }
+          ],
+          "base_id": "FLEXID-0386"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Élodie",
+              "counterfactual": "Émile"
+            }
+          ],
+          "base_id": "FLEXID-0499"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "requis",
+              "counterfactual": "requise"
+            },
+            {
+              "tag": "replace",
+              "original": "Bertrand",
+              "counterfactual": "Bertille"
+            }
+          ],
+          "base_id": "FLEXID-0254"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Donghyun,",
+              "counterfactual": "Daphné,"
+            }
+          ],
+          "base_id": "FLEXID-0798"
+        },
+        {
+          "changed_original_tokens": 6,
+          "changed_counterfactual_tokens": 6,
+          "edit_blocks": 4,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Amine",
+              "counterfactual": "Amina"
+            },
+            {
+              "tag": "replace",
+              "original": "un ressortissant sénégalais,",
+              "counterfactual": "une ressortissante sénégalaise,"
+            },
+            {
+              "tag": "replace",
+              "original": "Il",
+              "counterfactual": "Elle"
+            },
+            {
+              "tag": "replace",
+              "original": "Amine",
+              "counterfactual": "Amina"
+            }
+          ],
+          "base_id": "FLEXID-0228"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Sofia",
+              "counterfactual": "Sami"
+            },
+            {
+              "tag": "replace",
+              "original": "Sofia.",
+              "counterfactual": "Sami."
+            }
+          ],
+          "base_id": "FLEXID-0445"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Chloé, âgée",
+              "counterfactual": "Charles, âgé"
+            }
+          ],
+          "base_id": "FLEXID-0562"
+        },
+        {
+          "changed_original_tokens": 5,
+          "changed_counterfactual_tokens": 5,
+          "edit_blocks": 4,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Célestine",
+              "counterfactual": "Césaire"
+            },
+            {
+              "tag": "replace",
+              "original": "mariée",
+              "counterfactual": "marié"
+            },
+            {
+              "tag": "replace",
+              "original": "Elle",
+              "counterfactual": "Il"
+            },
+            {
+              "tag": "replace",
+              "original": "conjointe actuelle,",
+              "counterfactual": "conjoint actuel,"
+            }
+          ],
+          "base_id": "FLEXID-0607"
+        },
+        {
+          "changed_original_tokens": 5,
+          "changed_counterfactual_tokens": 5,
+          "edit_blocks": 4,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Sofia",
+              "counterfactual": "Sami"
+            },
+            {
+              "tag": "replace",
+              "original": "mariée",
+              "counterfactual": "marié"
+            },
+            {
+              "tag": "replace",
+              "original": "qu’épouse soumise",
+              "counterfactual": "qu’époux soumis"
+            },
+            {
+              "tag": "replace",
+              "original": "elle",
+              "counterfactual": "il"
+            }
+          ],
+          "base_id": "FLEXID-0622"
+        },
+        {
+          "changed_original_tokens": 4,
+          "changed_counterfactual_tokens": 4,
+          "edit_blocks": 4,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Rina",
+              "counterfactual": "Riku"
+            },
+            {
+              "tag": "replace",
+              "original": "elle",
+              "counterfactual": "il"
+            },
+            {
+              "tag": "replace",
+              "original": "qu'elle",
+              "counterfactual": "qu'il"
+            },
+            {
+              "tag": "replace",
+              "original": "elle",
+              "counterfactual": "il"
+            }
+          ],
+          "base_id": "FLEXID-0163"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Sofia.",
+              "counterfactual": "Sami."
+            }
+          ],
+          "base_id": "FLEXID-0374"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Yasmine",
+              "counterfactual": "Yassine"
+            }
+          ],
+          "base_id": "FLEXID-0736"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Julien",
+              "counterfactual": "Julie"
+            },
+            {
+              "tag": "replace",
+              "original": "Ils",
+              "counterfactual": "Elles"
+            }
+          ],
+          "base_id": "FLEXID-0125"
+        },
+        {
+          "changed_original_tokens": 5,
+          "changed_counterfactual_tokens": 5,
+          "edit_blocks": 5,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Hyunwoo",
+              "counterfactual": "Hyejin"
+            },
+            {
+              "tag": "replace",
+              "original": "convoqué",
+              "counterfactual": "convoquée"
+            },
+            {
+              "tag": "replace",
+              "original": "qu'il",
+              "counterfactual": "qu'elle"
+            },
+            {
+              "tag": "replace",
+              "original": "Il",
+              "counterfactual": "Elle"
+            },
+            {
+              "tag": "replace",
+              "original": "tenu",
+              "counterfactual": "tenue"
+            }
+          ],
+          "base_id": "FLEXID-0253"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Julien",
+              "counterfactual": "Julie"
+            },
+            {
+              "tag": "replace",
+              "original": "Il",
+              "counterfactual": "Elle"
+            }
+          ],
+          "base_id": "FLEXID-0044"
+        },
+        {
+          "changed_original_tokens": 6,
+          "changed_counterfactual_tokens": 6,
+          "edit_blocks": 6,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Naliaka",
+              "counterfactual": "Nadine"
+            },
+            {
+              "tag": "replace",
+              "original": "qu'il",
+              "counterfactual": "qu'elle"
+            },
+            {
+              "tag": "replace",
+              "original": "il",
+              "counterfactual": "elle"
+            },
+            {
+              "tag": "replace",
+              "original": "tenu",
+              "counterfactual": "tenue"
+            },
+            {
+              "tag": "replace",
+              "original": "gardien",
+              "counterfactual": "gardienne"
+            },
+            {
+              "tag": "replace",
+              "original": "condamné",
+              "counterfactual": "condamnée"
+            }
+          ],
+          "base_id": "FLEXID-0035"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Kaori",
+              "counterfactual": "Kamel"
+            },
+            {
+              "tag": "replace",
+              "original": "Kaori",
+              "counterfactual": "Kamel"
+            }
+          ],
+          "base_id": "FLEXID-0033"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Yara",
+              "counterfactual": "Yanis"
+            }
+          ],
+          "base_id": "FLEXID-0643"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Domitille",
+              "counterfactual": "Damien"
+            },
+            {
+              "tag": "replace",
+              "original": "Domitille.",
+              "counterfactual": "Damien."
+            }
+          ],
+          "base_id": "FLEXID-0802"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Benjamin,",
+              "counterfactual": "Béatrice,"
+            },
+            {
+              "tag": "replace",
+              "original": "Benjamin",
+              "counterfactual": "Béatrice"
+            }
+          ],
+          "base_id": "FLEXID-0095"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Élodie",
+              "counterfactual": "Émile"
+            }
+          ],
+          "base_id": "FLEXID-0500"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Antoine",
+              "counterfactual": "Anissa"
+            }
+          ],
+          "base_id": "FLEXID-0526"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Martin",
+              "counterfactual": "Martine"
+            }
+          ],
+          "base_id": "FLEXID-0087"
+        },
+        {
+          "changed_original_tokens": 2,
+          "changed_counterfactual_tokens": 2,
+          "edit_blocks": 2,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Quitterie",
+              "counterfactual": "Raphaël"
+            },
+            {
+              "tag": "replace",
+              "original": "Elle",
+              "counterfactual": "Lui"
+            }
+          ],
+          "base_id": "FLEXID-0742"
+        },
+        {
+          "changed_original_tokens": 1,
+          "changed_counterfactual_tokens": 1,
+          "edit_blocks": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Sofia",
+              "counterfactual": "Sami"
+            }
+          ],
+          "base_id": "FLEXID-0448"
+        },
+        {
+          "changed_original_tokens": 5,
+          "changed_counterfactual_tokens": 5,
+          "edit_blocks": 3,
+          "edits": [
+            {
+              "tag": "replace",
+              "original": "Nora",
+              "counterfactual": "Nabil"
+            },
+            {
+              "tag": "replace",
+              "original": "elle",
+              "counterfactual": "il"
+            },
+            {
+              "tag": "replace",
+              "original": "la dernière descendante,",
+              "counterfactual": "le dernier descendant,"
+            }
+          ],
+          "base_id": "FLEXID-0424"
+        }
+      ]
+    }
+  },
+  "model": {
+    "script": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\scripts\\mdeberta_join_label_rationales.py",
+    "result_directory": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\results_mdeberta_joint_final_run03",
+    "seeds": [
+      2026,
+      2027,
+      2028
+    ]
+  },
+  "per_seed": [
+    {
+      "seed": 2026,
+      "checkpoint": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\results_mdeberta_joint_final_run03\\seed_2026\\best",
+      "device": "cpu",
+      "precision": "fp32",
+      "n_pairs": 61,
+      "original_accuracy": {
+        "mean": 0.4426229508196721,
+        "ci95": [
+          0.3114754098360656,
+          0.5573770491803278
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "counterfactual_accuracy": {
+        "mean": 0.5081967213114754,
+        "ci95": [
+          0.3770491803278688,
+          0.6229508196721312
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "flip_rate": {
+        "mean": 0.11475409836065574,
+        "ci95": [
+          0.04918032786885246,
+          0.19672131147540983
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "harmful_flip_rate": {
+        "mean": 0.01639344262295082,
+        "ci95": [
+          0.0,
+          0.04918032786885246
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "beneficial_flip_rate": {
+        "mean": 0.08196721311475409,
+        "ci95": [
+          0.01639344262295082,
+          0.16393442622950818
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.039081230171818714,
+        "ci95": [
+          0.025224309351455546,
+          0.05749717893710618
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "mean_absolute_gold_probability_shift": {
+        "mean": 0.027764938405302704,
+        "ci95": [
+          0.01773976099097216,
+          0.04047775267791308
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "mean_signed_gold_probability_shift": {
+        "mean": 0.007966601396681832,
+        "ci95": [
+          -0.004530256117892558,
+          0.022652115010213653
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "correctness_discordance": {
+        "harmful_count": 1,
+        "beneficial_count": 5,
+        "exact_mcnemar_p_value": 0.21875
+      },
+      "direction_balanced_flip_rate": 0.11978021978021978,
+      "direction_balanced_harmful_flip_rate": 0.019230769230769232,
+      "by_direction": {
+        "feminine_to_masculine": {
+          "n": 35,
+          "flip_rate": 0.08571428571428572,
+          "harmful_flip_rate": 0,
+          "beneficial_flip_rate": 0.08571428571428572,
+          "original_accuracy": 0.42857142857142855,
+          "counterfactual_accuracy": 0.5142857142857142,
+          "mean_total_variation_distance": 0.02864616708829999,
+          "mean_absolute_gold_probability_shift": 0.021426294105393547,
+          "mean_signed_gold_probability_shift": -0.0006528033741882869
+        },
+        "masculine_to_feminine": {
+          "n": 26,
+          "flip_rate": 0.15384615384615385,
+          "harmful_flip_rate": 0.038461538461538464,
+          "beneficial_flip_rate": 0.07692307692307693,
+          "original_accuracy": 0.46153846153846156,
+          "counterfactual_accuracy": 0.5,
+          "mean_total_variation_distance": 0.05312843047655546,
+          "mean_absolute_gold_probability_shift": 0.03629772880902657,
+          "mean_signed_gold_probability_shift": 0.019569646280545454
+        }
+      },
+      "by_label": {
+        "entailment": {
+          "n": 25,
+          "flip_rate": 0.12,
+          "harmful_flip_rate": 0,
+          "beneficial_flip_rate": 0.08,
+          "original_accuracy": 0.48,
+          "counterfactual_accuracy": 0.56,
+          "mean_total_variation_distance": 0.03796328721567988,
+          "mean_absolute_gold_probability_shift": 0.02803959459066391,
+          "mean_signed_gold_probability_shift": 0.0006958773732185364
+        },
+        "contradiction": {
+          "n": 20,
+          "flip_rate": 0.15,
+          "harmful_flip_rate": 0,
+          "beneficial_flip_rate": 0.15,
+          "original_accuracy": 0.3,
+          "counterfactual_accuracy": 0.45,
+          "mean_total_variation_distance": 0.05342083417344838,
+          "mean_absolute_gold_probability_shift": 0.036350821144878864,
+          "mean_signed_gold_probability_shift": 0.028555539436638355
+        },
+        "neutral": {
+          "n": 16,
+          "flip_rate": 0.0625,
+          "harmful_flip_rate": 0.0625,
+          "beneficial_flip_rate": 0,
+          "original_accuracy": 0.5625,
+          "counterfactual_accuracy": 0.5,
+          "mean_total_variation_distance": 0.022903511038748547,
+          "mean_absolute_gold_probability_shift": 0.01660343469120562,
+          "mean_signed_gold_probability_shift": -0.006409064866602421
+        }
+      }
+    },
+    {
+      "seed": 2027,
+      "checkpoint": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\results_mdeberta_joint_final_run03\\seed_2027\\best",
+      "device": "cpu",
+      "precision": "fp32",
+      "n_pairs": 61,
+      "original_accuracy": {
+        "mean": 0.5409836065573771,
+        "ci95": [
+          0.4098360655737705,
+          0.6557377049180327
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "counterfactual_accuracy": {
+        "mean": 0.5573770491803278,
+        "ci95": [
+          0.4262295081967213,
+          0.6885245901639344
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "flip_rate": {
+        "mean": 0.01639344262295082,
+        "ci95": [
+          0.0,
+          0.04918032786885246
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "harmful_flip_rate": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "beneficial_flip_rate": {
+        "mean": 0.01639344262295082,
+        "ci95": [
+          0.0,
+          0.04918032786885246
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.03031056016668311,
+        "ci95": [
+          0.021386713732690476,
+          0.04060224556453815
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "mean_absolute_gold_probability_shift": {
+        "mean": 0.02503087623502876,
+        "ci95": [
+          0.016968374633703563,
+          0.034570256238192563
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "mean_signed_gold_probability_shift": {
+        "mean": 0.0071973478665850205,
+        "ci95": [
+          -0.0036223376288124524,
+          0.01800984285664973
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "correctness_discordance": {
+        "harmful_count": 0,
+        "beneficial_count": 1,
+        "exact_mcnemar_p_value": 1.0
+      },
+      "direction_balanced_flip_rate": 0.014285714285714285,
+      "direction_balanced_harmful_flip_rate": 0,
+      "by_direction": {
+        "feminine_to_masculine": {
+          "n": 35,
+          "flip_rate": 0.02857142857142857,
+          "harmful_flip_rate": 0,
+          "beneficial_flip_rate": 0.02857142857142857,
+          "original_accuracy": 0.5428571428571428,
+          "counterfactual_accuracy": 0.5714285714285714,
+          "mean_total_variation_distance": 0.031223271740600467,
+          "mean_absolute_gold_probability_shift": 0.024884006114942687,
+          "mean_signed_gold_probability_shift": 0.0036796444760901588
+        },
+        "masculine_to_feminine": {
+          "n": 26,
+          "flip_rate": 0,
+          "harmful_flip_rate": 0,
+          "beneficial_flip_rate": 0,
+          "original_accuracy": 0.5384615384615384,
+          "counterfactual_accuracy": 0.5384615384615384,
+          "mean_total_variation_distance": 0.029081909971025128,
+          "mean_absolute_gold_probability_shift": 0.025228586012067702,
+          "mean_signed_gold_probability_shift": 0.011932717815328103
+        }
+      },
+      "by_label": {
+        "entailment": {
+          "n": 25,
+          "flip_rate": 0,
+          "harmful_flip_rate": 0,
+          "beneficial_flip_rate": 0,
+          "original_accuracy": 0.64,
+          "counterfactual_accuracy": 0.64,
+          "mean_total_variation_distance": 0.026001623813062907,
+          "mean_absolute_gold_probability_shift": 0.024088920913636683,
+          "mean_signed_gold_probability_shift": 0.001195380724966526
+        },
+        "contradiction": {
+          "n": 20,
+          "flip_rate": 0.05,
+          "harmful_flip_rate": 0,
+          "beneficial_flip_rate": 0.05,
+          "original_accuracy": 0.4,
+          "counterfactual_accuracy": 0.45,
+          "mean_total_variation_distance": 0.041057110344991085,
+          "mean_absolute_gold_probability_shift": 0.036540165171027185,
+          "mean_signed_gold_probability_shift": 0.01194336898624897
+        },
+        "neutral": {
+          "n": 16,
+          "flip_rate": 0,
+          "harmful_flip_rate": 0,
+          "beneficial_flip_rate": 0,
+          "original_accuracy": 0.5625,
+          "counterfactual_accuracy": 0.5625,
+          "mean_total_variation_distance": 0.023610085496329702,
+          "mean_absolute_gold_probability_shift": 0.012116070254705846,
+          "mean_signed_gold_probability_shift": 0.01064289512578398
+        }
+      }
+    },
+    {
+      "seed": 2028,
+      "checkpoint": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\results_mdeberta_joint_final_run03\\seed_2028\\best",
+      "device": "cpu",
+      "precision": "fp32",
+      "n_pairs": 61,
+      "original_accuracy": {
+        "mean": 0.5737704918032787,
+        "ci95": [
+          0.45901639344262296,
+          0.7049180327868853
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "counterfactual_accuracy": {
+        "mean": 0.5901639344262295,
+        "ci95": [
+          0.45901639344262296,
+          0.705327868852453
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "flip_rate": {
+        "mean": 0.08196721311475409,
+        "ci95": [
+          0.01639344262295082,
+          0.14795081967212517
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "harmful_flip_rate": {
+        "mean": 0.03278688524590164,
+        "ci95": [
+          0.0,
+          0.08196721311475409
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "beneficial_flip_rate": {
+        "mean": 0.04918032786885246,
+        "ci95": [
+          0.0,
+          0.11475409836065574
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "mean_total_variation_distance": {
+        "mean": 0.029412511308662227,
+        "ci95": [
+          0.0178218996656112,
+          0.04520030030121904
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "mean_absolute_gold_probability_shift": {
+        "mean": 0.02467494300704022,
+        "ci95": [
+          0.013572565281046096,
+          0.03865634764727877
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "mean_signed_gold_probability_shift": {
+        "mean": 0.003431651298506338,
+        "ci95": [
+          -0.009476541600296977,
+          0.0184229887899805
+        ],
+        "bootstrap_reps": 5000,
+        "resampling_unit": "base_pair"
+      },
+      "correctness_discordance": {
+        "harmful_count": 2,
+        "beneficial_count": 3,
+        "exact_mcnemar_p_value": 1.0
+      },
+      "direction_balanced_flip_rate": 0.08626373626373626,
+      "direction_balanced_harmful_flip_rate": 0.033516483516483515,
+      "by_direction": {
+        "feminine_to_masculine": {
+          "n": 35,
+          "flip_rate": 0.05714285714285714,
+          "harmful_flip_rate": 0.02857142857142857,
+          "beneficial_flip_rate": 0.02857142857142857,
+          "original_accuracy": 0.5428571428571428,
+          "counterfactual_accuracy": 0.5428571428571428,
+          "mean_total_variation_distance": 0.02061918250152043,
+          "mean_absolute_gold_probability_shift": 0.0171852367530976,
+          "mean_signed_gold_probability_shift": -0.0038612702329243933
+        },
+        "masculine_to_feminine": {
+          "n": 26,
+          "flip_rate": 0.11538461538461539,
+          "harmful_flip_rate": 0.038461538461538464,
+          "beneficial_flip_rate": 0.07692307692307693,
+          "original_accuracy": 0.6153846153846154,
+          "counterfactual_accuracy": 0.6538461538461539,
+          "mean_total_variation_distance": 0.04124968470289157,
+          "mean_absolute_gold_probability_shift": 0.03475723988734759,
+          "mean_signed_gold_probability_shift": 0.013249045667740015
+        }
+      },
+      "by_label": {
+        "entailment": {
+          "n": 25,
+          "flip_rate": 0.08,
+          "harmful_flip_rate": 0.04,
+          "beneficial_flip_rate": 0.04,
+          "original_accuracy": 0.64,
+          "counterfactual_accuracy": 0.64,
+          "mean_total_variation_distance": 0.018899911474436523,
+          "mean_absolute_gold_probability_shift": 0.017454168647527694,
+          "mean_signed_gold_probability_shift": -0.00604230061173439
+        },
+        "contradiction": {
+          "n": 20,
+          "flip_rate": 0.15,
+          "harmful_flip_rate": 0.05,
+          "beneficial_flip_rate": 0.1,
+          "original_accuracy": 0.5,
+          "counterfactual_accuracy": 0.55,
+          "mean_total_variation_distance": 0.05708580710925162,
+          "mean_absolute_gold_probability_shift": 0.04854914154857397,
+          "mean_signed_gold_probability_shift": 0.01973035279661417
+        },
+        "neutral": {
+          "n": 16,
+          "flip_rate": 0,
+          "harmful_flip_rate": 0,
+          "beneficial_flip_rate": 0,
+          "original_accuracy": 0.5625,
+          "counterfactual_accuracy": 0.5625,
+          "mean_total_variation_distance": 0.011246828798903152,
+          "mean_absolute_gold_probability_shift": 0.006114654766861349,
+          "mean_signed_gold_probability_shift": -0.002138675714377314
+        }
+      }
+    }
+  ],
+  "aggregate_across_model_seeds": {
+    "original_accuracy": {
+      "values": [
+        0.4426229508196721,
+        0.5409836065573771,
+        0.5737704918032787
+      ],
+      "mean": 0.5191256830601093,
+      "std": 0.06825134424479123
+    },
+    "counterfactual_accuracy": {
+      "values": [
+        0.5081967213114754,
+        0.5573770491803278,
+        0.5901639344262295
+      ],
+      "mean": 0.5519125683060109,
+      "std": 0.041255925875796434
+    },
+    "flip_rate": {
+      "values": [
+        0.11475409836065574,
+        0.01639344262295082,
+        0.08196721311475409
+      ],
+      "mean": 0.07103825136612021,
+      "std": 0.05008279448039169
+    },
+    "harmful_flip_rate": {
+      "values": [
+        0.01639344262295082,
+        0.0,
+        0.03278688524590164
+      ],
+      "mean": 0.01639344262295082,
+      "std": 0.01639344262295082
+    },
+    "beneficial_flip_rate": {
+      "values": [
+        0.08196721311475409,
+        0.01639344262295082,
+        0.04918032786885246
+      ],
+      "mean": 0.04918032786885246,
+      "std": 0.032786885245901634
+    },
+    "mean_total_variation_distance": {
+      "values": [
+        0.039081230171818714,
+        0.03031056016668311,
+        0.029412511308662227
+      ],
+      "mean": 0.03293476721572135,
+      "std": 0.005341898360213906
+    },
+    "mean_absolute_gold_probability_shift": {
+      "values": [
+        0.027764938405302704,
+        0.02503087623502876,
+        0.02467494300704022
+      ],
+      "mean": 0.02582358588245723,
+      "std": 0.0016906535213240634
+    },
+    "mean_signed_gold_probability_shift": {
+      "values": [
+        0.007966601396681832,
+        0.0071973478665850205,
+        0.003431651298506338
+      ],
+      "mean": 0.006198533520591063,
+      "std": 0.0024268633401075515
+    },
+    "direction_balanced_flip_rate": {
+      "values": [
+        0.11978021978021978,
+        0.014285714285714285,
+        0.08626373626373626
+      ],
+      "mean": 0.07344322344322345,
+      "std": 0.05390312453020013
+    },
+    "direction_balanced_harmful_flip_rate": {
+      "values": [
+        0.019230769230769232,
+        0.0,
+        0.033516483516483515
+      ],
+      "mean": 0.017582417582417582,
+      "std": 0.01681893171979557
+    },
+    "by_direction": {
+      "feminine_to_masculine": {
+        "flip_rate": {
+          "values": [
+            0.08571428571428572,
+            0.02857142857142857,
+            0.05714285714285714
+          ],
+          "mean": 0.05714285714285714,
+          "std": 0.028571428571428574
+        },
+        "harmful_flip_rate": {
+          "values": [
+            0,
+            0,
+            0.02857142857142857
+          ],
+          "mean": 0.009523809523809523,
+          "std": 0.01649572197684645
+        },
+        "beneficial_flip_rate": {
+          "values": [
+            0.08571428571428572,
+            0.02857142857142857,
+            0.02857142857142857
+          ],
+          "mean": 0.047619047619047616,
+          "std": 0.032991443953692905
+        },
+        "original_accuracy": {
+          "values": [
+            0.42857142857142855,
+            0.5428571428571428,
+            0.5428571428571428
+          ],
+          "mean": 0.5047619047619047,
+          "std": 0.0659828879073858
+        },
+        "counterfactual_accuracy": {
+          "values": [
+            0.5142857142857142,
+            0.5714285714285714,
+            0.5428571428571428
+          ],
+          "mean": 0.5428571428571428,
+          "std": 0.02857142857142858
+        },
+        "mean_total_variation_distance": {
+          "values": [
+            0.02864616708829999,
+            0.031223271740600467,
+            0.02061918250152043
+          ],
+          "mean": 0.02682954044347363,
+          "std": 0.0055305312965946655
+        },
+        "mean_absolute_gold_probability_shift": {
+          "values": [
+            0.021426294105393547,
+            0.024884006114942687,
+            0.0171852367530976
+          ],
+          "mean": 0.02116517899114461,
+          "std": 0.0038560210384395045
+        },
+        "mean_signed_gold_probability_shift": {
+          "values": [
+            -0.0006528033741882869,
+            0.0036796444760901588,
+            -0.0038612702329243933
+          ],
+          "mean": -0.0002781430436741738,
+          "std": 0.0037843924789328757
+        }
+      },
+      "masculine_to_feminine": {
+        "flip_rate": {
+          "values": [
+            0.15384615384615385,
+            0,
+            0.11538461538461539
+          ],
+          "mean": 0.08974358974358974,
+          "std": 0.08006407690254357
+        },
+        "harmful_flip_rate": {
+          "values": [
+            0.038461538461538464,
+            0,
+            0.038461538461538464
+          ],
+          "mean": 0.025641025641025644,
+          "std": 0.022205779584216375
+        },
+        "beneficial_flip_rate": {
+          "values": [
+            0.07692307692307693,
+            0,
+            0.07692307692307693
+          ],
+          "mean": 0.05128205128205129,
+          "std": 0.04441155916843275
+        },
+        "original_accuracy": {
+          "values": [
+            0.46153846153846156,
+            0.5384615384615384,
+            0.6153846153846154
+          ],
+          "mean": 0.5384615384615384,
+          "std": 0.07692307692307693
+        },
+        "counterfactual_accuracy": {
+          "values": [
+            0.5,
+            0.5384615384615384,
+            0.6538461538461539
+          ],
+          "mean": 0.5641025641025641,
+          "std": 0.08006407690254358
+        },
+        "mean_total_variation_distance": {
+          "values": [
+            0.05312843047655546,
+            0.029081909971025128,
+            0.04124968470289157
+          ],
+          "mean": 0.041153341716824055,
+          "std": 0.012023549749718091
+        },
+        "mean_absolute_gold_probability_shift": {
+          "values": [
+            0.03629772880902657,
+            0.025228586012067702,
+            0.03475723988734759
+          ],
+          "mean": 0.032094518236147285,
+          "std": 0.0059957522888036945
+        },
+        "mean_signed_gold_probability_shift": {
+          "values": [
+            0.019569646280545454,
+            0.011932717815328103,
+            0.013249045667740015
+          ],
+          "mean": 0.01491713658787119,
+          "std": 0.004082592875132153
+        }
+      }
+    },
+    "by_label": {
+      "entailment": {
+        "flip_rate": {
+          "values": [
+            0.12,
+            0,
+            0.08
+          ],
+          "mean": 0.06666666666666667,
+          "std": 0.061101009266077866
+        },
+        "harmful_flip_rate": {
+          "values": [
+            0,
+            0,
+            0.04
+          ],
+          "mean": 0.013333333333333334,
+          "std": 0.023094010767585032
+        },
+        "beneficial_flip_rate": {
+          "values": [
+            0.08,
+            0,
+            0.04
+          ],
+          "mean": 0.04,
+          "std": 0.04
+        },
+        "original_accuracy": {
+          "values": [
+            0.48,
+            0.64,
+            0.64
+          ],
+          "mean": 0.5866666666666667,
+          "std": 0.09237604307034014
+        },
+        "counterfactual_accuracy": {
+          "values": [
+            0.56,
+            0.64,
+            0.64
+          ],
+          "mean": 0.6133333333333334,
+          "std": 0.046188021535170036
+        },
+        "mean_total_variation_distance": {
+          "values": [
+            0.03796328721567988,
+            0.026001623813062907,
+            0.018899911474436523
+          ],
+          "mean": 0.02762160750105977,
+          "std": 0.009634382908364623
+        }
+      },
+      "contradiction": {
+        "flip_rate": {
+          "values": [
+            0.15,
+            0.05,
+            0.15
+          ],
+          "mean": 0.11666666666666667,
+          "std": 0.057735026918962574
+        },
+        "harmful_flip_rate": {
+          "values": [
+            0,
+            0,
+            0.05
+          ],
+          "mean": 0.016666666666666666,
+          "std": 0.02886751345948129
+        },
+        "beneficial_flip_rate": {
+          "values": [
+            0.15,
+            0.05,
+            0.1
+          ],
+          "mean": 0.1,
+          "std": 0.049999999999999996
+        },
+        "original_accuracy": {
+          "values": [
+            0.3,
+            0.4,
+            0.5
+          ],
+          "mean": 0.4,
+          "std": 0.1
+        },
+        "counterfactual_accuracy": {
+          "values": [
+            0.45,
+            0.45,
+            0.55
+          ],
+          "mean": 0.48333333333333334,
+          "std": 0.057735026918962595
+        },
+        "mean_total_variation_distance": {
+          "values": [
+            0.05342083417344838,
+            0.041057110344991085,
+            0.05708580710925162
+          ],
+          "mean": 0.05052125054256369,
+          "std": 0.00839853968940582
+        }
+      },
+      "neutral": {
+        "flip_rate": {
+          "values": [
+            0.0625,
+            0,
+            0
+          ],
+          "mean": 0.020833333333333332,
+          "std": 0.03608439182435161
+        },
+        "harmful_flip_rate": {
+          "values": [
+            0.0625,
+            0,
+            0
+          ],
+          "mean": 0.020833333333333332,
+          "std": 0.03608439182435161
+        },
+        "beneficial_flip_rate": {
+          "values": [
+            0,
+            0,
+            0
+          ],
+          "mean": 0,
+          "std": 0.0
+        },
+        "original_accuracy": {
+          "values": [
+            0.5625,
+            0.5625,
+            0.5625
+          ],
+          "mean": 0.5625,
+          "std": 0.0
+        },
+        "counterfactual_accuracy": {
+          "values": [
+            0.5,
+            0.5625,
+            0.5625
+          ],
+          "mean": 0.5416666666666666,
+          "std": 0.03608439182435161
+        },
+        "mean_total_variation_distance": {
+          "values": [
+            0.022903511038748547,
+            0.023610085496329702,
+            0.011246828798903152
+          ],
+          "mean": 0.019253475111327134,
+          "std": 0.006942953315788313
+        }
+      }
+    }
+  },
+  "cross_seed_pair_stability": {
+    "pairs_with_flip_in_at_least_one_seed": 11,
+    "rate_pairs_with_flip_in_at_least_one_seed": 0.18032786885245902,
+    "pairs_with_harmful_flip_in_at_least_one_seed": 3,
+    "rate_pairs_with_harmful_flip_in_at_least_one_seed": 0.04918032786885246,
+    "pairs_stable_in_all_three_seeds": 50,
+    "rate_pairs_stable_in_all_three_seeds": 0.819672131147541
+  }
+}

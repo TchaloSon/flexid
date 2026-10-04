@@ -1,0 +1,113 @@
+{
+  "experiment": "CamemBERT-base joint NLI + rationale span",
+  "script_version": "FLEXID-CAMEMBERT-JOINT-RATIONALE-v1.1-WINDOWED",
+  "model_id": "almanach/camembert-base",
+  "split_protocol": "FLEXID-EXACT-GROUP-SPLIT-v3",
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "runs": 3,
+  "metrics": {
+    "accuracy": {
+      "mean": 0.3688888888888889,
+      "std": 0.02341256389522829,
+      "min": 0.3466666666666667,
+      "max": 0.3933333333333333,
+      "values": [
+        0.3933333333333333,
+        0.36666666666666664,
+        0.3466666666666667
+      ]
+    },
+    "macro_f1": {
+      "mean": 0.27871699237387226,
+      "std": 0.04414185836582275,
+      "min": 0.22836661546338968,
+      "max": 0.3107575518109043,
+      "values": [
+        0.2970268098473227,
+        0.3107575518109043,
+        0.22836661546338968
+      ]
+    },
+    "cohen_kappa": {
+      "mean": 0.053333333333333365,
+      "std": 0.035118845842842396,
+      "min": 0.020000000000000125,
+      "max": 0.08999999999999998,
+      "values": [
+        0.08999999999999998,
+        0.04999999999999998,
+        0.020000000000000125
+      ]
+    },
+    "rationale_macro_token_f1": {
+      "mean": 0.6513225220979159,
+      "std": 0.0243913457722041,
+      "min": 0.6348463251726123,
+      "max": 0.6793429093497392,
+      "values": [
+        0.6397783317713961,
+        0.6793429093497392,
+        0.6348463251726123
+      ]
+    },
+    "rationale_macro_iou": {
+      "mean": 0.5440613040241646,
+      "std": 0.01908288962766306,
+      "min": 0.5273046464570134,
+      "max": 0.5648318681559127,
+      "values": [
+        0.5400473974595678,
+        0.5648318681559127,
+        0.5273046464570134
+      ]
+    },
+    "rationale_exact_match": {
+      "mean": 0.18868407578084997,
+      "std": 0.026543109120906856,
+      "min": 0.16129032258064516,
+      "max": 0.21428571428571427,
+      "values": [
+        0.21428571428571427,
+        0.19047619047619047,
+        0.16129032258064516
+      ]
+    },
+    "joint_iou_at_0_50": {
+      "mean": 0.2511111111111111,
+      "std": 0.04729732589731724,
+      "min": 0.2,
+      "max": 0.29333333333333333,
+      "values": [
+        0.26,
+        0.29333333333333333,
+        0.2
+      ]
+    },
+    "joint_exact_match": {
+      "mean": 0.1688888888888889,
+      "std": 0.06677768533918542,
+      "min": 0.1,
+      "max": 0.23333333333333334,
+      "values": [
+        0.17333333333333334,
+        0.23333333333333334,
+        0.1
+      ]
+    }
+  },
+  "windowing": {
+    "max_length": 512,
+    "doc_stride": 128,
+    "classification_aggregation": "mean softmax probabilities",
+    "span_window_selection": "highest predicted-label probability"
+  },
+  "rationale_metric_definition": {
+    "tokenization": "\\S+ on premise",
+    "macro_span_set": "instances where gold and prediction are both non-neutral",
+    "joint_iou_at_0_50": "label correct AND rationale IoU >= 0.50; correct neutral predictions count as joint successes"
+  }
+}

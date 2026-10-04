@@ -1,0 +1,96 @@
+{
+  "created_at_utc": "2026-09-21T06:52:51.549338+00:00",
+  "training_script_version": "FLEXID-ENCODER-TRAIN-v3.0",
+  "software": {
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "2.2.1",
+    "torch": "2.12.0+cpu",
+    "transformers": "5.9.0",
+    "datasets": "5.0.1",
+    "scikit_learn": "1.8.0"
+  },
+  "task": "three-class NLI label classification",
+  "rationales_predicted": false,
+  "split_protocol_version": "FLEXID-EXACT-GROUP-SPLIT-v3",
+  "split_source_sha256": "1114bdaf990f25c305415ff1252ec429912c343744f5edac03bb4495d2dd3d07",
+  "split_file_sha256": {
+    "train": "6f50032ad860baa697efe5eb0b41e7b45c2b6a0949da5cb5b88d1deb39bcd712",
+    "validation": "01ba50651fa1f5266bf32533564215c03a5a14845f7e402669671b499872f19a",
+    "test": "f9acae1c9d602a7dca8ffe0bc3e717e12d85c85810312113119207ce74e702ee"
+  },
+  "split_sizes": {
+    "train": 701,
+    "validation": 151,
+    "test": 150
+  },
+  "split_label_distribution": {
+    "train": {
+      "entailment": 236,
+      "contradiction": 233,
+      "neutral": 232
+    },
+    "validation": {
+      "entailment": 51,
+      "contradiction": 50,
+      "neutral": 50
+    },
+    "test": {
+      "entailment": 50,
+      "contradiction": 50,
+      "neutral": 50
+    }
+  },
+  "models": [
+    {
+      "key": "camembert_base",
+      "display_name": "CamemBERT-base",
+      "model_id": "almanach/camembert-base"
+    },
+    {
+      "key": "juribert_base",
+      "display_name": "JuriBERT-base",
+      "model_id": "dascim/juribert-base"
+    }
+  ],
+  "training_seeds_by_model": {
+    "camembert_base": [
+      2026,
+      2027,
+      2028
+    ],
+    "juribert_base": [
+      2026,
+      2027,
+      2028
+    ]
+  },
+  "input_fields": [
+    "premise",
+    "hypothesis_facts"
+  ],
+  "ignored_fields": [
+    "law_ref",
+    "meta.law_ref",
+    "rationale_start",
+    "rationale_end",
+    "rationale_text",
+    "tokenized_premise"
+  ],
+  "training_configuration": {
+    "max_length": 512,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "num_train_epochs_max": 8,
+    "warmup_ratio": 0.1,
+    "preferred_per_device_train_batch_size": 16,
+    "preferred_per_device_eval_batch_size": 32,
+    "preferred_gradient_accumulation_steps": 1,
+    "preferred_effective_train_batch_size": 16,
+    "auto_oom_batch_fallback": true,
+    "fallback_per_device_train_batch_size": 8,
+    "fallback_per_device_eval_batch_size": 16,
+    "fallback_gradient_accumulation_steps": 2,
+    "fallback_effective_train_batch_size": 16,
+    "early_stopping_patience": 2
+  }
+}

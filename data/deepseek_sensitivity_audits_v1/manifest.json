@@ -1,0 +1,22 @@
+{
+  "audit_version": "FLEXID-DEEPSEEK-SENSITIVITY-v1.0",
+  "created_at_utc": "2026-09-26T13:27:01.063401+00:00",
+  "model": "deepseek-v4-flash",
+  "base_url": "https://api.deepseek.com",
+  "thinking": {
+    "type": "enabled"
+  },
+  "reasoning_effort": "high",
+  "max_output_tokens": 8192,
+  "temperature_explicitly_set": false,
+  "system_prompt_sha256": "c0f0f7ead3222030267a6a13f36bfd7189ddce5c22c21a8ae884449831adcc34",
+  "response_format": {
+    "type": "json_object"
+  },
+  "one_request_per_unique_premise_hypothesis_pair": true,
+  "reasoning_content_saved": false,
+  "gold_sent_to_model": false,
+  "name_base_sha256": "2d444abd5ac80ac02e15f5349994d9d33147fd7e44014819493988bf542f2dbd",
+  "name_challenge_sha256": "99f24c2bacb86a7e765255723d90a9a193166e8c503715a54ec9004da453847f",
+  "gender_challenge_sha256": "981fdcd4f8dd6684342ca6467ccc12fbaa0626400f9c3c58913632fb91fff2ab"
+}

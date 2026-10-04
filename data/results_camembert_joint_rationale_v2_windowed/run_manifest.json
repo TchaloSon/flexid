@@ -1,0 +1,78 @@
+{
+  "experiment": "CamemBERT-base joint NLI + rationale span",
+  "created_at_utc": "2026-09-21T12:29:57.979032+00:00",
+  "script_version": "FLEXID-CAMEMBERT-JOINT-RATIONALE-v1.1-WINDOWED",
+  "project_root": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid",
+  "split_directory": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_exact_group_split",
+  "split_protocol": "FLEXID-EXACT-GROUP-SPLIT-v3",
+  "split_sizes": {
+    "train": 701,
+    "validation": 151,
+    "test": 150
+  },
+  "label_distributions": {
+    "train": {
+      "contradiction": 233,
+      "entailment": 236,
+      "neutral": 232
+    },
+    "validation": {
+      "neutral": 50,
+      "entailment": 51,
+      "contradiction": 50
+    },
+    "test": {
+      "neutral": 50,
+      "entailment": 50,
+      "contradiction": 50
+    }
+  },
+  "model_id": "almanach/camembert-base",
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "environment": {
+    "python": "3.13.1",
+    "python_executable": "C:\\Users\\TETEREOU Aboudouraza\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "numpy": "2.2.1",
+    "torch": "2.12.0+cpu",
+    "transformers": "5.9.0",
+    "cuda_available": false,
+    "cuda_version": null,
+    "device": "cpu"
+  },
+  "training": {
+    "max_length": 512,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "epochs_max": 8,
+    "warmup_ratio": 0.1,
+    "train_batch_size": 16,
+    "eval_batch_size": 32,
+    "gradient_accumulation_steps": 1,
+    "max_grad_norm": 1.0,
+    "span_loss_weight": 1.0,
+    "early_stopping_patience": 2,
+    "selection": "validation Joint IoU@0.50; Macro-F1 label as tie-break"
+  },
+  "task": {
+    "label_head": "3-class NLI classification from first sequence token",
+    "span_heads": "start/end token positions over premise tokens only",
+    "neutral_span_training": "ignored (-100); predicted neutral => no span",
+    "loss": "CE(label) + lambda * mean(CE(start), CE(end))",
+    "lambda": 1.0
+  },
+  "evaluation": {
+    "rationale_tokenization": "\\S+ on the original premise",
+    "gold_char_span": "start inclusive, end exclusive",
+    "reported_span": "start inclusive, end inclusive",
+    "joint_iou_at_0_50": "correct label + rationale IoU>=0.50; correct neutral counts as a joint success",
+    "deepseek_comparable": true
+  },
+  "split_summary_sha256": "59fa1e9af1d241b99a8bdd5f2d46307fa587cf8f0b987b1391e386a9adb4c9ab",
+  "train_sha256": "6f50032ad860baa697efe5eb0b41e7b45c2b6a0949da5cb5b88d1deb39bcd712",
+  "validation_sha256": "01ba50651fa1f5266bf32533564215c03a5a14845f7e402669671b499872f19a",
+  "test_sha256": "f9acae1c9d602a7dca8ffe0bc3e717e12d85c85810312113119207ce74e702ee"
+}

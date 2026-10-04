@@ -1,0 +1,157 @@
+{
+  "experiment": "CamemBERT-base joint NLI + rationale span",
+  "created_at_utc": "2026-09-21T15:25:44.664544+00:00",
+  "seed": 2027,
+  "best_epoch": 4,
+  "run_signature": {
+    "script_version": "FLEXID-CAMEMBERT-JOINT-RATIONALE-v1.1-WINDOWED",
+    "split_protocol": "FLEXID-EXACT-GROUP-SPLIT-v3",
+    "model_id": "almanach/camembert-base",
+    "train_sha256": "6f50032ad860baa697efe5eb0b41e7b45c2b6a0949da5cb5b88d1deb39bcd712",
+    "validation_sha256": "01ba50651fa1f5266bf32533564215c03a5a14845f7e402669671b499872f19a",
+    "test_sha256": "f9acae1c9d602a7dca8ffe0bc3e717e12d85c85810312113119207ce74e702ee",
+    "max_length": 512,
+    "doc_stride": 128,
+    "windowing": "overflow on premise only; hypothesis repeated in each window",
+    "classification_window_aggregation": "mean softmax probabilities",
+    "span_window_selection": "highest probability for aggregated predicted non-neutral label",
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "epochs": 8,
+    "warmup_ratio": 0.1,
+    "train_batch_size": 16,
+    "eval_batch_size": 32,
+    "gradient_accumulation_steps": 1,
+    "span_loss_weight": 1.0,
+    "selection_metric": "validation joint_iou_at_0_50; tie-break macro_f1",
+    "early_stopping_patience": 2,
+    "evaluation_rationale_tokenization": "\\S+",
+    "environment": {
+      "python": "3.13.1",
+      "python_executable": "C:\\Users\\TETEREOU Aboudouraza\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "numpy": "2.2.1",
+      "torch": "2.12.0+cpu",
+      "transformers": "5.9.0",
+      "cuda_available": false,
+      "cuda_version": null,
+      "device": "cpu"
+    },
+    "seed": 2027
+  },
+  "validation_loss": 3.0070017337799073,
+  "test_loss": 3.214880895614624,
+  "validation": {
+    "classification": {
+      "accuracy": 0.40397350993377484,
+      "macro_precision": 0.3520922123208059,
+      "macro_recall": 0.4037908496732026,
+      "macro_f1": 0.3291564505785789,
+      "cohen_kappa": 0.10550911604028172,
+      "per_class": {
+        "entailment": {
+          "precision": 0.3793103448275862,
+          "recall": 0.43137254901960786,
+          "f1": 0.40366972477064217,
+          "support": 51
+        },
+        "contradiction": {
+          "precision": 0.25,
+          "recall": 0.02,
+          "f1": 0.037037037037037035,
+          "support": 50
+        },
+        "neutral": {
+          "precision": 0.42696629213483145,
+          "recall": 0.76,
+          "f1": 0.5467625899280575,
+          "support": 50
+        }
+      },
+      "confusion_matrix_gold_rows_pred_columns": {
+        "entailment": {
+          "entailment": 22,
+          "contradiction": 1,
+          "neutral": 28
+        },
+        "contradiction": {
+          "entailment": 26,
+          "contradiction": 1,
+          "neutral": 23
+        },
+        "neutral": {
+          "entailment": 10,
+          "contradiction": 2,
+          "neutral": 38
+        }
+      }
+    },
+    "rationale": {
+      "s_span_definition": "instances où gold et modèle donnent tous deux un label non-neutral",
+      "s_span": 50,
+      "both_neutral": 38,
+      "neutral_vs_non_neutral_disagreements": 63,
+      "macro_token_f1": 0.6936981309278654,
+      "macro_iou": 0.5854934155891178,
+      "exact_match": 0.24,
+      "joint_iou_at_0_50": 0.3443708609271523,
+      "joint_exact_match": 0.304635761589404
+    }
+  },
+  "test": {
+    "classification": {
+      "accuracy": 0.36666666666666664,
+      "macro_precision": 0.4658020886834446,
+      "macro_recall": 0.36666666666666664,
+      "macro_f1": 0.3107575518109043,
+      "cohen_kappa": 0.04999999999999998,
+      "per_class": {
+        "entailment": {
+          "precision": 0.3898305084745763,
+          "recall": 0.46,
+          "f1": 0.4220183486238532,
+          "support": 50
+        },
+        "contradiction": {
+          "precision": 0.6666666666666666,
+          "recall": 0.04,
+          "f1": 0.07547169811320754,
+          "support": 50
+        },
+        "neutral": {
+          "precision": 0.3409090909090909,
+          "recall": 0.6,
+          "f1": 0.43478260869565216,
+          "support": 50
+        }
+      },
+      "confusion_matrix_gold_rows_pred_columns": {
+        "entailment": {
+          "entailment": 23,
+          "contradiction": 1,
+          "neutral": 26
+        },
+        "contradiction": {
+          "entailment": 16,
+          "contradiction": 2,
+          "neutral": 32
+        },
+        "neutral": {
+          "entailment": 20,
+          "contradiction": 0,
+          "neutral": 30
+        }
+      }
+    },
+    "rationale": {
+      "s_span_definition": "instances où gold et modèle donnent tous deux un label non-neutral",
+      "s_span": 42,
+      "both_neutral": 30,
+      "neutral_vs_non_neutral_disagreements": 78,
+      "macro_token_f1": 0.6793429093497392,
+      "macro_iou": 0.5648318681559127,
+      "exact_match": 0.19047619047619047,
+      "joint_iou_at_0_50": 0.29333333333333333,
+      "joint_exact_match": 0.23333333333333334
+    }
+  }
+}

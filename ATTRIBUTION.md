@@ -1,73 +1,45 @@
-# How to Attribute FLEXID
+# FLEXID attribution
 
-## Short attribution
+FLEXID — French Legal Explainable Inference Dataset. Copyright © 2026 Aboudourazakou Tetereou, Tarik Boudaa, and El Wardani Dadi. Original dataset contributions and documentation: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
 
-> FLEXID — French Legal Explainable Inference Dataset, © 2026 Aboudourazakou
-> Tetereou, Tarik Boudaa, and El Wardani Dadi, CC BY 4.0. Official French legal
-> information: DILA/Légifrance and Cour de cassation/Judilibre, Licence
-> Ouverte 2.0.
+Repository: https://github.com/TchalosonForResearch/flexid
 
-## Attribution for an academic publication
-
-Please:
-
-1. cite the FLEXID paper;
-2. identify the dataset release tag, version, or archived record used;
-3. link to the public dataset repository or archive;
-4. state whether the dataset was modified; and
-5. retain the official legal-source references distributed with each instance.
-
-Suggested prose:
-
-> We use FLEXID (French Legal Explainable Inference Dataset), © 2026
-> Aboudourazakou Tetereou, Tarik Boudaa, and El Wardani Dadi, under CC BY 4.0.
-> We used the release identified in our reproducibility materials. Official
-> French legal information incorporated in FLEXID originates from
-> DILA/Légifrance and, where applicable, the Cour de cassation/Judilibre, and
-> remains subject to Licence Ouverte 2.0.
-
-## BibTeX
-
-Update this entry with the journal, DOI, volume, pages, and final publication
-year once the article is published.
+## Dataset citation
 
 ```bibtex
 @misc{tetereou2026flexid,
+  author       = {Tetereou, Aboudourazakou and Boudaa, Tarik and Dadi, El Wardani},
   title        = {{FLEXID}: A Benchmark for Explainable Legal Inference
                   in French Civil Law, with Rationale Spans},
-  author       = {Tetereou, Aboudourazakou and Boudaa, Tarik and
-                  Dadi, El Wardani},
   year         = {2026},
   howpublished = {Dataset and accompanying manuscript},
   url          = {https://github.com/TchalosonForResearch/flexid},
-  note         = {Dataset licensed under CC BY 4.0; incorporated official
-                  French legal information remains subject to Licence
-                  Ouverte 2.0}
+  note         = {Original dataset contributions and documentation: CC BY 4.0.
+                  Third-party material retains its source-specific terms}
 }
 ```
 
-## Attribution for a derivative dataset
+This entry identifies the dataset and accompanying manuscript, without asserting journal publication or assigning a DOI.
 
-Suggested wording:
+## Reuse attribution
 
-> This dataset is adapted from FLEXID, © 2026 Aboudourazakou Tetereou, Tarik
-> Boudaa, and El Wardani Dadi, used under CC BY 4.0. The authors of FLEXID do
-> not endorse this derivative. A description of all changes is provided in the
-> derivative dataset's change log. Official French legal information remains
-> attributed to its original public producer and subject to Licence Ouverte
-> 2.0 and the applicable source terms.
+> FLEXID, © 2026 Aboudourazakou Tetereou, Tarik Boudaa, and El Wardani Dadi, https://github.com/TchalosonForResearch/flexid. Original dataset contributions and documentation are licensed under CC BY 4.0. Official legal information and external pedagogical material remain attributed to their respective sources under the terms described in THIRD_PARTY_NOTICES.md.
 
-## Attribution inside a model or dataset card
+A redistribution identifies the version used and indicates any changes. Citation of FLEXID does not replace attribution of incorporated third-party material. Existing source references and available dates or version identifiers accompany the reused material.
+
+## Source attribution
+
+- DILA/Légifrance: identify DILA, the legal reference, source URL and the last-update date of the reused information; apply Licence Ouverte 2.0 and applicable access terms.
+- Cour de cassation/Judilibre: identify the court, decision reference and source date; apply Licence Ouverte 2.0 and the applicable reuse conditions.
+- Conseil d'État/ArianeWeb: identify the decision or analysis, its date and URL, with the attribution “Source : site internet du Conseil d'État”; apply the source's reuse terms.
+- Teaching and examination resources: identify the publisher and the linked resource. Listing a source does not grant permission to reproduce its protected contents.
+
+## Dataset-card metadata
 
 ```yaml
 license: cc-by-4.0
-license_name: CC BY 4.0 for original FLEXID contributions
+license_name: CC BY 4.0 for original FLEXID dataset contributions and documentation
 license_link: https://creativecommons.org/licenses/by/4.0/legalcode
 ```
 
-Add the following text directly below the metadata:
-
-> The license field above applies to original FLEXID contributions. Official
-> legal texts and related source metadata remain subject to Licence Ouverte
-> 2.0 and applicable Légifrance or Cour de cassation/Judilibre terms. See
-> `THIRD_PARTY_NOTICES.md`.
+This metadata applies to the original FLEXID material covered by LICENSE.md. It does not extend to third-party texts, model weights or software. Source-specific terms are documented in THIRD_PARTY_NOTICES.md.

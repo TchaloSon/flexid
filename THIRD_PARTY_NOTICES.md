@@ -1,82 +1,51 @@
-# FLEXID Third-Party Notices
+# FLEXID third-party notices
 
-This file identifies material in FLEXID that originates from third-party
-public legal sources. It forms part of the dataset's licensing documentation.
+These notices distinguish the original FLEXID dataset contributions from the external legal and pedagogical sources. The CC BY 4.0 grant in [LICENSE.md](LICENSE.md) does not relicense third-party material.
 
-## 1. Légifrance
+## DILA and Légifrance
 
-FLEXID contains or derives normative premises and legal-reference metadata
-from Légifrance, the official French public service for the dissemination of
-law.
+Statutory provisions and associated legal-reference metadata obtained from Légifrance are attributed to the Direction de l'information légale et administrative (DILA).
 
-- **Producer:** Direction de l'information légale et administrative (DILA)
-- **Source:** [Légifrance](https://www.legifrance.gouv.fr/)
-- **Open-data information:** [Open data and API](https://www.legifrance.gouv.fr/contenu/pied-de-page/open-data-et-api)
-- **License:** [Licence Ouverte / Open Licence 2.0](https://www.etalab.gouv.fr/licence-ouverte-open-licence)
-- **Additional terms:** Any applicable Légifrance or PISTE API terms of use
+- Source: https://www.legifrance.gouv.fr/
+- Open-data and API terms: https://www.legifrance.gouv.fr/contenu/pied-de-page/open-data-et-api
+- Licence Ouverte 2.0: https://www.data.gouv.fr/pages/legal/licences/etalab-2.0
 
-Recommended attribution:
+Reuse retains the producer attribution, source and last-update date of the information. Extracts or reformulations must not be represented as an official consolidated text. API access is also subject to the applicable service conditions.
 
-> Source: Direction de l'information légale et administrative (DILA),
-> Légifrance, legal reference and source date or version recorded in FLEXID.
-> Reused under Licence Ouverte 2.0.
+## Cour de cassation and Judilibre
 
-## 2. Cour de cassation and Judilibre
+Court decisions and associated legal information obtained from the Cour de cassation or Judilibre retain the court attribution and their source-specific conditions.
 
-Some FLEXID premises are based on statements of principle or case-law material
-published by the Cour de cassation. Where the source material was obtained
-through Judilibre, its reuse is also governed by the applicable Judilibre
-terms.
+- Source: https://www.courdecassation.fr/
+- Open data: https://www.courdecassation.fr/acces-rapide-judilibre/donnees-ouvertes-open-data-et-api
+- Reuse conditions: https://www.courdecassation.fr/conditions-generales-dutilisation-pour-la-reutilisation-des-donnees-judiciaires-ouvertes-open-data
+- Licence Ouverte 2.0: https://www.data.gouv.fr/pages/legal/licences/etalab-2.0
 
-- **Producer:** Cour de cassation
-- **Source:** [Cour de cassation](https://www.courdecassation.fr/)
-- **Open-data service:** [Judilibre](https://www.courdecassation.fr/acces-rapide-judilibre)
-- **License:** [Licence Ouverte / Open Licence 2.0](https://www.etalab.gouv.fr/licence-ouverte-open-licence)
-- **Additional terms:** Any applicable Judilibre or PISTE terms of use
+A decision reference, source and date identify the reused information. A source citation to the court does not imply that every item was retrieved through the Judilibre API.
 
-Recommended attribution:
+## Conseil d'État and ArianeWeb
 
-> Source: Cour de cassation / Judilibre, decision identifier or legal
-> reference and source date recorded in FLEXID. Reused under Licence Ouverte
-> 2.0.
+The source bibliography includes the ArianeWeb analysis of Conseil d'État decision no. 362444, read on 31 January 2014. This is a case-law source, not a pedagogical exercise.
 
-If a premise was obtained directly from another official page rather than
-Judilibre, the precise page and any terms displayed by that source should be
-retained in the instance metadata.
+- Analysis: https://www.conseil-etat.fr/fr/arianeweb/CE/analyse/2014-01-31/362444
+- Source terms: https://www.conseil-etat.fr/bas-de-page/mentions-legales
 
-## 3. Required treatment of official information
+Attribution: **Source : site internet du Conseil d'État — ArianeWeb, analyse de la décision no 362444 du 31 janvier 2014.**
 
-When redistributing FLEXID or a derivative:
+The Conseil d'État's site specifies conditions for reuse of its public information, including document integrity, source linkage and document/update dates, and excludes protected content from that general permission. This notice does not extend the DILA or Judilibre license to unrelated content hosted on the Conseil d'État's site.
 
-1. preserve the available legal reference and source metadata;
-2. identify the official producer and applicable license;
-3. state the date or version of the information when available;
-4. indicate any modification, normalization, truncation, or reformulation;
-5. do not imply that an adapted text is an official consolidated version;
-6. do not mislead users about the source, legal status, or currency of the
-   information; and
-7. consult the current source terms if the official information is refreshed.
+## Teaching and assessment references
 
-## 4. Pedagogically grounded scenarios
+[pratical_cases_source.md](pratical_cases_source.md) identifies the teaching and examination resources in the source bibliography. They include commercial legal-education websites, an Académie de Créteil teaching resource and a Conseil national des barreaux examination document.
 
-FLEXID includes rewritten factual scenarios inspired by undergraduate
-civil-law teaching exercises. The dataset maintainers state that the original
-questions and answers are not reproduced.
+These references are distinct from official statutes and decisions. Public accessibility alone does not place pedagogical content under Licence Ouverte 2.0 or CC BY 4.0. The FLEXID license covers only original wording and annotations within the authors' licensing authority; it does not grant rights in linked exercises, examination questions, answers or illustrations. The source documents themselves are not reproduced in this scripts-and-documentation package.
 
-The CC BY 4.0 grant in [`LICENSE.md`](LICENSE.md) applies only to the original
-FLEXID wording and annotations that the maintainers are authorized to license.
-If any third-party examination question, assignment, model answer, or other
-protected teaching material is later added, it must be removed or accompanied
-by a separate permission and notice before public release.
+## Attribution and adaptations
 
-## 5. No endorsement
+Redistribution preserves the available legal reference, source, date and version information. Adapted or truncated passages are identified as such, without implying official status or endorsement. The respective source licenses and conditions remain applicable.
 
-Use of official legal information does not imply endorsement of FLEXID, its
-annotations, its conclusions, or downstream systems by the French Republic,
-DILA, Légifrance, the Cour de cassation, or Judilibre.
+No endorsement of FLEXID or downstream systems by DILA, Légifrance, the Cour de cassation, Judilibre, the Conseil d'État or any pedagogical publisher is implied.
 
-## 6. Scope
+## Software, dependencies and models
 
-These notices describe the source layers present in FLEXID. They do not replace
-the complete Licence Ouverte 2.0, the applicable source-specific terms, or
-independent legal advice.
+The dataset license does not cover the software scripts, external Python dependencies, pretrained model weights, trademarks or hosted-model services. Those components retain their respective rights and terms. This package contains no third-party model weights or vendored dependency code.

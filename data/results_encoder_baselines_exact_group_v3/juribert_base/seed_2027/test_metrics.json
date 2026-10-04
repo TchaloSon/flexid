@@ -1,0 +1,127 @@
+{
+  "created_at_utc": "2026-09-21T08:33:33.295515+00:00",
+  "run_signature": {
+    "training_script_version": "FLEXID-ENCODER-TRAIN-v3.0",
+    "model_key": "juribert_base",
+    "model_id": "dascim/juribert-base",
+    "seed": 2027,
+    "split_file_sha256": {
+      "train": "6f50032ad860baa697efe5eb0b41e7b45c2b6a0949da5cb5b88d1deb39bcd712",
+      "validation": "01ba50651fa1f5266bf32533564215c03a5a14845f7e402669671b499872f19a",
+      "test": "f9acae1c9d602a7dca8ffe0bc3e717e12d85c85810312113119207ce74e702ee"
+    },
+    "training_configuration": {
+      "max_length": 512,
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "num_train_epochs_max": 8,
+      "warmup_ratio": 0.1,
+      "preferred_per_device_train_batch_size": 16,
+      "preferred_per_device_eval_batch_size": 32,
+      "preferred_gradient_accumulation_steps": 1,
+      "auto_oom_batch_fallback": true,
+      "fallback_per_device_train_batch_size": 8,
+      "fallback_per_device_eval_batch_size": 16,
+      "fallback_gradient_accumulation_steps": 2,
+      "early_stopping_patience": 2
+    }
+  },
+  "model_key": "juribert_base",
+  "model_display_name": "JuriBERT-base",
+  "model_id": "dascim/juribert-base",
+  "seed": 2027,
+  "effective_max_length": 512,
+  "tokenizer_backend": "fast",
+  "training_configuration": {
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "num_train_epochs_max": 8,
+    "warmup_ratio": 0.1,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 32,
+    "gradient_accumulation_steps": 1,
+    "effective_train_batch_size": 16,
+    "batch_fallback_used": false,
+    "early_stopping_patience": 2,
+    "precision": "fp32"
+  },
+  "split_sizes": {
+    "train": 701,
+    "validation": 151,
+    "test": 150
+  },
+  "best_model_checkpoint": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\results_encoder_baselines_exact_group_v3\\juribert_base\\seed_2027\\checkpoints\\checkpoint-308",
+  "best_validation_metric": 0.5034324942791762,
+  "validation_metrics": {
+    "validation_loss": 1.0402894020080566,
+    "validation_accuracy": 0.5033112582781457,
+    "validation_macro_precision": 0.5118882275132275,
+    "validation_macro_recall": 0.5028758169934641,
+    "validation_macro_f1": 0.5034324942791762,
+    "validation_weighted_precision": 0.51149906706612,
+    "validation_weighted_recall": 0.5033112582781457,
+    "validation_weighted_f1": 0.5034385560792276,
+    "validation_runtime": 20.3558,
+    "validation_samples_per_second": 7.418,
+    "validation_steps_per_second": 0.246,
+    "epoch": 8.0
+  },
+  "test": {
+    "accuracy": 0.46,
+    "macro_precision": 0.459022985732439,
+    "macro_recall": 0.45999999999999996,
+    "macro_f1": 0.45911702820767514,
+    "weighted_precision": 0.459022985732439,
+    "weighted_recall": 0.46,
+    "weighted_f1": 0.45911702820767514,
+    "per_class": {
+      "entailment": {
+        "precision": 0.47058823529411764,
+        "recall": 0.48,
+        "f1": 0.4752475247524752,
+        "support": 50
+      },
+      "contradiction": {
+        "precision": 0.43478260869565216,
+        "recall": 0.4,
+        "f1": 0.4166666666666667,
+        "support": 50
+      },
+      "neutral": {
+        "precision": 0.4716981132075472,
+        "recall": 0.5,
+        "f1": 0.4854368932038835,
+        "support": 50
+      }
+    },
+    "confusion_matrix": {
+      "row_labels_gold": [
+        "entailment",
+        "contradiction",
+        "neutral"
+      ],
+      "column_labels_prediction": [
+        "entailment",
+        "contradiction",
+        "neutral"
+      ],
+      "values": [
+        [
+          24,
+          12,
+          14
+        ],
+        [
+          16,
+          20,
+          14
+        ],
+        [
+          11,
+          14,
+          25
+        ]
+      ]
+    }
+  }
+}

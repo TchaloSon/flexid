@@ -1,0 +1,13 @@
+{
+  "best_grouped_cv_balanced_accuracy": 0.528904497122232,
+  "best_parameters": {
+    "classifier__C": 0.125,
+    "classifier__class_weight": null
+  },
+  "representation": [
+    "premise_tfidf",
+    "hypothesis_tfidf",
+    "absolute_difference",
+    "elementwise_overlap"
+  ]
+}

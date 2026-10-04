@@ -1,0 +1,71 @@
+{
+  "comparison": [
+    {
+      "variant": "hypothesis_only",
+      "accuracy": 0.4820359281437126,
+      "balanced_accuracy": 0.4822202346066347,
+      "macro_f1": 0.4827603649925822,
+      "weighted_f1": 0.4825476599899575,
+      "delta_vs_majority": 0.14570858283433136
+    },
+    {
+      "variant": "premise_only",
+      "accuracy": 0.3343313373253493,
+      "balanced_accuracy": 0.3339548300221855,
+      "macro_f1": 0.33073084906436845,
+      "weighted_f1": 0.33092764418228793,
+      "delta_vs_majority": -0.0019960079840319334
+    },
+    {
+      "variant": "premise_plus_hypothesis",
+      "accuracy": 0.5329341317365269,
+      "balanced_accuracy": 0.5332633140809466,
+      "macro_f1": 0.5325328569248384,
+      "weighted_f1": 0.5322732447628116,
+      "delta_vs_majority": 0.19660678642714569
+    },
+    {
+      "variant": "shuffled_premise",
+      "accuracy": 0.48303393213572854,
+      "balanced_accuracy": 0.48427284851617197,
+      "macro_f1": 0.460470362946831,
+      "weighted_f1": 0.45977268436356755,
+      "delta_vs_majority": 0.1467065868263473
+    }
+  ],
+  "relational_audit": {
+    "full_accuracy": 0.5329341317365269,
+    "hypothesis_only_accuracy": 0.4820359281437126,
+    "premise_only_accuracy": 0.3343313373253493,
+    "shuffled_premise_accuracy": 0.48303393213572854,
+    "full_gain_over_hypothesis_only": 0.05089820359281433,
+    "full_gain_over_premise_only": 0.19860279441117762,
+    "drop_when_premise_is_shuffled": 0.04990019960079839,
+    "paired_group_bootstrap": {
+      "correct_pair_minus_hypothesis_only": {
+        "metric": "accuracy",
+        "first_minus_second": 0.05089820359281433,
+        "confidence_interval_95": [
+          0.024975024975024976,
+          0.0767677271216653
+        ],
+        "method": "paired percentile cluster bootstrap over leakage-control groups",
+        "groups": 335,
+        "iterations": 10000,
+        "seed": 2026
+      },
+      "correct_pair_minus_shuffled_premise": {
+        "metric": "accuracy",
+        "first_minus_second": 0.04990019960079839,
+        "confidence_interval_95": [
+          0.022907227947058684,
+          0.0769980747360339
+        ],
+        "method": "paired percentile cluster bootstrap over leakage-control groups",
+        "groups": 335,
+        "iterations": 10000,
+        "seed": 2026
+      }
+    }
+  }
+}

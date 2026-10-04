@@ -1,0 +1,31 @@
+FLEXID — Évaluation du modèle contre le gold
+============================================================
+Système évalué : DeepSeek-V4-Flash
+Gold : C:\Users\TETEREOU Aboudouraza\Desktop\GIT_FLEXID_V2\flexid\data\flexid_kappa_rationale_180_unique_law_refs_60_each_gold.jsonl
+Modèle évalué (DeepSeek-V4-Flash) : C:\Users\TETEREOU Aboudouraza\Desktop\GIT_FLEXID_V2\flexid\data\flexid_deepseek_v4_flash_predictions.jsonl
+
+A. LABELS
+Instances alignées : 180
+Accord brut : 0.9167 (165/180)
+Cohen's kappa : 0.8750
+IC bootstrap 95 % de kappa : [0.8083, 0.9333]
+Accord attendu p_e : 0.3333
+
+Matrice de confusion — lignes=gold, colonnes=système évalué
+                         entailment  contradiction  neutral
+entailment                       55              0        5
+contradiction                     1             55        4
+neutral                           4              1       55
+
+B. RATIONALE SPANS
+S_span : N=110
+Macro-F1 token : 0.8762
+IC bootstrap 95 % du Macro-F1 : [0.8412, 0.9085]
+Macro-IoU : 0.8192
+Exact Match strict : 0.5000 (55/110)
+
+C. NEUTRAL
+NRA : 0.9167 (55/60)
+
+D. BOUT-EN-BOUT
+Joint IoU@0.50 : 0.8389 (151/180)

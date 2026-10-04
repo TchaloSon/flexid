@@ -26,8 +26,8 @@ SPLIT_RELATIVE_DIRECTORY = (
     Path("data") / "flexid_exact_group_split"
 )
 
-SPLIT_PROTOCOL_VERSION = "FLEXID-EXACT-GROUP-SPLIT-v2"
-TRAINING_SCRIPT_VERSION = "FLEXID-ENCODER-TRAIN-v2.1"
+SPLIT_PROTOCOL_VERSION = "FLEXID-EXACT-GROUP-SPLIT-v3"
+TRAINING_SCRIPT_VERSION = "FLEXID-ENCODER-TRAIN-v3.0"
 
 EXPECTED_INSTANCE_COUNT = 1002
 
@@ -56,10 +56,10 @@ ID_TO_LABEL = {index: label for label, index in LABEL_TO_ID.items()}
 
 TRAINING_SEEDS_BY_MODEL = {
     "camembert_base": (2026, 2027, 2028),
-    "juribert_base": (2026,),
+    "juribert_base": (2026, 2027, 2028),
 }
 
-OUTPUT_DIRECTORY_NAME = "results_encoder_baselines_exact_group_v2"
+OUTPUT_DIRECTORY_NAME = "results_encoder_baselines_exact_group_v3"
 
 MAX_LENGTH = 512
 LEARNING_RATE = 2e-5
@@ -67,9 +67,16 @@ WEIGHT_DECAY = 0.01
 NUM_TRAIN_EPOCHS = 8
 WARMUP_RATIO = 0.10
 
-PER_DEVICE_TRAIN_BATCH_SIZE = 8
-PER_DEVICE_EVAL_BATCH_SIZE = 16
-GRADIENT_ACCUMULATION_STEPS = 2
+PER_DEVICE_TRAIN_BATCH_SIZE = 16
+PER_DEVICE_EVAL_BATCH_SIZE = 32
+GRADIENT_ACCUMULATION_STEPS = 1
+
+# Si le GPU manque de VRAM avec batch=16, le script retente automatiquement
+# avec batch=8 et accumulation=2, donc le batch effectif reste 16.
+AUTO_OOM_BATCH_FALLBACK = True
+FALLBACK_TRAIN_BATCH_SIZE = 8
+FALLBACK_EVAL_BATCH_SIZE = 16
+FALLBACK_GRADIENT_ACCUMULATION_STEPS = 2
 
 EARLY_STOPPING_PATIENCE = 2
 SAVE_TOTAL_LIMIT = 1
@@ -174,7 +181,7 @@ def find_project_root_and_split_dir() -> tuple[Path, Path]:
     rendered = "\n".join(f"  - {path}" for path in checked)
 
     raise FileNotFoundError(
-        "Split exact-group v2 introuvable. Dossiers vérifiés :\n"
+        "Split exact-group v3 introuvable. Dossiers vérifiés :\n"
         f"{rendered}\n"
         "Place le script à la racine de FLEXID_FINAL ou dans scripts/."
     )
@@ -473,6 +480,8 @@ def import_training_dependencies() -> dict[str, Any]:
         import numpy as np
         import torch
         import transformers
+        import datasets
+        import sklearn
 
         from datasets import Dataset
         from sklearn.metrics import (
@@ -501,7 +510,12 @@ def import_training_dependencies() -> dict[str, Any]:
     return {
         "np": np,
         "torch": torch,
+        "numpy_version": np.__version__,
+        "torch_version": torch.__version__,
         "transformers_version": transformers.__version__,
+        "datasets_version": datasets.__version__,
+        "sklearn_version": sklearn.__version__,
+        "python_version": sys.version,
         "Dataset": Dataset,
         "accuracy_score": accuracy_score,
         "confusion_matrix": confusion_matrix,
@@ -696,6 +710,9 @@ def build_training_arguments(
     seed: int,
     use_fp16: bool,
     use_bf16: bool,
+    train_batch_size: int,
+    eval_batch_size: int,
+    gradient_accumulation_steps: int,
 ) -> Any:
     """
     Construit TrainingArguments en fonction de la signature réellement
@@ -717,15 +734,9 @@ def build_training_arguments(
         "weight_decay": WEIGHT_DECAY,
         "num_train_epochs": NUM_TRAIN_EPOCHS,
         "warmup_ratio": WARMUP_RATIO,
-        "per_device_train_batch_size": (
-            PER_DEVICE_TRAIN_BATCH_SIZE
-        ),
-        "per_device_eval_batch_size": (
-            PER_DEVICE_EVAL_BATCH_SIZE
-        ),
-        "gradient_accumulation_steps": (
-            GRADIENT_ACCUMULATION_STEPS
-        ),
+        "per_device_train_batch_size": train_batch_size,
+        "per_device_eval_batch_size": eval_batch_size,
+        "gradient_accumulation_steps": gradient_accumulation_steps,
         "save_strategy": "epoch",
         "logging_strategy": "epoch",
         "load_best_model_at_end": True,
@@ -843,14 +854,24 @@ def train_single_run(
             "weight_decay": WEIGHT_DECAY,
             "num_train_epochs_max": NUM_TRAIN_EPOCHS,
             "warmup_ratio": WARMUP_RATIO,
-            "per_device_train_batch_size": (
+            "preferred_per_device_train_batch_size": (
                 PER_DEVICE_TRAIN_BATCH_SIZE
             ),
-            "per_device_eval_batch_size": (
+            "preferred_per_device_eval_batch_size": (
                 PER_DEVICE_EVAL_BATCH_SIZE
             ),
-            "gradient_accumulation_steps": (
+            "preferred_gradient_accumulation_steps": (
                 GRADIENT_ACCUMULATION_STEPS
+            ),
+            "auto_oom_batch_fallback": AUTO_OOM_BATCH_FALLBACK,
+            "fallback_per_device_train_batch_size": (
+                FALLBACK_TRAIN_BATCH_SIZE
+            ),
+            "fallback_per_device_eval_batch_size": (
+                FALLBACK_EVAL_BATCH_SIZE
+            ),
+            "fallback_gradient_accumulation_steps": (
+                FALLBACK_GRADIENT_ACCUMULATION_STEPS
             ),
             "early_stopping_patience": EARLY_STOPPING_PATIENCE,
         },
@@ -955,30 +976,51 @@ def train_single_run(
     use_bf16 = bf16_supported
     use_fp16 = cuda_available and not use_bf16
 
-    training_args = build_training_arguments(
-        TrainingArguments,
-        run_dir=run_dir,
-        seed=seed,
-        use_fp16=use_fp16,
-        use_bf16=use_bf16,
-    )
+    def make_trainer_and_args(
+        train_batch_size: int,
+        eval_batch_size: int,
+        gradient_accumulation_steps: int,
+    ) -> tuple[Any, Any]:
+        training_args_local = build_training_arguments(
+            TrainingArguments,
+            run_dir=run_dir,
+            seed=seed,
+            use_fp16=use_fp16,
+            use_bf16=use_bf16,
+            train_batch_size=train_batch_size,
+            eval_batch_size=eval_batch_size,
+            gradient_accumulation_steps=gradient_accumulation_steps,
+        )
 
-    trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=tokenized["train"],
-        eval_dataset=tokenized["validation"],
-        data_collator=DataCollatorWithPadding(
-            tokenizer=tokenizer,
-            pad_to_multiple_of=8 if cuda_available else None,
-        ),
-        compute_metrics=build_compute_metrics(dependencies),
-        callbacks=[
-            EarlyStoppingCallback(
-                early_stopping_patience=EARLY_STOPPING_PATIENCE
-            )
-        ],
-        **trainer_tokenizer_argument(Trainer, tokenizer),
+        trainer_local = Trainer(
+            model=model,
+            args=training_args_local,
+            train_dataset=tokenized["train"],
+            eval_dataset=tokenized["validation"],
+            data_collator=DataCollatorWithPadding(
+                tokenizer=tokenizer,
+                pad_to_multiple_of=8 if cuda_available else None,
+            ),
+            compute_metrics=build_compute_metrics(dependencies),
+            callbacks=[
+                EarlyStoppingCallback(
+                    early_stopping_patience=EARLY_STOPPING_PATIENCE
+                )
+            ],
+            **trainer_tokenizer_argument(Trainer, tokenizer),
+        )
+
+        return trainer_local, training_args_local
+
+    active_train_batch_size = PER_DEVICE_TRAIN_BATCH_SIZE
+    active_eval_batch_size = PER_DEVICE_EVAL_BATCH_SIZE
+    active_gradient_accumulation_steps = GRADIENT_ACCUMULATION_STEPS
+    batch_fallback_used = False
+
+    trainer, training_args = make_trainer_and_args(
+        active_train_batch_size,
+        active_eval_batch_size,
+        active_gradient_accumulation_steps,
     )
 
     checkpoint_dir = Path(training_args.output_dir)
@@ -995,12 +1037,75 @@ def train_single_run(
         f"    précision mixte : "
         f"{'bf16' if use_bf16 else 'fp16' if use_fp16 else 'fp32'}"
     )
-
-    trainer.train(
-        resume_from_checkpoint=last_checkpoint
-        if last_checkpoint
-        else None
+    print(
+        f"    batch train/eval : "
+        f"{active_train_batch_size}/{active_eval_batch_size} | "
+        f"accumulation={active_gradient_accumulation_steps} | "
+        f"batch effectif="
+        f"{active_train_batch_size * active_gradient_accumulation_steps}"
     )
+
+    try:
+        trainer.train(
+            resume_from_checkpoint=last_checkpoint
+            if last_checkpoint
+            else None
+        )
+    except RuntimeError as exc:
+        oom_message = str(exc).casefold()
+        is_oom = (
+            "out of memory" in oom_message
+            or "cuda error: out of memory" in oom_message
+        )
+
+        if (
+            not AUTO_OOM_BATCH_FALLBACK
+            or not cuda_available
+            or not is_oom
+        ):
+            raise
+
+        print(
+            "    CUDA OOM détecté : nouveau départ avec "
+            f"batch={FALLBACK_TRAIN_BATCH_SIZE}, "
+            f"eval_batch={FALLBACK_EVAL_BATCH_SIZE}, "
+            f"accumulation="
+            f"{FALLBACK_GRADIENT_ACCUMULATION_STEPS}."
+        )
+
+        torch.cuda.empty_cache()
+
+        # Un run OOM partiellement créé ne doit pas être repris avec une autre
+        # configuration de batch. Les checkpoints incomplets sont supprimés.
+        if checkpoint_dir.exists():
+            import shutil
+            shutil.rmtree(checkpoint_dir)
+
+        # Réinitialise le seed et recharge le modèle pour repartir proprement.
+        set_seed(seed)
+        model = AutoModelForSequenceClassification.from_pretrained(
+            model_spec["model_id"],
+            num_labels=len(LABELS),
+            id2label=ID_TO_LABEL,
+            label2id=LABEL_TO_ID,
+            ignore_mismatched_sizes=True,
+        )
+        model.config.problem_type = "single_label_classification"
+
+        active_train_batch_size = FALLBACK_TRAIN_BATCH_SIZE
+        active_eval_batch_size = FALLBACK_EVAL_BATCH_SIZE
+        active_gradient_accumulation_steps = (
+            FALLBACK_GRADIENT_ACCUMULATION_STEPS
+        )
+        batch_fallback_used = True
+
+        trainer, training_args = make_trainer_and_args(
+            active_train_batch_size,
+            active_eval_batch_size,
+            active_gradient_accumulation_steps,
+        )
+
+        trainer.train(resume_from_checkpoint=None)
 
     validation_metrics = trainer.evaluate(
         eval_dataset=tokenized["validation"],
@@ -1068,14 +1173,19 @@ def train_single_run(
             "num_train_epochs_max": NUM_TRAIN_EPOCHS,
             "warmup_ratio": WARMUP_RATIO,
             "per_device_train_batch_size": (
-                PER_DEVICE_TRAIN_BATCH_SIZE
+                active_train_batch_size
             ),
             "per_device_eval_batch_size": (
-                PER_DEVICE_EVAL_BATCH_SIZE
+                active_eval_batch_size
             ),
             "gradient_accumulation_steps": (
-                GRADIENT_ACCUMULATION_STEPS
+                active_gradient_accumulation_steps
             ),
+            "effective_train_batch_size": (
+                active_train_batch_size
+                * active_gradient_accumulation_steps
+            ),
+            "batch_fallback_used": batch_fallback_used,
             "early_stopping_patience": (
                 EARLY_STOPPING_PATIENCE
             ),
@@ -1266,7 +1376,14 @@ def main() -> int:
     training_protocol = {
         "created_at_utc": utc_timestamp(),
         "training_script_version": TRAINING_SCRIPT_VERSION,
-        "transformers_version": dependencies["transformers_version"],
+        "software": {
+            "python": dependencies["python_version"],
+            "numpy": dependencies["numpy_version"],
+            "torch": dependencies["torch_version"],
+            "transformers": dependencies["transformers_version"],
+            "datasets": dependencies["datasets_version"],
+            "scikit_learn": dependencies["sklearn_version"],
+        },
         "task": "three-class NLI label classification",
         "rationales_predicted": False,
         "split_protocol_version": SPLIT_PROTOCOL_VERSION,
@@ -1310,14 +1427,32 @@ def main() -> int:
             "weight_decay": WEIGHT_DECAY,
             "num_train_epochs_max": NUM_TRAIN_EPOCHS,
             "warmup_ratio": WARMUP_RATIO,
-            "per_device_train_batch_size": (
+            "preferred_per_device_train_batch_size": (
                 PER_DEVICE_TRAIN_BATCH_SIZE
             ),
-            "per_device_eval_batch_size": (
+            "preferred_per_device_eval_batch_size": (
                 PER_DEVICE_EVAL_BATCH_SIZE
             ),
-            "gradient_accumulation_steps": (
+            "preferred_gradient_accumulation_steps": (
                 GRADIENT_ACCUMULATION_STEPS
+            ),
+            "preferred_effective_train_batch_size": (
+                PER_DEVICE_TRAIN_BATCH_SIZE
+                * GRADIENT_ACCUMULATION_STEPS
+            ),
+            "auto_oom_batch_fallback": AUTO_OOM_BATCH_FALLBACK,
+            "fallback_per_device_train_batch_size": (
+                FALLBACK_TRAIN_BATCH_SIZE
+            ),
+            "fallback_per_device_eval_batch_size": (
+                FALLBACK_EVAL_BATCH_SIZE
+            ),
+            "fallback_gradient_accumulation_steps": (
+                FALLBACK_GRADIENT_ACCUMULATION_STEPS
+            ),
+            "fallback_effective_train_batch_size": (
+                FALLBACK_TRAIN_BATCH_SIZE
+                * FALLBACK_GRADIENT_ACCUMULATION_STEPS
             ),
             "early_stopping_patience": (
                 EARLY_STOPPING_PATIENCE
@@ -1330,7 +1465,7 @@ def main() -> int:
         training_protocol,
     )
 
-    print("Baselines supervisées FLEXID — split exact-group v2")
+    print("Baselines supervisées FLEXID — split exact-group v3")
     print(f"Version script           : {TRAINING_SCRIPT_VERSION}")
     print(f"Projet                   : {project_root}")
     print(f"Split                    : {split_dir}")
@@ -1347,8 +1482,28 @@ def main() -> int:
     print("Prédiction               : labels NLI uniquement")
     print("Rationales               : non prédites")
     print(
+        "Python                   : "
+        f"{dependencies['python_version'].split()[0]}"
+    )
+    print(
+        "PyTorch                  : "
+        f"{dependencies['torch_version']}"
+    )
+    print(
         "Transformers             : "
         f"{dependencies['transformers_version']}"
+    )
+    print(
+        "Datasets                 : "
+        f"{dependencies['datasets_version']}"
+    )
+    print(
+        "scikit-learn             : "
+        f"{dependencies['sklearn_version']}"
+    )
+    print(
+        "NumPy                    : "
+        f"{dependencies['numpy_version']}"
     )
     print(
         "GPU disponible          : "

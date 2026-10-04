@@ -1,16 +1,16 @@
 {
-  "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT FLEXID\\data\\flexid.jsonl",
-  "output_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT FLEXID\\data\\flexid_shuffled.jsonl",
-  "positions_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT FLEXID\\data\\flexid_shuffle_positions.csv",
+  "input_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid.jsonl",
+  "output_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_shuffled.jsonl",
+  "positions_file": "C:\\Users\\TETEREOU Aboudouraza\\Desktop\\GIT_FLEXID_V2\\flexid\\data\\flexid_shuffle_positions.csv",
   "seed": 42,
   "feasibility_attempts_per_gap": 12,
   "order_attempts": 200,
   "successful_order_attempts": 200,
   "instances": 1002,
   "article_frequency": {
-    "distinct_law_refs": 372,
+    "distinct_law_refs": 336,
     "instances_without_law_ref": 0,
-    "maximum_instances_for_one_law_ref": 4
+    "maximum_instances_for_one_law_ref": 7
   },
   "validation": {
     "same_instance_count": true,
@@ -18,3586 +18,3604 @@
     "no_duplicate_ids": true,
     "records_unchanged": true,
     "order_changed": true,
-    "content_sha256_order_independent": "f7a433732f99160e9813f842bae4fc2f9f7bac69a3410123c4c309e43bc6b789"
+    "content_sha256_order_independent": "ab3e2bea22d7d0ad3edb3d4a56dd09658d85bcc5524fab39a947e835dbfd6d37"
   },
   "same_law_ref_separation": {
-    "theoretical_upper_bound_for_minimum_gap": 333,
-    "best_minimum_gap_found": 331,
-    "achieved_minimum_gap": 331,
-    "reached_theoretical_upper_bound": false,
-    "p10_gap": 331.0,
-    "median_gap": 331.0,
-    "mean_gap": 345.9428571428571,
-    "maximum_gap": 685,
+    "theoretical_upper_bound_for_minimum_gap": 166,
+    "best_minimum_gap_found": 166,
+    "achieved_minimum_gap": 166,
+    "reached_theoretical_upper_bound": true,
+    "p10_gap": 166.0,
+    "median_gap": 303.5,
+    "mean_gap": 319.48198198198196,
+    "maximum_gap": 643,
     "adjacent_same_article_pairs": 0,
-    "gap_count": 630,
+    "gap_count": 666,
     "per_article": {
-      "C. civ. art. 2276": {
-        "instances": 4,
+      "Code civil, art. 16": {
+        "instances": 7,
         "positions": [
           1,
-          332,
-          663,
-          994
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 57": {
-        "instances": 4,
-        "positions": [
-          2,
+          167,
           333,
-          664,
-          995
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil Art. 161": {
-        "instances": 4,
-        "positions": [
-          3,
-          334,
+          499,
           665,
-          996
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil 16-7": {
-        "instances": 4,
-        "positions": [
-          4,
-          335,
-          666,
+          831,
           997
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 166,
+        "maximum_gap": 166
       },
-      "C. civ. art. 61-5": {
-        "instances": 4,
+      "Code civil, art. 16-7": {
+        "instances": 7,
         "positions": [
-          5,
-          336,
-          667,
+          2,
+          168,
+          334,
+          500,
+          666,
+          832,
           998
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 166,
+        "maximum_gap": 166
+      },
+      "Code civil, art. 1240": {
+        "instances": 6,
+        "positions": [
+          3,
+          169,
+          335,
+          501,
+          667,
+          833
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 166,
+        "maximum_gap": 166
+      },
+      "Code civil, art. 311-25": {
+        "instances": 6,
+        "positions": [
+          4,
+          170,
+          336,
+          502,
+          668,
+          848
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 168.8,
+        "maximum_gap": 180
+      },
+      "Code civil, art. 215": {
+        "instances": 6,
+        "positions": [
+          5,
+          171,
+          337,
+          503,
+          669,
+          835
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 166,
+        "maximum_gap": 166
+      },
+      "Code civil, art. 312": {
+        "instances": 6,
+        "positions": [
+          6,
+          172,
+          338,
+          504,
+          670,
+          836
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 166,
+        "maximum_gap": 166
+      },
+      "Code civil, art. 61-5": {
+        "instances": 5,
+        "positions": [
+          7,
+          173,
+          339,
+          505,
+          960
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 238.25,
+        "maximum_gap": 455
+      },
+      "Code civil, art. 515-14": {
+        "instances": 5,
+        "positions": [
+          8,
+          174,
+          340,
+          506,
+          862
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 213.5,
+        "maximum_gap": 356
+      },
+      "Code civil, art. 1123": {
+        "instances": 4,
+        "positions": [
+          9,
+          311,
+          477,
+          896
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 295.6666666666667,
+        "maximum_gap": 419
+      },
+      "Code civil, art. 1242": {
+        "instances": 4,
+        "positions": [
+          10,
+          176,
+          387,
+          692
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 227.33333333333334,
+        "maximum_gap": 305
+      },
+      "Code civil, art. 1401": {
+        "instances": 4,
+        "positions": [
+          11,
+          235,
+          401,
+          753
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 247.33333333333334,
+        "maximum_gap": 352
+      },
+      "Code civil, art. 57": {
+        "instances": 4,
+        "positions": [
+          12,
+          178,
+          358,
+          982
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 323.3333333333333,
+        "maximum_gap": 624
+      },
+      "Code civil, art. 161": {
+        "instances": 4,
+        "positions": [
+          13,
+          179,
+          551,
+          717
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 234.66666666666666,
+        "maximum_gap": 372
+      },
+      "Code civil, art. 1196": {
+        "instances": 4,
+        "positions": [
+          14,
+          306,
+          472,
+          817
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 267.6666666666667,
+        "maximum_gap": 345
+      },
+      "Code civil, art. 1426": {
+        "instances": 4,
+        "positions": [
+          15,
+          181,
+          566,
+          972
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 319,
+        "maximum_gap": 406
+      },
+      "Code civil, art. 1353": {
+        "instances": 4,
+        "positions": [
+          16,
+          182,
+          623,
+          789
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 257.6666666666667,
+        "maximum_gap": 441
       },
       "Code civil, art. 14": {
         "instances": 4,
         "positions": [
-          6,
-          337,
-          668,
-          999
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 312": {
-        "instances": 4,
-        "positions": [
-          7,
-          338,
-          669,
-          1000
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 311-21 al. 1": {
-        "instances": 4,
-        "positions": [
-          8,
-          339,
-          670,
-          1001
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil 1196": {
-        "instances": 4,
-        "positions": [
-          9,
-          340,
-          671,
-          1002
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 32": {
-        "instances": 3,
-        "positions": [
-          10,
-          341,
-          672
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 78": {
-        "instances": 3,
-        "positions": [
-          11,
-          342,
-          673
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 223": {
-        "instances": 3,
-        "positions": [
-          12,
-          343,
-          966
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 477,
-        "maximum_gap": 623
-      },
-      "Ass. Plén., 3 juill. 2015": {
-        "instances": 3,
-        "positions": [
-          13,
-          344,
-          986
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 486.5,
-        "maximum_gap": 642
-      },
-      "C. civ. art. 16": {
-        "instances": 3,
-        "positions": [
-          14,
-          345,
-          676
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 221": {
-        "instances": 3,
-        "positions": [
-          15,
-          346,
-          975
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 480,
-        "maximum_gap": 629
-      },
-      "Code civil, art. 169": {
-        "instances": 3,
-        "positions": [
-          16,
-          347,
-          990
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 487,
-        "maximum_gap": 643
-      },
-      "Code civil, art. 109": {
-        "instances": 3,
-        "positions": [
           17,
-          348,
-          679
+          289,
+          515,
+          866
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 226,
+        "mean_gap": 283,
+        "maximum_gap": 351
       },
-      "Code civil, art. 28": {
-        "instances": 3,
+      "Code civil, art. 2276": {
+        "instances": 4,
         "positions": [
           18,
-          349,
-          680
+          239,
+          511,
+          936
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 221,
+        "mean_gap": 306,
+        "maximum_gap": 425
       },
-      "Code civil, art. 23-1": {
-        "instances": 3,
+      "Code civil, art. 55": {
+        "instances": 4,
         "positions": [
           19,
-          350,
-          686
+          312,
+          572,
+          738
         ],
-        "minimum_gap": 331,
-        "mean_gap": 333.5,
-        "maximum_gap": 336
+        "minimum_gap": 166,
+        "mean_gap": 239.66666666666666,
+        "maximum_gap": 293
       },
-      "Code civil, art. 98": {
-        "instances": 3,
+      "Code civil, art. 311-21, al. 1": {
+        "instances": 4,
         "positions": [
           20,
-          351,
-          790
+          186,
+          582,
+          950
         ],
-        "minimum_gap": 331,
-        "mean_gap": 385,
-        "maximum_gap": 439
+        "minimum_gap": 166,
+        "mean_gap": 310,
+        "maximum_gap": 396
       },
-      "Code civil, art. 359": {
+      "Code civil, art. 311": {
         "instances": 3,
         "positions": [
           21,
-          352,
-          683
+          470,
+          933
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 449,
+        "mean_gap": 456,
+        "maximum_gap": 463
       },
-      "Code civil, art. 21-25-1": {
+      "Code civil, art. 370-1-4": {
         "instances": 3,
         "positions": [
           22,
-          353,
-          785
+          486,
+          698
         ],
-        "minimum_gap": 331,
-        "mean_gap": 381.5,
-        "maximum_gap": 432
+        "minimum_gap": 212,
+        "mean_gap": 338,
+        "maximum_gap": 464
       },
-      "Code civil, art. 173": {
+      "Code civil, art. 38": {
         "instances": 3,
         "positions": [
           23,
-          354,
-          917
+          654,
+          891
         ],
-        "minimum_gap": 331,
-        "mean_gap": 447,
-        "maximum_gap": 563
-      },
-      "C. civ. art. 238": {
-        "instances": 3,
-        "positions": [
-          24,
-          355,
-          727
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 351.5,
-        "maximum_gap": 372
-      },
-      "Code civil, art. 22": {
-        "instances": 3,
-        "positions": [
-          25,
-          356,
-          985
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 480,
-        "maximum_gap": 629
-      },
-      "Code civil, art. 23-4": {
-        "instances": 3,
-        "positions": [
-          26,
-          357,
-          967
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 470.5,
-        "maximum_gap": 610
-      },
-      "Code civil, art. 342-2": {
-        "instances": 3,
-        "positions": [
-          27,
-          358,
-          689
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 1182": {
-        "instances": 3,
-        "positions": [
-          28,
-          359,
-          690
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 318-1": {
-        "instances": 3,
-        "positions": [
-          29,
-          360,
-          691
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 247-1": {
-        "instances": 3,
-        "positions": [
-          30,
-          361,
-          692
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 48": {
-        "instances": 3,
-        "positions": [
-          31,
-          362,
-          693
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 189": {
-        "instances": 3,
-        "positions": [
-          32,
-          363,
-          713
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 340.5,
-        "maximum_gap": 350
-      },
-      "Code civil, art. 22-1": {
-        "instances": 3,
-        "positions": [
-          33,
-          364,
-          695
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 202-2": {
-        "instances": 3,
-        "positions": [
-          34,
-          365,
-          696
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 343-1": {
-        "instances": 3,
-        "positions": [
-          35,
-          366,
-          697
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 74": {
-        "instances": 3,
-        "positions": [
-          36,
-          367,
-          698
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 20-1": {
-        "instances": 3,
-        "positions": [
-          37,
-          368,
-          747
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 355,
-        "maximum_gap": 379
-      },
-      "Code civil, art. 203": {
-        "instances": 3,
-        "positions": [
-          38,
-          369,
-          700
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 363": {
-        "instances": 3,
-        "positions": [
-          39,
-          370,
-          701
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 278": {
-        "instances": 3,
-        "positions": [
-          40,
-          371,
-          702
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 30-1": {
-        "instances": 3,
-        "positions": [
-          41,
-          372,
-          745
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 352,
-        "maximum_gap": 373
-      },
-      "Code civil, art. 108-3": {
-        "instances": 3,
-        "positions": [
-          42,
-          373,
-          710
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 334,
-        "maximum_gap": 337
-      },
-      "C. civ. art. 1100 al. 2": {
-        "instances": 3,
-        "positions": [
-          43,
-          374,
-          730
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 343.5,
-        "maximum_gap": 356
-      },
-      "C. civ., art. 1113": {
-        "instances": 3,
-        "positions": [
-          44,
-          375,
-          706
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 37": {
-        "instances": 3,
-        "positions": [
-          45,
-          376,
-          707
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 815-13": {
-        "instances": 3,
-        "positions": [
-          46,
-          377,
-          708
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 98-2": {
-        "instances": 3,
-        "positions": [
-          47,
-          378,
-          709
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 347": {
-        "instances": 3,
-        "positions": [
-          48,
-          379,
-          969
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 460.5,
-        "maximum_gap": 590
-      },
-      "Code civil 893": {
-        "instances": 3,
-        "positions": [
-          49,
-          380,
-          711
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 182": {
-        "instances": 3,
-        "positions": [
-          50,
-          381,
-          712
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 348-1": {
-        "instances": 3,
-        "positions": [
-          51,
-          382,
-          811
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 380,
-        "maximum_gap": 429
-      },
-      "Code civil, art. 100": {
-        "instances": 3,
-        "positions": [
-          52,
-          383,
-          819
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 383.5,
-        "maximum_gap": 436
-      },
-      "Code civil, art. 265-2": {
-        "instances": 3,
-        "positions": [
-          53,
-          384,
-          728
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 337.5,
-        "maximum_gap": 344
-      },
-      "Code civil, art. 264": {
-        "instances": 3,
-        "positions": [
-          54,
-          385,
-          716
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 254": {
-        "instances": 3,
-        "positions": [
-          55,
-          386,
-          717
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 237,
+        "mean_gap": 434,
+        "maximum_gap": 631
       },
       "Code civil, art. 30-4": {
         "instances": 3,
         "positions": [
-          56,
-          387,
-          718
+          24,
+          628,
+          912
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 284,
+        "mean_gap": 444,
+        "maximum_gap": 604
       },
-      "Code civil, art. 112": {
+      "Code civil, art. 348-6": {
+        "instances": 3,
+        "positions": [
+          25,
+          420,
+          805
+        ],
+        "minimum_gap": 385,
+        "mean_gap": 390,
+        "maximum_gap": 395
+      },
+      "Code civil, art. 325": {
+        "instances": 3,
+        "positions": [
+          26,
+          446,
+          660
+        ],
+        "minimum_gap": 214,
+        "mean_gap": 317,
+        "maximum_gap": 420
+      },
+      "Code civil, art. 306": {
+        "instances": 3,
+        "positions": [
+          27,
+          653,
+          917
+        ],
+        "minimum_gap": 264,
+        "mean_gap": 445,
+        "maximum_gap": 626
+      },
+      "Code civil, art. 19-3": {
+        "instances": 3,
+        "positions": [
+          28,
+          656,
+          822
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 397,
+        "maximum_gap": 628
+      },
+      "Code civil, art. 1129": {
+        "instances": 3,
+        "positions": [
+          29,
+          385,
+          963
+        ],
+        "minimum_gap": 356,
+        "mean_gap": 467,
+        "maximum_gap": 578
+      },
+      "Code civil, art. 815": {
+        "instances": 3,
+        "positions": [
+          30,
+          517,
+          915
+        ],
+        "minimum_gap": 398,
+        "mean_gap": 442.5,
+        "maximum_gap": 487
+      },
+      "Code civil, art. 353": {
+        "instances": 3,
+        "positions": [
+          31,
+          611,
+          930
+        ],
+        "minimum_gap": 319,
+        "mean_gap": 449.5,
+        "maximum_gap": 580
+      },
+      "Code civil, art. 146-1": {
+        "instances": 3,
+        "positions": [
+          32,
+          398,
+          966
+        ],
+        "minimum_gap": 366,
+        "mean_gap": 467,
+        "maximum_gap": 568
+      },
+      "Code civil, art. 60, al. 4": {
+        "instances": 3,
+        "positions": [
+          33,
+          548,
+          813
+        ],
+        "minimum_gap": 265,
+        "mean_gap": 390,
+        "maximum_gap": 515
+      },
+      "Code civil, art. 1143": {
+        "instances": 3,
+        "positions": [
+          34,
+          431,
+          742
+        ],
+        "minimum_gap": 311,
+        "mean_gap": 354,
+        "maximum_gap": 397
+      },
+      "Code civil, art. 332": {
+        "instances": 3,
+        "positions": [
+          35,
+          509,
+          906
+        ],
+        "minimum_gap": 397,
+        "mean_gap": 435.5,
+        "maximum_gap": 474
+      },
+      "Code civil, art. 82": {
+        "instances": 3,
+        "positions": [
+          36,
+          330,
+          795
+        ],
+        "minimum_gap": 294,
+        "mean_gap": 379.5,
+        "maximum_gap": 465
+      },
+      "Code civil, art. 169": {
+        "instances": 3,
+        "positions": [
+          37,
+          632,
+          798
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 380.5,
+        "maximum_gap": 595
+      },
+      "Code civil, art. 183": {
+        "instances": 3,
+        "positions": [
+          38,
+          399,
+          988
+        ],
+        "minimum_gap": 361,
+        "mean_gap": 475,
+        "maximum_gap": 589
+      },
+      "Code civil, art. 352": {
+        "instances": 3,
+        "positions": [
+          39,
+          589,
+          763
+        ],
+        "minimum_gap": 174,
+        "mean_gap": 362,
+        "maximum_gap": 550
+      },
+      "Code civil, art. 364": {
+        "instances": 3,
+        "positions": [
+          40,
+          507,
+          935
+        ],
+        "minimum_gap": 428,
+        "mean_gap": 447.5,
+        "maximum_gap": 467
+      },
+      "Code civil, art. 359": {
+        "instances": 3,
+        "positions": [
+          41,
+          421,
+          855
+        ],
+        "minimum_gap": 380,
+        "mean_gap": 407,
+        "maximum_gap": 434
+      },
+      "Code civil, art. 98": {
+        "instances": 3,
+        "positions": [
+          42,
+          391,
+          894
+        ],
+        "minimum_gap": 349,
+        "mean_gap": 426,
+        "maximum_gap": 503
+      },
+      "Code civil, art. 1113": {
+        "instances": 3,
+        "positions": [
+          43,
+          403,
+          873
+        ],
+        "minimum_gap": 360,
+        "mean_gap": 415,
+        "maximum_gap": 470
+      },
+      "Code civil, art. 342-8": {
+        "instances": 3,
+        "positions": [
+          44,
+          416,
+          786
+        ],
+        "minimum_gap": 370,
+        "mean_gap": 371,
+        "maximum_gap": 372
+      },
+      "Code civil, art. 1136": {
+        "instances": 3,
+        "positions": [
+          45,
+          615,
+          781
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 368,
+        "maximum_gap": 570
+      },
+      "Code civil, art. 28": {
+        "instances": 3,
+        "positions": [
+          46,
+          614,
+          780
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 367,
+        "maximum_gap": 568
+      },
+      "Code civil, art. 61-3": {
+        "instances": 3,
+        "positions": [
+          47,
+          528,
+          954
+        ],
+        "minimum_gap": 426,
+        "mean_gap": 453.5,
+        "maximum_gap": 481
+      },
+      "Code civil, art. 321": {
+        "instances": 3,
+        "positions": [
+          48,
+          649,
+          815
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 383.5,
+        "maximum_gap": 601
+      },
+      "Code civil, art. 148": {
+        "instances": 3,
+        "positions": [
+          49,
+          371,
+          787
+        ],
+        "minimum_gap": 322,
+        "mean_gap": 369,
+        "maximum_gap": 416
+      },
+      "Code civil, art. 117": {
+        "instances": 3,
+        "positions": [
+          50,
+          423,
+          1000
+        ],
+        "minimum_gap": 373,
+        "mean_gap": 475,
+        "maximum_gap": 577
+      },
+      "Code civil, art. 22-1": {
+        "instances": 3,
+        "positions": [
+          51,
+          496,
+          693
+        ],
+        "minimum_gap": 197,
+        "mean_gap": 321,
+        "maximum_gap": 445
+      },
+      "Code civil, art. 128": {
+        "instances": 3,
+        "positions": [
+          52,
+          610,
+          776
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 362,
+        "maximum_gap": 558
+      },
+      "Code civil, art. 815-17, al. 2–3": {
+        "instances": 3,
+        "positions": [
+          53,
+          617,
+          961
+        ],
+        "minimum_gap": 344,
+        "mean_gap": 454,
+        "maximum_gap": 564
+      },
+      "Code civil, art. 21-6": {
+        "instances": 3,
+        "positions": [
+          54,
+          386,
+          784
+        ],
+        "minimum_gap": 332,
+        "mean_gap": 365,
+        "maximum_gap": 398
+      },
+      "Code civil, art. 108-2": {
+        "instances": 3,
+        "positions": [
+          55,
+          594,
+          941
+        ],
+        "minimum_gap": 347,
+        "mean_gap": 443,
+        "maximum_gap": 539
+      },
+      "Code civil, art. 311-17": {
+        "instances": 3,
+        "positions": [
+          56,
+          388,
+          849
+        ],
+        "minimum_gap": 332,
+        "mean_gap": 396.5,
+        "maximum_gap": 461
+      },
+      "Code civil, art. 352-1": {
         "instances": 3,
         "positions": [
           57,
-          388,
-          719
+          524,
+          799
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 275,
+        "mean_gap": 371,
+        "maximum_gap": 467
       },
-      "Code civil, art. 21-16": {
+      "Code civil, art. 147": {
         "instances": 3,
         "positions": [
           58,
-          389,
-          720
+          438,
+          995
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 380,
+        "mean_gap": 468.5,
+        "maximum_gap": 557
       },
-      "Code civil, art. 227": {
+      "Code civil, art. 815-13": {
         "instances": 3,
         "positions": [
           59,
-          390,
-          721
+          342,
+          985
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 283,
+        "mean_gap": 463,
+        "maximum_gap": 643
       },
-      "Code civil, art. 171": {
+      "Code civil, art. 37": {
         "instances": 3,
         "positions": [
           60,
-          391,
-          722
+          529,
+          846
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 317,
+        "mean_gap": 393,
+        "maximum_gap": 469
       },
-      "C. civ. art. 60": {
+      "Code civil, art. 362": {
         "instances": 3,
         "positions": [
           61,
-          392,
-          723
+          537,
+          703
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 321,
+        "maximum_gap": 476
       },
-      "Code civil, art. 250": {
+      "Code civil, art. 544": {
         "instances": 3,
         "positions": [
           62,
-          393,
-          724
+          658,
+          940
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 282,
+        "mean_gap": 439,
+        "maximum_gap": 596
       },
-      "Code civil, art. 16-13": {
+      "Code civil, art. 202-2": {
         "instances": 3,
         "positions": [
           63,
-          394,
-          725
+          414,
+          854
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 351,
+        "mean_gap": 395.5,
+        "maximum_gap": 440
       },
-      "Code civil, art. 21-22": {
+      "Code civil, art. 32-1": {
         "instances": 3,
         "positions": [
           64,
-          395,
-          726
+          556,
+          785
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 229,
+        "mean_gap": 360.5,
+        "maximum_gap": 492
       },
-      "Code civil, art. 61-8": {
+      "Code civil, art. 370-1-1": {
         "instances": 3,
         "positions": [
           65,
-          396,
-          993
+          575,
+          741
         ],
-        "minimum_gap": 331,
-        "mean_gap": 464,
-        "maximum_gap": 597
+        "minimum_gap": 166,
+        "mean_gap": 338,
+        "maximum_gap": 510
       },
-      "C. civ. art. 1112-1": {
+      "Code civil, art. 108": {
         "instances": 3,
         "positions": [
           66,
-          397,
-          840
+          583,
+          749
         ],
-        "minimum_gap": 331,
-        "mean_gap": 387,
-        "maximum_gap": 443
+        "minimum_gap": 166,
+        "mean_gap": 341.5,
+        "maximum_gap": 517
       },
-      "Code civil, art. 16-1-1": {
+      "Code civil, art. 124": {
         "instances": 3,
         "positions": [
           67,
-          398,
-          729
+          369,
+          916
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 302,
+        "mean_gap": 424.5,
+        "maximum_gap": 547
       },
-      "Code civil, art. 350": {
+      "Code civil, art. 27": {
         "instances": 3,
         "positions": [
           68,
-          399,
-          757
+          523,
+          922
         ],
-        "minimum_gap": 331,
-        "mean_gap": 344.5,
-        "maximum_gap": 358
+        "minimum_gap": 399,
+        "mean_gap": 427,
+        "maximum_gap": 455
       },
-      "Code civil, art. 367": {
+      "Code civil, art. 173": {
         "instances": 3,
         "positions": [
           69,
-          400,
-          731
+          426,
+          690
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 264,
+        "mean_gap": 310.5,
+        "maximum_gap": 357
       },
-      "Code civil, art. 17-6": {
+      "Code civil, art. 225": {
         "instances": 3,
         "positions": [
           70,
-          401,
-          732
+          439,
+          991
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 369,
+        "mean_gap": 460.5,
+        "maximum_gap": 552
       },
       "Code civil, art. 123": {
         "instances": 3,
         "positions": [
           71,
-          402,
-          733
+          453,
+          919
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 815": {
-        "instances": 3,
-        "positions": [
-          72,
-          403,
-          734
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 68": {
-        "instances": 3,
-        "positions": [
-          73,
-          404,
-          762
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 344.5,
-        "maximum_gap": 358
-      },
-      "Code civil, art. 19": {
-        "instances": 3,
-        "positions": [
-          74,
-          405,
-          736
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 34-1": {
-        "instances": 3,
-        "positions": [
-          75,
-          406,
-          929
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 427,
-        "maximum_gap": 523
-      },
-      "Code civil, art. 253": {
-        "instances": 3,
-        "positions": [
-          76,
-          407,
-          738
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 196": {
-        "instances": 3,
-        "positions": [
-          77,
-          408,
-          739
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 313": {
-        "instances": 3,
-        "positions": [
-          78,
-          409,
-          740
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 348-2": {
-        "instances": 3,
-        "positions": [
-          79,
-          410,
-          741
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 220-3": {
-        "instances": 3,
-        "positions": [
-          80,
-          411,
-          742
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 352-2": {
-        "instances": 3,
-        "positions": [
-          81,
-          412,
-          743
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 106": {
-        "instances": 3,
-        "positions": [
-          82,
-          413,
-          744
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 208": {
-        "instances": 3,
-        "positions": [
-          83,
-          414,
-          961
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 439,
-        "maximum_gap": 547
-      },
-      "Code civil, art. 348-3": {
-        "instances": 3,
-        "positions": [
-          84,
-          415,
-          746
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 60 alinéa 4": {
-        "instances": 3,
-        "positions": [
-          85,
-          416,
-          989
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 452,
-        "maximum_gap": 573
-      },
-      "Code civil, art. 217": {
-        "instances": 3,
-        "positions": [
-          86,
-          417,
-          748
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 311-17": {
-        "instances": 3,
-        "positions": [
-          87,
-          418,
-          749
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 117": {
-        "instances": 3,
-        "positions": [
-          88,
-          419,
-          750
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 355": {
-        "instances": 3,
-        "positions": [
-          89,
-          420,
-          751
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 66": {
-        "instances": 3,
-        "positions": [
-          90,
-          421,
-          752
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 251": {
-        "instances": 3,
-        "positions": [
-          91,
-          422,
-          753
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 20-4": {
-        "instances": 3,
-        "positions": [
-          92,
-          423,
-          754
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 209": {
-        "instances": 3,
-        "positions": [
-          93,
-          424,
-          755
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 370-1-2": {
-        "instances": 3,
-        "positions": [
-          94,
-          425,
-          756
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 128": {
-        "instances": 3,
-        "positions": [
-          95,
-          426,
-          792
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 348.5,
-        "maximum_gap": 366
-      },
-      "Code civil, art. 188": {
-        "instances": 3,
-        "positions": [
-          96,
-          427,
-          758
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 65": {
-        "instances": 3,
-        "positions": [
-          97,
-          428,
-          759
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 244": {
-        "instances": 3,
-        "positions": [
-          98,
-          429,
-          760
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 18-1": {
-        "instances": 3,
-        "positions": [
-          99,
-          430,
-          761
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 104": {
-        "instances": 3,
-        "positions": [
-          100,
-          431,
-          933
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 416.5,
-        "maximum_gap": 502
-      },
-      "Code civil, art. 370-1-1": {
-        "instances": 3,
-        "positions": [
-          101,
-          432,
-          763
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 260": {
-        "instances": 3,
-        "positions": [
-          102,
-          433,
-          764
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 345-2": {
-        "instances": 3,
-        "positions": [
-          103,
-          434,
-          765
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 171-6": {
-        "instances": 3,
-        "positions": [
-          104,
-          435,
-          766
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 1136": {
-        "instances": 3,
-        "positions": [
-          105,
-          436,
-          767
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 362": {
-        "instances": 3,
-        "positions": [
-          106,
-          437,
-          768
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 82": {
-        "instances": 3,
-        "positions": [
-          107,
-          438,
-          841
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 367,
-        "maximum_gap": 403
-      },
-      "Code civil, art. 213": {
-        "instances": 3,
-        "positions": [
-          108,
-          439,
-          770
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 67": {
-        "instances": 3,
-        "positions": [
-          109,
-          440,
-          771
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 177": {
-        "instances": 3,
-        "positions": [
-          110,
-          441,
-          772
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 21-24-1": {
-        "instances": 3,
-        "positions": [
-          111,
-          442,
-          844
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 366.5,
-        "maximum_gap": 402
-      },
-      "Code civil, art. 53": {
-        "instances": 3,
-        "positions": [
-          112,
-          443,
-          774
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 351": {
-        "instances": 3,
-        "positions": [
-          113,
-          444,
-          974
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 430.5,
-        "maximum_gap": 530
-      },
-      "Code civil, art. 237": {
-        "instances": 3,
-        "positions": [
-          114,
-          445,
-          776
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 311-25": {
-        "instances": 3,
-        "positions": [
-          115,
-          446,
-          777
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 382,
+        "mean_gap": 424,
+        "maximum_gap": 466
       },
       "Code civil, art. 19-1": {
         "instances": 3,
         "positions": [
-          116,
-          447,
-          778
+          72,
+          531,
+          882
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 351,
+        "mean_gap": 405,
+        "maximum_gap": 459
       },
-      "Code civil, art. 7": {
+      "Code civil, art. 205": {
         "instances": 3,
         "positions": [
-          117,
-          448,
-          779
+          73,
+          616,
+          883
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 163": {
-        "instances": 3,
-        "positions": [
-          118,
-          449,
-          780
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 1164": {
-        "instances": 3,
-        "positions": [
-          119,
-          450,
-          981
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 431,
-        "maximum_gap": 531
-      },
-      "Code civil, art. 32-1": {
-        "instances": 3,
-        "positions": [
-          120,
-          451,
-          782
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Art. 1193 C. civ.": {
-        "instances": 3,
-        "positions": [
-          121,
-          452,
-          783
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 323": {
-        "instances": 3,
-        "positions": [
-          122,
-          453,
-          784
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil 414-1": {
-        "instances": 3,
-        "positions": [
-          123,
-          454,
-          870
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 373.5,
-        "maximum_gap": 416
-      },
-      "Code civil 1401": {
-        "instances": 3,
-        "positions": [
-          124,
-          455,
-          786
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 124": {
-        "instances": 3,
-        "positions": [
-          125,
-          456,
-          787
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 299": {
-        "instances": 3,
-        "positions": [
-          126,
-          457,
-          788
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 322": {
-        "instances": 3,
-        "positions": [
-          127,
-          458,
-          789
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 1426": {
-        "instances": 3,
-        "positions": [
-          128,
-          459,
-          927
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 399.5,
-        "maximum_gap": 468
-      },
-      "Code civil, art. 325": {
-        "instances": 3,
-        "positions": [
-          129,
-          460,
-          791
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 61": {
-        "instances": 3,
-        "positions": [
-          130,
-          461,
-          866
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 368,
-        "maximum_gap": 405
-      },
-      "Code civil, art. 118": {
-        "instances": 3,
-        "positions": [
-          131,
-          462,
-          793
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 21-27-1": {
-        "instances": 3,
-        "positions": [
-          132,
-          463,
-          794
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 16-2": {
-        "instances": 3,
-        "positions": [
-          133,
-          464,
-          795
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 9": {
-        "instances": 3,
-        "positions": [
-          134,
-          465,
-          796
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 79-1": {
-        "instances": 3,
-        "positions": [
-          135,
-          466,
-          797
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 330": {
-        "instances": 3,
-        "positions": [
-          136,
-          467,
-          798
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 342-9": {
-        "instances": 3,
-        "positions": [
-          137,
-          468,
-          799
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 10": {
-        "instances": 3,
-        "positions": [
-          138,
-          469,
-          800
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 8": {
-        "instances": 3,
-        "positions": [
-          139,
-          470,
-          972
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 416.5,
-        "maximum_gap": 502
-      },
-      "C. civ. art. 1240": {
-        "instances": 3,
-        "positions": [
-          140,
-          471,
-          802
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 353": {
-        "instances": 3,
-        "positions": [
-          141,
-          472,
-          803
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 345-1": {
-        "instances": 3,
-        "positions": [
-          142,
-          473,
-          804
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 248": {
-        "instances": 3,
-        "positions": [
-          143,
-          474,
-          805
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 103": {
-        "instances": 3,
-        "positions": [
-          144,
-          475,
-          806
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 352-1": {
-        "instances": 3,
-        "positions": [
-          145,
-          476,
-          807
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 225": {
-        "instances": 3,
-        "positions": [
-          146,
-          477,
-          808
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 175-1": {
-        "instances": 3,
-        "positions": [
-          147,
-          478,
-          809
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil 215": {
-        "instances": 3,
-        "positions": [
-          148,
-          479,
-          991
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 421.5,
-        "maximum_gap": 512
-      },
-      "Code civil, art. 318": {
-        "instances": 3,
-        "positions": [
-          149,
-          480,
-          830
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 340.5,
-        "maximum_gap": 350
-      },
-      "Code civil, art. 16-5": {
-        "instances": 3,
-        "positions": [
-          150,
-          481,
-          812
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 31": {
-        "instances": 3,
-        "positions": [
-          151,
-          482,
-          813
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 311-14": {
-        "instances": 3,
-        "positions": [
-          152,
-          483,
-          814
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 131": {
-        "instances": 3,
-        "positions": [
-          153,
-          484,
-          815
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 47": {
-        "instances": 3,
-        "positions": [
-          154,
-          485,
-          816
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 148": {
-        "instances": 3,
-        "positions": [
-          155,
-          486,
-          817
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 11": {
-        "instances": 3,
-        "positions": [
-          156,
-          487,
-          818
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 311-15": {
-        "instances": 3,
-        "positions": [
-          157,
-          488,
-          946
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 394.5,
-        "maximum_gap": 458
-      },
-      "Code civil, art. 214": {
-        "instances": 3,
-        "positions": [
-          158,
-          489,
-          820
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 215": {
-        "instances": 3,
-        "positions": [
-          159,
-          490,
-          821
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 331": {
-        "instances": 3,
-        "positions": [
-          160,
-          491,
-          822
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 198": {
-        "instances": 3,
-        "positions": [
-          161,
-          492,
-          823
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 232": {
-        "instances": 3,
-        "positions": [
-          162,
-          493,
-          824
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 21-1": {
-        "instances": 3,
-        "positions": [
-          163,
-          494,
-          825
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 348": {
-        "instances": 3,
-        "positions": [
-          164,
-          495,
-          826
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 69": {
-        "instances": 3,
-        "positions": [
-          165,
-          496,
-          827
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil Article 1231-1": {
-        "instances": 3,
-        "positions": [
-          166,
-          497,
-          828
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 201": {
-        "instances": 3,
-        "positions": [
-          167,
-          498,
-          829
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 307": {
-        "instances": 3,
-        "positions": [
-          168,
-          499,
-          835
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 333.5,
-        "maximum_gap": 336
-      },
-      "Code civil, art. 218": {
-        "instances": 3,
-        "positions": [
-          169,
-          500,
-          976
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 403.5,
-        "maximum_gap": 476
-      },
-      "Code civil, art. 18": {
-        "instances": 3,
-        "positions": [
-          170,
-          501,
-          832
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 108": {
-        "instances": 3,
-        "positions": [
-          171,
-          502,
-          963
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 396,
-        "maximum_gap": 461
-      },
-      "Code civil, art. 211": {
-        "instances": 3,
-        "positions": [
-          172,
-          503,
-          834
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 276-3": {
-        "instances": 3,
-        "positions": [
-          173,
-          504,
-          962
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 394.5,
-        "maximum_gap": 458
-      },
-      "Code civil, art. 51": {
-        "instances": 3,
-        "positions": [
-          174,
-          505,
-          836
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 119": {
-        "instances": 3,
-        "positions": [
-          175,
-          506,
-          837
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 31-3": {
-        "instances": 3,
-        "positions": [
-          176,
-          507,
-          838
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 32-4": {
-        "instances": 3,
-        "positions": [
-          177,
-          508,
-          839
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 21-29": {
-        "instances": 3,
-        "positions": [
-          178,
-          509,
-          984
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 403,
-        "maximum_gap": 475
-      },
-      "Code civil, art. 206": {
-        "instances": 3,
-        "positions": [
-          179,
-          510,
-          987
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 404,
-        "maximum_gap": 477
-      },
-      "Code civil, art. 146": {
-        "instances": 3,
-        "positions": [
-          180,
-          511,
-          842
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil 544": {
-        "instances": 3,
-        "positions": [
-          181,
-          512,
-          843
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 306": {
-        "instances": 3,
-        "positions": [
-          182,
-          513,
-          965
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 391.5,
-        "maximum_gap": 452
-      },
-      "Code civil, art. 311-24-1": {
-        "instances": 3,
-        "positions": [
-          183,
-          514,
-          845
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 1132": {
-        "instances": 3,
-        "positions": [
-          184,
-          515,
-          846
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 5": {
-        "instances": 3,
-        "positions": [
-          185,
-          516,
-          847
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 195": {
-        "instances": 3,
-        "positions": [
-          186,
-          517,
-          848
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 370-1-4": {
-        "instances": 3,
-        "positions": [
-          187,
-          518,
-          849
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 61-2": {
-        "instances": 3,
-        "positions": [
-          188,
-          519,
-          850
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 267,
+        "mean_gap": 405,
+        "maximum_gap": 543
       },
       "Code civil, art. 9-1": {
         "instances": 3,
         "positions": [
-          189,
-          520,
-          851
+          74,
+          540,
+          708
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 168,
+        "mean_gap": 317,
+        "maximum_gap": 466
       },
-      "Code civil, art. 245-1": {
+      "Code civil, art. 192": {
         "instances": 3,
         "positions": [
-          190,
-          521,
-          852
+          75,
+          600,
+          859
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 259,
+        "mean_gap": 392,
+        "maximum_gap": 525
       },
-      "Code civil, art. 99": {
+      "Code civil, art. 355": {
         "instances": 3,
         "positions": [
-          191,
-          522,
-          853
+          76,
+          644,
+          810
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 367,
+        "maximum_gap": 568
       },
-      "Code civil, art. 352": {
+      "Code civil, art. 106": {
         "instances": 3,
         "positions": [
-          192,
-          523,
-          854
+          77,
+          362,
+          969
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 285,
+        "mean_gap": 446,
+        "maximum_gap": 607
+      },
+      "Code civil, art. 62-1": {
+        "instances": 3,
+        "positions": [
+          78,
+          647,
+          842
+        ],
+        "minimum_gap": 195,
+        "mean_gap": 382,
+        "maximum_gap": 569
+      },
+      "Code civil, art. 88": {
+        "instances": 3,
+        "positions": [
+          79,
+          498,
+          765
+        ],
+        "minimum_gap": 267,
+        "mean_gap": 343,
+        "maximum_gap": 419
+      },
+      "Code civil, art. 1242, al. 1": {
+        "instances": 3,
+        "positions": [
+          80,
+          573,
+          975
+        ],
+        "minimum_gap": 402,
+        "mean_gap": 447.5,
+        "maximum_gap": 493
+      },
+      "Code civil, art. 327": {
+        "instances": 3,
+        "positions": [
+          81,
+          356,
+          712
+        ],
+        "minimum_gap": 275,
+        "mean_gap": 315.5,
+        "maximum_gap": 356
+      },
+      "Code civil, art. 1644": {
+        "instances": 3,
+        "positions": [
+          82,
+          618,
+          869
+        ],
+        "minimum_gap": 251,
+        "mean_gap": 393.5,
+        "maximum_gap": 536
+      },
+      "Code civil, art. 171-6": {
+        "instances": 3,
+        "positions": [
+          83,
+          534,
+          700
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 308.5,
+        "maximum_gap": 451
       },
       "Code civil, art. 200": {
         "instances": 3,
         "positions": [
-          193,
-          524,
-          923
+          84,
+          332,
+          718
         ],
-        "minimum_gap": 331,
-        "mean_gap": 365,
-        "maximum_gap": 399
+        "minimum_gap": 248,
+        "mean_gap": 317,
+        "maximum_gap": 386
       },
-      "Code civil, art. 364": {
+      "Code civil, art. 1132": {
         "instances": 3,
         "positions": [
-          194,
-          525,
-          856
+          85,
+          634,
+          800
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 234": {
-        "instances": 3,
-        "positions": [
-          195,
-          526,
-          857
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 87": {
-        "instances": 3,
-        "positions": [
-          196,
-          527,
-          858
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 172": {
-        "instances": 3,
-        "positions": [
-          197,
-          528,
-          859
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 81": {
-        "instances": 3,
-        "positions": [
-          198,
-          529,
-          860
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 229-1": {
-        "instances": 3,
-        "positions": [
-          199,
-          530,
-          861
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 126": {
-        "instances": 3,
-        "positions": [
-          200,
-          531,
-          862
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 357.5,
+        "maximum_gap": 549
       },
       "Code civil, art. 265-1": {
         "instances": 3,
         "positions": [
-          201,
-          532,
-          983
+          86,
+          519,
+          722
         ],
-        "minimum_gap": 331,
-        "mean_gap": 391,
+        "minimum_gap": 203,
+        "mean_gap": 318,
+        "maximum_gap": 433
+      },
+      "Code civil, art. 20-1": {
+        "instances": 3,
+        "positions": [
+          87,
+          355,
+          952
+        ],
+        "minimum_gap": 268,
+        "mean_gap": 432.5,
+        "maximum_gap": 597
+      },
+      "Code civil, art. 107": {
+        "instances": 3,
+        "positions": [
+          88,
+          455,
+          837
+        ],
+        "minimum_gap": 367,
+        "mean_gap": 374.5,
+        "maximum_gap": 382
+      },
+      "Code civil, art. 343-1": {
+        "instances": 3,
+        "positions": [
+          89,
+          350,
+          939
+        ],
+        "minimum_gap": 261,
+        "mean_gap": 425,
+        "maximum_gap": 589
+      },
+      "Code civil, art. 201": {
+        "instances": 3,
+        "positions": [
+          90,
+          413,
+          714
+        ],
+        "minimum_gap": 301,
+        "mean_gap": 312,
+        "maximum_gap": 323
+      },
+      "Code civil, art. 259-2": {
+        "instances": 3,
+        "positions": [
+          91,
+          568,
+          734
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 321.5,
+        "maximum_gap": 477
+      },
+      "Code civil, art. 87": {
+        "instances": 3,
+        "positions": [
+          92,
+          585,
+          924
+        ],
+        "minimum_gap": 339,
+        "mean_gap": 416,
+        "maximum_gap": 493
+      },
+      "Code civil, art. 307": {
+        "instances": 3,
+        "positions": [
+          93,
+          613,
+          782
+        ],
+        "minimum_gap": 169,
+        "mean_gap": 344.5,
+        "maximum_gap": 520
+      },
+      "Code civil, art. 21-25-1": {
+        "instances": 3,
+        "positions": [
+          94,
+          624,
+          830
+        ],
+        "minimum_gap": 206,
+        "mean_gap": 368,
+        "maximum_gap": 530
+      },
+      "Code civil, art. 264": {
+        "instances": 3,
+        "positions": [
+          95,
+          580,
+          746
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 325.5,
+        "maximum_gap": 485
+      },
+      "Code civil, art. 175-1": {
+        "instances": 3,
+        "positions": [
+          96,
+          622,
+          934
+        ],
+        "minimum_gap": 312,
+        "mean_gap": 419,
+        "maximum_gap": 526
+      },
+      "Code civil, art. 22": {
+        "instances": 3,
+        "positions": [
+          97,
+          465,
+          874
+        ],
+        "minimum_gap": 368,
+        "mean_gap": 388.5,
+        "maximum_gap": 409
+      },
+      "Code civil, art. 232": {
+        "instances": 3,
+        "positions": [
+          98,
+          633,
+          994
+        ],
+        "minimum_gap": 361,
+        "mean_gap": 448,
+        "maximum_gap": 535
+      },
+      "Code civil, art. 319": {
+        "instances": 3,
+        "positions": [
+          99,
+          405,
+          996
+        ],
+        "minimum_gap": 306,
+        "mean_gap": 448.5,
+        "maximum_gap": 591
+      },
+      "Code civil, art. 316-4": {
+        "instances": 3,
+        "positions": [
+          100,
+          571,
+          843
+        ],
+        "minimum_gap": 272,
+        "mean_gap": 371.5,
+        "maximum_gap": 471
+      },
+      "Code civil, art. 31": {
+        "instances": 3,
+        "positions": [
+          101,
+          564,
+          730
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 314.5,
+        "maximum_gap": 463
+      },
+      "Code civil, art. 23-4": {
+        "instances": 3,
+        "positions": [
+          102,
+          561,
+          880
+        ],
+        "minimum_gap": 319,
+        "mean_gap": 389,
+        "maximum_gap": 459
+      },
+      "Code civil, art. 1164": {
+        "instances": 3,
+        "positions": [
+          103,
+          554,
+          803
+        ],
+        "minimum_gap": 249,
+        "mean_gap": 350,
         "maximum_gap": 451
       },
-      "Code civil, art. 23-7": {
+      "Code civil, art. 145": {
         "instances": 3,
         "positions": [
-          202,
-          533,
-          864
+          104,
+          512,
+          697
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 185,
+        "mean_gap": 296.5,
+        "maximum_gap": 408
       },
-      "Jurisprudence Ass. Plén., 31 mai 1991": {
+      "Code civil, art. 276-1": {
         "instances": 3,
         "positions": [
-          203,
-          534,
-          865
+          105,
+          351,
+          971
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 246,
+        "mean_gap": 433,
+        "maximum_gap": 620
       },
-      "Code civil, art. 115": {
+      "Code civil, art. 69": {
         "instances": 3,
         "positions": [
-          204,
-          535,
+          106,
+          599,
+          907
+        ],
+        "minimum_gap": 308,
+        "mean_gap": 400.5,
+        "maximum_gap": 493
+      },
+      "Code civil, art. 1231-1": {
+        "instances": 3,
+        "positions": [
+          107,
+          590,
+          756
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 324.5,
+        "maximum_gap": 483
+      },
+      "Code civil, art. 1100-1": {
+        "instances": 3,
+        "positions": [
+          108,
+          550,
+          752
+        ],
+        "minimum_gap": 202,
+        "mean_gap": 322,
+        "maximum_gap": 442
+      },
+      "Code civil, art. 2300": {
+        "instances": 3,
+        "positions": [
+          109,
+          389,
+          686
+        ],
+        "minimum_gap": 280,
+        "mean_gap": 288.5,
+        "maximum_gap": 297
+      },
+      "Code civil, art. 347": {
+        "instances": 3,
+        "positions": [
+          110,
+          536,
+          944
+        ],
+        "minimum_gap": 408,
+        "mean_gap": 417,
+        "maximum_gap": 426
+      },
+      "Code civil, art. 225-1": {
+        "instances": 3,
+        "positions": [
+          111,
+          645,
+          811
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 350,
+        "maximum_gap": 534
+      },
+      "Code civil, art. 1100, al. 2": {
+        "instances": 3,
+        "positions": [
+          112,
+          361,
           970
         ],
-        "minimum_gap": 331,
+        "minimum_gap": 249,
+        "mean_gap": 429,
+        "maximum_gap": 609
+      },
+      "Code civil, art. 16-13": {
+        "instances": 3,
+        "positions": [
+          113,
+          612,
+          879
+        ],
+        "minimum_gap": 267,
         "mean_gap": 383,
-        "maximum_gap": 435
+        "maximum_gap": 499
+      },
+      "Code civil, art. 159": {
+        "instances": 3,
+        "positions": [
+          114,
+          354,
+          931
+        ],
+        "minimum_gap": 240,
+        "mean_gap": 408.5,
+        "maximum_gap": 577
+      },
+      "Code civil, art. 331": {
+        "instances": 3,
+        "positions": [
+          115,
+          458,
+          886
+        ],
+        "minimum_gap": 343,
+        "mean_gap": 385.5,
+        "maximum_gap": 428
+      },
+      "Code civil, art. 21-29": {
+        "instances": 3,
+        "positions": [
+          116,
+          513,
+          679
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 281.5,
+        "maximum_gap": 397
+      },
+      "Code civil, art. 354": {
+        "instances": 3,
+        "positions": [
+          117,
+          579,
+          928
+        ],
+        "minimum_gap": 349,
+        "mean_gap": 405.5,
+        "maximum_gap": 462
+      },
+      "Code civil, art. 1137, al. 3": {
+        "instances": 3,
+        "positions": [
+          118,
+          382,
+          893
+        ],
+        "minimum_gap": 264,
+        "mean_gap": 387.5,
+        "maximum_gap": 511
+      },
+      "Code civil, art. 209": {
+        "instances": 3,
+        "positions": [
+          119,
+          346,
+          864
+        ],
+        "minimum_gap": 227,
+        "mean_gap": 372.5,
+        "maximum_gap": 518
+      },
+      "Code civil, art. 300": {
+        "instances": 3,
+        "positions": [
+          120,
+          370,
+          663
+        ],
+        "minimum_gap": 250,
+        "mean_gap": 271.5,
+        "maximum_gap": 293
+      },
+      "Code civil, art. 203": {
+        "instances": 3,
+        "positions": [
+          121,
+          347,
+          804
+        ],
+        "minimum_gap": 226,
+        "mean_gap": 341.5,
+        "maximum_gap": 457
+      },
+      "Code civil, art. 30-1": {
+        "instances": 3,
+        "positions": [
+          122,
+          343,
+          910
+        ],
+        "minimum_gap": 221,
+        "mean_gap": 394,
+        "maximum_gap": 567
+      },
+      "Code civil, art. 1422": {
+        "instances": 3,
+        "positions": [
+          123,
+          349,
+          716
+        ],
+        "minimum_gap": 226,
+        "mean_gap": 296.5,
+        "maximum_gap": 367
+      },
+      "Code civil, art. 414-1": {
+        "instances": 3,
+        "positions": [
+          124,
+          445,
+          772
+        ],
+        "minimum_gap": 321,
+        "mean_gap": 324,
+        "maximum_gap": 327
+      },
+      "Code civil, art. 285-1": {
+        "instances": 3,
+        "positions": [
+          125,
+          491,
+          905
+        ],
+        "minimum_gap": 366,
+        "mean_gap": 390,
+        "maximum_gap": 414
+      },
+      "Code civil, art. 21-20": {
+        "instances": 3,
+        "positions": [
+          126,
+          368,
+          678
+        ],
+        "minimum_gap": 242,
+        "mean_gap": 276,
+        "maximum_gap": 310
+      },
+      "Code civil, art. 211": {
+        "instances": 3,
+        "positions": [
+          127,
+          379,
+          794
+        ],
+        "minimum_gap": 252,
+        "mean_gap": 333.5,
+        "maximum_gap": 415
+      },
+      "Code civil, art. 1421": {
+        "instances": 3,
+        "positions": [
+          128,
+          454,
+          871
+        ],
+        "minimum_gap": 326,
+        "mean_gap": 371.5,
+        "maximum_gap": 417
+      },
+      "Code civil, art. 154": {
+        "instances": 3,
+        "positions": [
+          129,
+          533,
+          699
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 285,
+        "maximum_gap": 404
+      },
+      "Code civil, art. 348-1": {
+        "instances": 3,
+        "positions": [
+          130,
+          489,
+          724
+        ],
+        "minimum_gap": 235,
+        "mean_gap": 297,
+        "maximum_gap": 359
+      },
+      "Code civil, art. 352-2": {
+        "instances": 3,
+        "positions": [
+          131,
+          353,
+          925
+        ],
+        "minimum_gap": 222,
+        "mean_gap": 397,
+        "maximum_gap": 572
+      },
+      "Code civil, art. 221": {
+        "instances": 3,
+        "positions": [
+          132,
+          364,
+          962
+        ],
+        "minimum_gap": 232,
+        "mean_gap": 415,
+        "maximum_gap": 598
+      },
+      "Code civil, art. 893": {
+        "instances": 3,
+        "positions": [
+          133,
+          527,
+          913
+        ],
+        "minimum_gap": 386,
+        "mean_gap": 390,
+        "maximum_gap": 394
+      },
+      "Code civil, art. 191": {
+        "instances": 3,
+        "positions": [
+          134,
+          449,
+          977
+        ],
+        "minimum_gap": 315,
+        "mean_gap": 421.5,
+        "maximum_gap": 528
+      },
+      "Code civil, art. 68": {
+        "instances": 3,
+        "positions": [
+          135,
+          345,
+          721
+        ],
+        "minimum_gap": 210,
+        "mean_gap": 293,
+        "maximum_gap": 376
+      },
+      "Code civil, art. 1124": {
+        "instances": 3,
+        "positions": [
+          136,
+          360,
+          857
+        ],
+        "minimum_gap": 224,
+        "mean_gap": 360.5,
+        "maximum_gap": 497
+      },
+      "Code civil, art. 11": {
+        "instances": 3,
+        "positions": [
+          137,
+          652,
+          818
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 340.5,
+        "maximum_gap": 515
+      },
+      "Code civil, art. 316-3": {
+        "instances": 3,
+        "positions": [
+          138,
+          603,
+          773
+        ],
+        "minimum_gap": 170,
+        "mean_gap": 317.5,
+        "maximum_gap": 465
+      },
+      "Code civil, art. 213": {
+        "instances": 3,
+        "positions": [
+          139,
+          487,
+          887
+        ],
+        "minimum_gap": 348,
+        "mean_gap": 374,
+        "maximum_gap": 400
+      },
+      "Code civil, art. 276-3": {
+        "instances": 3,
+        "positions": [
+          140,
+          543,
+          826
+        ],
+        "minimum_gap": 283,
+        "mean_gap": 343,
+        "maximum_gap": 403
+      },
+      "Code civil, art. 61-8": {
+        "instances": 3,
+        "positions": [
+          141,
+          539,
+          705
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 282,
+        "maximum_gap": 398
+      },
+      "Code civil, art. 34-1": {
+        "instances": 3,
+        "positions": [
+          142,
+          450,
+          900
+        ],
+        "minimum_gap": 308,
+        "mean_gap": 379,
+        "maximum_gap": 450
+      },
+      "Code civil, art. 32-4": {
+        "instances": 3,
+        "positions": [
+          143,
+          508,
+          788
+        ],
+        "minimum_gap": 280,
+        "mean_gap": 322.5,
+        "maximum_gap": 365
+      },
+      "Code civil, art. 348-3": {
+        "instances": 3,
+        "positions": [
+          144,
+          425,
+          875
+        ],
+        "minimum_gap": 281,
+        "mean_gap": 365.5,
+        "maximum_gap": 450
+      },
+      "Code civil, art. 108-3": {
+        "instances": 3,
+        "positions": [
+          145,
+          643,
+          809
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 332,
+        "maximum_gap": 498
+      },
+      "Code civil, art. 1172": {
+        "instances": 3,
+        "positions": [
+          146,
+          348,
+          829
+        ],
+        "minimum_gap": 202,
+        "mean_gap": 341.5,
+        "maximum_gap": 481
+      },
+      "Code civil, art. 342-4": {
+        "instances": 3,
+        "positions": [
+          147,
+          596,
+          762
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 307.5,
+        "maximum_gap": 449
+      },
+      "Code civil, art. 15": {
+        "instances": 3,
+        "positions": [
+          148,
+          451,
+          892
+        ],
+        "minimum_gap": 303,
+        "mean_gap": 372,
+        "maximum_gap": 441
+      },
+      "Code civil, art. 70": {
+        "instances": 3,
+        "positions": [
+          149,
+          376,
+          745
+        ],
+        "minimum_gap": 227,
+        "mean_gap": 298,
+        "maximum_gap": 369
+      },
+      "Code civil, art. 21": {
+        "instances": 3,
+        "positions": [
+          150,
+          464,
+          683
+        ],
+        "minimum_gap": 219,
+        "mean_gap": 266.5,
+        "maximum_gap": 314
+      },
+      "Code civil, art. 204": {
+        "instances": 3,
+        "positions": [
+          151,
+          392,
+          974
+        ],
+        "minimum_gap": 241,
+        "mean_gap": 411.5,
+        "maximum_gap": 582
+      },
+      "Code civil, art. 150": {
+        "instances": 3,
+        "positions": [
+          152,
+          525,
+          691
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 269.5,
+        "maximum_gap": 373
+      },
+      "Code civil, art. 263": {
+        "instances": 3,
+        "positions": [
+          153,
+          605,
+          771
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 309,
+        "maximum_gap": 452
+      },
+      "Code civil, art. 1112-1": {
+        "instances": 3,
+        "positions": [
+          154,
+          560,
+          984
+        ],
+        "minimum_gap": 406,
+        "mean_gap": 415,
+        "maximum_gap": 424
+      },
+      "Code civil, art. 53": {
+        "instances": 3,
+        "positions": [
+          155,
+          497,
+          895
+        ],
+        "minimum_gap": 342,
+        "mean_gap": 370,
+        "maximum_gap": 398
+      },
+      "Code civil, art. 109": {
+        "instances": 3,
+        "positions": [
+          156,
+          422,
+          968
+        ],
+        "minimum_gap": 266,
+        "mean_gap": 406,
+        "maximum_gap": 546
+      },
+      "Code civil, art. 74": {
+        "instances": 3,
+        "positions": [
+          157,
+          532,
+          739
+        ],
+        "minimum_gap": 207,
+        "mean_gap": 291,
+        "maximum_gap": 375
+      },
+      "Code civil, art. 219": {
+        "instances": 3,
+        "positions": [
+          158,
+          417,
+          834
+        ],
+        "minimum_gap": 259,
+        "mean_gap": 338,
+        "maximum_gap": 417
+      },
+      "Code civil, art. 259": {
+        "instances": 3,
+        "positions": [
+          159,
+          331,
+          687
+        ],
+        "minimum_gap": 172,
+        "mean_gap": 264,
+        "maximum_gap": 356
+      },
+      "Code civil, art. 259-1": {
+        "instances": 3,
+        "positions": [
+          160,
+          484,
+          774
+        ],
+        "minimum_gap": 290,
+        "mean_gap": 307,
+        "maximum_gap": 324
+      },
+      "Code civil, art. 101-2": {
+        "instances": 3,
+        "positions": [
+          161,
+          410,
+          973
+        ],
+        "minimum_gap": 249,
+        "mean_gap": 406,
+        "maximum_gap": 563
+      },
+      "Code civil, art. 367": {
+        "instances": 3,
+        "positions": [
+          162,
+          538,
+          860
+        ],
+        "minimum_gap": 322,
+        "mean_gap": 349,
+        "maximum_gap": 376
+      },
+      "Code civil, art. 5": {
+        "instances": 3,
+        "positions": [
+          163,
+          577,
+          948
+        ],
+        "minimum_gap": 371,
+        "mean_gap": 392.5,
+        "maximum_gap": 414
+      },
+      "Code civil, art. 119": {
+        "instances": 3,
+        "positions": [
+          164,
+          606,
+          981
+        ],
+        "minimum_gap": 375,
+        "mean_gap": 408.5,
+        "maximum_gap": 442
+      },
+      "Cass. ass. plén., 3 juillet 2015": {
+        "instances": 3,
+        "positions": [
+          165,
+          581,
+          920
+        ],
+        "minimum_gap": 339,
+        "mean_gap": 377.5,
+        "maximum_gap": 416
+      },
+      "Code civil, art. 21-27-1": {
+        "instances": 3,
+        "positions": [
+          166,
+          357,
+          956
+        ],
+        "minimum_gap": 191,
+        "mean_gap": 395,
+        "maximum_gap": 599
+      },
+      "Code civil, art. 16-2": {
+        "instances": 3,
+        "positions": [
+          175,
+          344,
+          904
+        ],
+        "minimum_gap": 169,
+        "mean_gap": 364.5,
+        "maximum_gap": 560
+      },
+      "Code civil, art. 363": {
+        "instances": 3,
+        "positions": [
+          177,
+          384,
+          921
+        ],
+        "minimum_gap": 207,
+        "mean_gap": 372,
+        "maximum_gap": 537
+      },
+      "Code civil, art. 342-9": {
+        "instances": 3,
+        "positions": [
+          180,
+          636,
+          802
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 311,
+        "maximum_gap": 456
+      },
+      "Code civil, art. 311-14": {
+        "instances": 3,
+        "positions": [
+          183,
+          467,
+          671
+        ],
+        "minimum_gap": 204,
+        "mean_gap": 244,
+        "maximum_gap": 284
+      },
+      "Code civil, art. 180": {
+        "instances": 3,
+        "positions": [
+          184,
+          373,
+          715
+        ],
+        "minimum_gap": 189,
+        "mean_gap": 265.5,
+        "maximum_gap": 342
+      },
+      "Code civil, art. 66": {
+        "instances": 3,
+        "positions": [
+          185,
+          375,
+          685
+        ],
+        "minimum_gap": 190,
+        "mean_gap": 250,
+        "maximum_gap": 310
+      },
+      "Code civil, art. 323": {
+        "instances": 3,
+        "positions": [
+          187,
+          365,
+          980
+        ],
+        "minimum_gap": 178,
+        "mean_gap": 396.5,
+        "maximum_gap": 615
+      },
+      "Code civil, art. 242": {
+        "instances": 3,
+        "positions": [
+          188,
+          381,
+          986
+        ],
+        "minimum_gap": 193,
+        "mean_gap": 399,
+        "maximum_gap": 605
+      },
+      "Code civil, art. 16-1": {
+        "instances": 3,
+        "positions": [
+          189,
+          602,
+          768
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 289.5,
+        "maximum_gap": 413
+      },
+      "Code civil, art. 237": {
+        "instances": 3,
+        "positions": [
+          190,
+          409,
+          769
+        ],
+        "minimum_gap": 219,
+        "mean_gap": 289.5,
+        "maximum_gap": 360
       },
       "Code civil, art. 21-21": {
         "instances": 3,
         "positions": [
-          205,
-          536,
-          867
+          191,
+          635,
+          801
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 305,
+        "maximum_gap": 444
+      },
+      "Code civil, art. 177": {
+        "instances": 3,
+        "positions": [
+          192,
+          557,
+          841
+        ],
+        "minimum_gap": 284,
+        "mean_gap": 324.5,
+        "maximum_gap": 365
+      },
+      "Code civil, art. 220-1": {
+        "instances": 3,
+        "positions": [
+          193,
+          359,
+          850
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 328.5,
+        "maximum_gap": 491
+      },
+      "Code civil, art. 47": {
+        "instances": 3,
+        "positions": [
+          194,
+          586,
+          861
+        ],
+        "minimum_gap": 275,
+        "mean_gap": 333.5,
+        "maximum_gap": 392
+      },
+      "Code civil, art. 212": {
+        "instances": 3,
+        "positions": [
+          195,
+          626,
+          792
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 298.5,
+        "maximum_gap": 431
+      },
+      "Code civil, art. 8": {
+        "instances": 3,
+        "positions": [
+          196,
+          415,
+          898
+        ],
+        "minimum_gap": 219,
+        "mean_gap": 351,
+        "maximum_gap": 483
+      },
+      "Code civil, art. 368": {
+        "instances": 3,
+        "positions": [
+          197,
+          363,
+          983
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 393,
+        "maximum_gap": 620
+      },
+      "Code civil, art. 7": {
+        "instances": 3,
+        "positions": [
+          198,
+          514,
+          942
+        ],
+        "minimum_gap": 316,
+        "mean_gap": 372,
+        "maximum_gap": 428
+      },
+      "Code civil, art. 17-6": {
+        "instances": 3,
+        "positions": [
+          199,
+          366,
+          770
+        ],
+        "minimum_gap": 167,
+        "mean_gap": 285.5,
+        "maximum_gap": 404
+      },
+      "Code civil, art. 350": {
+        "instances": 3,
+        "positions": [
+          200,
+          595,
+          897
+        ],
+        "minimum_gap": 302,
+        "mean_gap": 348.5,
+        "maximum_gap": 395
+      },
+      "Code civil, art. 366": {
+        "instances": 3,
+        "positions": [
+          201,
+          555,
+          778
+        ],
+        "minimum_gap": 223,
+        "mean_gap": 288.5,
+        "maximum_gap": 354
+      },
+      "Code civil, art. 198": {
+        "instances": 3,
+        "positions": [
+          202,
+          473,
+          688
+        ],
+        "minimum_gap": 215,
+        "mean_gap": 243,
+        "maximum_gap": 271
+      },
+      "Code civil, art. 234": {
+        "instances": 3,
+        "positions": [
+          203,
+          639,
+          824
+        ],
+        "minimum_gap": 185,
+        "mean_gap": 310.5,
+        "maximum_gap": 436
+      },
+      "Code civil, art. 32": {
+        "instances": 3,
+        "positions": [
+          204,
+          434,
+          707
+        ],
+        "minimum_gap": 230,
+        "mean_gap": 251.5,
+        "maximum_gap": 273
+      },
+      "Code civil, art. 369-1": {
+        "instances": 3,
+        "positions": [
+          205,
+          565,
+          903
+        ],
+        "minimum_gap": 338,
+        "mean_gap": 349,
+        "maximum_gap": 360
       },
       "Code civil, art. 101-1": {
         "instances": 3,
         "positions": [
           206,
-          537,
-          868
+          372,
+          945
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 369.5,
+        "maximum_gap": 573
       },
-      "Code civil, art. 348-6": {
+      "Code civil, art. 265-2": {
         "instances": 3,
         "positions": [
           207,
-          538,
-          869
+          377,
+          838
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 170,
+        "mean_gap": 315.5,
+        "maximum_gap": 461
       },
-      "C. civ. art. 21-20": {
+      "Code civil, art. 278": {
         "instances": 3,
         "positions": [
           208,
-          539,
-          949
+          604,
+          976
         ],
-        "minimum_gap": 331,
-        "mean_gap": 370.5,
-        "maximum_gap": 410
+        "minimum_gap": 372,
+        "mean_gap": 384,
+        "maximum_gap": 396
       },
-      "Code civil, art. 316-3": {
+      "Code civil, art. 220-3": {
         "instances": 3,
         "positions": [
           209,
-          540,
-          871
+          541,
+          908
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 332,
+        "mean_gap": 349.5,
+        "maximum_gap": 367
       },
-      "Code civil, art. 16-6": {
+      "Code civil, art. 313": {
         "instances": 3,
         "positions": [
           210,
-          541,
-          872
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 143": {
-        "instances": 3,
-        "positions": [
-          211,
-          542,
-          873
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 354": {
-        "instances": 3,
-        "positions": [
-          212,
-          543,
-          979
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 383.5,
-        "maximum_gap": 436
-      },
-      "Code civil, art. 108-2": {
-        "instances": 3,
-        "positions": [
-          213,
-          544,
-          875
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 335": {
-        "instances": 3,
-        "positions": [
-          214,
-          545,
-          876
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 16-14": {
-        "instances": 3,
-        "positions": [
-          215,
-          546,
-          877
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 150": {
-        "instances": 3,
-        "positions": [
-          216,
-          547,
-          878
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 219": {
-        "instances": 3,
-        "positions": [
-          217,
-          548,
-          879
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 1353": {
-        "instances": 3,
-        "positions": [
-          218,
-          549,
-          880
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 61-3": {
-        "instances": 3,
-        "positions": [
-          219,
-          550,
-          881
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 262": {
-        "instances": 3,
-        "positions": [
-          220,
-          551,
-          882
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 249": {
-        "instances": 3,
-        "positions": [
-          221,
-          552,
-          883
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 146-1": {
-        "instances": 3,
-        "positions": [
-          222,
-          553,
-          884
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 370-1": {
-        "instances": 3,
-        "positions": [
-          223,
-          554,
-          885
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 336": {
-        "instances": 3,
-        "positions": [
-          224,
-          555,
-          886
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 144": {
-        "instances": 3,
-        "positions": [
-          225,
-          556,
-          887
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 88": {
-        "instances": 3,
-        "positions": [
-          226,
-          557,
-          888
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 210": {
-        "instances": 3,
-        "positions": [
-          227,
-          558,
-          889
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 19-3": {
-        "instances": 3,
-        "positions": [
-          228,
-          559,
-          890
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 55": {
-        "instances": 3,
-        "positions": [
-          229,
-          560,
-          891
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 108-1": {
-        "instances": 3,
-        "positions": [
-          230,
-          561,
-          892
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 285-1": {
-        "instances": 3,
-        "positions": [
-          231,
-          562,
-          893
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 107": {
-        "instances": 3,
-        "positions": [
-          232,
-          563,
-          894
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 160": {
-        "instances": 3,
-        "positions": [
-          233,
-          564,
-          895
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 1421": {
-        "instances": 3,
-        "positions": [
-          234,
-          565,
-          896
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 311-25": {
-        "instances": 3,
-        "positions": [
-          235,
-          566,
-          897
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 52": {
-        "instances": 3,
-        "positions": [
-          236,
-          567,
-          898
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 319": {
-        "instances": 3,
-        "positions": [
-          237,
-          568,
-          899
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 145": {
-        "instances": 3,
-        "positions": [
-          238,
-          569,
-          900
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 205": {
-        "instances": 3,
-        "positions": [
-          239,
-          570,
-          901
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 1137 al. 3": {
-        "instances": 3,
-        "positions": [
-          240,
-          571,
-          902
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 15": {
-        "instances": 3,
-        "positions": [
-          241,
-          572,
-          903
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 242": {
-        "instances": 3,
-        "positions": [
-          242,
-          573,
-          904
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 180": {
-        "instances": 3,
-        "positions": [
-          243,
-          574,
-          905
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 192": {
-        "instances": 3,
-        "positions": [
-          244,
-          575,
-          906
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 276-1": {
-        "instances": 3,
-        "positions": [
-          245,
-          576,
-          907
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 321": {
-        "instances": 3,
-        "positions": [
-          246,
-          577,
-          908
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 308": {
-        "instances": 3,
-        "positions": [
-          247,
-          578,
-          909
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 343": {
-        "instances": 3,
-        "positions": [
-          248,
-          579,
-          910
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 16-1": {
-        "instances": 3,
-        "positions": [
-          249,
-          580,
-          911
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 259": {
-        "instances": 3,
-        "positions": [
-          250,
-          581,
-          912
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 159": {
-        "instances": 3,
-        "positions": [
-          251,
-          582,
-          913
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 62-1": {
-        "instances": 3,
-        "positions": [
-          252,
-          583,
-          914
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 327": {
-        "instances": 3,
-        "positions": [
-          253,
-          584,
-          915
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 326": {
-        "instances": 3,
-        "positions": [
-          254,
-          585,
-          916
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 348-5": {
-        "instances": 3,
-        "positions": [
-          255,
-          586,
-          971
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 358,
-        "maximum_gap": 385
-      },
-      "Code civil, art. 17-8": {
-        "instances": 3,
-        "positions": [
-          256,
-          587,
+          642,
           918
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 154": {
-        "instances": 3,
-        "positions": [
-          257,
-          588,
-          919
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 212": {
-        "instances": 3,
-        "positions": [
-          258,
-          589,
-          977
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 359.5,
-        "maximum_gap": 388
-      },
-      "Code civil 1589 al.1": {
-        "instances": 3,
-        "positions": [
-          259,
-          590,
-          921
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 21": {
-        "instances": 3,
-        "positions": [
-          260,
-          591,
-          922
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 21-18": {
-        "instances": 3,
-        "positions": [
-          261,
-          592,
-          982
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 360.5,
-        "maximum_gap": 390
-      },
-      "Code civil, art. 263": {
-        "instances": 3,
-        "positions": [
-          262,
-          593,
-          924
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 259-1": {
-        "instances": 3,
-        "positions": [
-          263,
-          594,
-          925
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 1123": {
-        "instances": 3,
-        "positions": [
-          264,
-          595,
-          926
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 342-8": {
-        "instances": 3,
-        "positions": [
-          265,
-          596,
-          968
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 351.5,
-        "maximum_gap": 372
-      },
-      "Code civil, art. 277": {
-        "instances": 3,
-        "positions": [
-          266,
-          597,
-          928
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 23-6": {
-        "instances": 3,
-        "positions": [
-          267,
-          598,
-          980
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 356.5,
-        "maximum_gap": 382
-      },
-      "Code civil, art. 216": {
-        "instances": 3,
-        "positions": [
-          268,
-          599,
-          930
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 369-1": {
-        "instances": 3,
-        "positions": [
-          269,
-          600,
-          931
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 60 alinea 1": {
-        "instances": 3,
-        "positions": [
-          270,
-          601,
-          932
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 311": {
-        "instances": 3,
-        "positions": [
-          271,
-          602,
-          964
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 346.5,
-        "maximum_gap": 362
+        "minimum_gap": 276,
+        "mean_gap": 354,
+        "maximum_gap": 432
       },
       "Code civil, art. 348-7": {
         "instances": 3,
         "positions": [
-          272,
-          603,
-          934
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 204": {
-        "instances": 3,
-        "positions": [
-          273,
-          604,
-          935
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 368": {
-        "instances": 3,
-        "positions": [
-          274,
-          605,
-          936
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 147": {
-        "instances": 3,
-        "positions": [
-          275,
-          606,
-          937
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 38": {
-        "instances": 3,
-        "positions": [
-          276,
-          607,
-          938
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "Code civil, art. 35": {
-        "instances": 3,
-        "positions": [
-          277,
-          608,
-          939
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 1100-1": {
-        "instances": 3,
-        "positions": [
-          278,
+          211,
           609,
-          940
+          775
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 282,
+        "maximum_gap": 398
       },
-      "Code civil, art. 220-1": {
+      "Code civil, art. 115": {
         "instances": 3,
         "positions": [
-          279,
-          610,
-          941
+          212,
+          378,
+          964
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 376,
+        "maximum_gap": 586
       },
-      "Code civil, art. 16": {
+      "Code civil, art. 61-2": {
         "instances": 3,
         "positions": [
-          280,
-          611,
-          942
+          213,
+          427,
+          926
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 214,
+        "mean_gap": 356.5,
+        "maximum_gap": 499
       },
-      "Code civil, art. 162": {
+      "Code civil, art. 112": {
         "instances": 3,
         "positions": [
-          281,
-          612,
-          943
+          214,
+          380,
+          979
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 382.5,
+        "maximum_gap": 599
       },
-      "Code civil, art. 349": {
+      "Code civil, art. 78": {
         "instances": 3,
         "positions": [
-          282,
-          613,
-          944
+          215,
+          460,
+          877
         ],
-        "minimum_gap": 331,
+        "minimum_gap": 245,
         "mean_gap": 331,
-        "maximum_gap": 331
+        "maximum_gap": 417
+      },
+      "Code civil, art. 371-1": {
+        "instances": 3,
+        "positions": [
+          216,
+          607,
+          949
+        ],
+        "minimum_gap": 342,
+        "mean_gap": 366.5,
+        "maximum_gap": 391
       },
       "Code civil, art. 171-5": {
         "instances": 3,
         "positions": [
-          283,
-          614,
-          945
+          217,
+          383,
+          661
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 222,
+        "maximum_gap": 278
       },
-      "Code civil, art. 342-4": {
+      "Code civil, art. 348-5": {
         "instances": 3,
         "positions": [
-          284,
-          615,
-          992
+          218,
+          393,
+          914
         ],
-        "minimum_gap": 331,
-        "mean_gap": 354,
-        "maximum_gap": 377
+        "minimum_gap": 175,
+        "mean_gap": 348,
+        "maximum_gap": 521
       },
-      "Code civil, art. 183": {
+      "Code civil, art. 348": {
         "instances": 3,
         "positions": [
-          285,
-          616,
-          947
+          219,
+          478,
+          766
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 259,
+        "mean_gap": 273.5,
+        "maximum_gap": 288
       },
-      "Code civil, art. 225-1": {
+      "Code civil, art. 322": {
         "instances": 3,
         "positions": [
-          286,
-          617,
-          948
+          220,
+          569,
+          735
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 257.5,
+        "maximum_gap": 349
       },
-      "Code civil, art. 332": {
+      "Code civil, art. 1195": {
         "instances": 3,
         "positions": [
-          287,
-          618,
-          978
+          221,
+          637,
+          853
         ],
-        "minimum_gap": 331,
-        "mean_gap": 345.5,
-        "maximum_gap": 360
+        "minimum_gap": 216,
+        "mean_gap": 316,
+        "maximum_gap": 416
       },
-      "Code civil, art. 27": {
+      "Code civil, art. 18-1": {
         "instances": 3,
         "positions": [
-          288,
+          222,
           619,
-          950
+          958
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 339,
+        "mean_gap": 368,
+        "maximum_gap": 397
       },
-      "Code civil, art. 300": {
+      "Code civil, art. 31-3": {
         "instances": 3,
         "positions": [
-          289,
-          620,
+          223,
+          621,
+          840
+        ],
+        "minimum_gap": 219,
+        "mean_gap": 308.5,
+        "maximum_gap": 398
+      },
+      "Code civil, art. 21-22": {
+        "instances": 3,
+        "positions": [
+          224,
+          390,
+          858
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 317,
+        "maximum_gap": 468
+      },
+      "Code civil, art. 23-7": {
+        "instances": 3,
+        "positions": [
+          225,
+          567,
+          733
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 254,
+        "maximum_gap": 342
+      },
+      "Code civil, art. 311-24-1": {
+        "instances": 3,
+        "positions": [
+          226,
+          601,
+          767
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 270.5,
+        "maximum_gap": 375
+      },
+      "Code civil, art. 81": {
+        "instances": 3,
+        "positions": [
+          227,
+          459,
+          852
+        ],
+        "minimum_gap": 232,
+        "mean_gap": 312.5,
+        "maximum_gap": 393
+      },
+      "Code civil, art. 16-5": {
+        "instances": 3,
+        "positions": [
+          228,
+          394,
+          748
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 260,
+        "maximum_gap": 354
+      },
+      "Code civil, art. 160": {
+        "instances": 3,
+        "positions": [
+          229,
+          395,
+          694
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 232.5,
+        "maximum_gap": 299
+      },
+      "Code civil, art. 51": {
+        "instances": 3,
+        "positions": [
+          230,
+          396,
+          999
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 384.5,
+        "maximum_gap": 603
+      },
+      "Code civil, art. 249": {
+        "instances": 3,
+        "positions": [
+          231,
+          640,
+          929
+        ],
+        "minimum_gap": 289,
+        "mean_gap": 349,
+        "maximum_gap": 409
+      },
+      "Code civil, art. 250": {
+        "instances": 3,
+        "positions": [
+          232,
+          646,
+          814
+        ],
+        "minimum_gap": 168,
+        "mean_gap": 291,
+        "maximum_gap": 414
+      },
+      "Code civil, art. 108-1": {
+        "instances": 3,
+        "positions": [
+          233,
+          430,
+          711
+        ],
+        "minimum_gap": 197,
+        "mean_gap": 239,
+        "maximum_gap": 281
+      },
+      "Code civil, art. 60, al. 1": {
+        "instances": 3,
+        "positions": [
+          234,
+          400,
           951
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 358.5,
+        "maximum_gap": 551
       },
-      "Code civil 371-1": {
+      "Code civil, art. 17-8": {
         "instances": 3,
         "positions": [
-          290,
-          621,
-          952
+          236,
+          402,
+          899
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 331.5,
+        "maximum_gap": 497
       },
-      "Code civil, art. 337": {
+      "Code civil, art. 196": {
         "instances": 3,
         "positions": [
-          291,
-          622,
+          237,
+          530,
+          884
+        ],
+        "minimum_gap": 293,
+        "mean_gap": 323.5,
+        "maximum_gap": 354
+      },
+      "Code civil, art. 52": {
+        "instances": 3,
+        "positions": [
+          238,
+          404,
+          659
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 210.5,
+        "maximum_gap": 255
+      },
+      "Code civil, art. 60": {
+        "instances": 3,
+        "positions": [
+          240,
+          406,
+          709
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 234.5,
+        "maximum_gap": 303
+      },
+      "Code civil, art. 172": {
+        "instances": 3,
+        "positions": [
+          241,
+          407,
+          732
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 245.5,
+        "maximum_gap": 325
+      },
+      "Code civil, art. 79-1": {
+        "instances": 3,
+        "positions": [
+          242,
+          408,
           953
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 355.5,
+        "maximum_gap": 545
       },
-      "Code civil, art. 316-4": {
+      "Code civil, art. 146": {
         "instances": 3,
         "positions": [
-          292,
-          623,
-          954
+          243,
+          471,
+          674
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 203,
+        "mean_gap": 215.5,
+        "maximum_gap": 228
       },
-      "Code civil, art. 101-2": {
+      "Cass. ass. plén., 31 mai 1991": {
         "instances": 3,
         "positions": [
-          293,
-          624,
+          244,
+          638,
+          902
+        ],
+        "minimum_gap": 264,
+        "mean_gap": 329,
+        "maximum_gap": 394
+      },
+      "Code civil, art. 103": {
+        "instances": 3,
+        "positions": [
+          245,
+          625,
+          965
+        ],
+        "minimum_gap": 340,
+        "mean_gap": 360,
+        "maximum_gap": 380
+      },
+      "Code civil, art. 210": {
+        "instances": 3,
+        "positions": [
+          246,
+          412,
+          844
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 299,
+        "maximum_gap": 432
+      },
+      "Code civil, art. 188": {
+        "instances": 3,
+        "positions": [
+          247,
+          655,
+          992
+        ],
+        "minimum_gap": 337,
+        "mean_gap": 372.5,
+        "maximum_gap": 408
+      },
+      "Code civil, art. 277": {
+        "instances": 3,
+        "positions": [
+          248,
+          468,
+          675
+        ],
+        "minimum_gap": 207,
+        "mean_gap": 213.5,
+        "maximum_gap": 220
+      },
+      "Code civil, art. 326": {
+        "instances": 3,
+        "positions": [
+          249,
+          651,
+          825
+        ],
+        "minimum_gap": 174,
+        "mean_gap": 288,
+        "maximum_gap": 402
+      },
+      "Code civil, art. 16-6": {
+        "instances": 3,
+        "positions": [
+          250,
+          552,
+          736
+        ],
+        "minimum_gap": 184,
+        "mean_gap": 243,
+        "maximum_gap": 302
+      },
+      "Code civil, art. 10": {
+        "instances": 3,
+        "positions": [
+          251,
+          627,
+          819
+        ],
+        "minimum_gap": 192,
+        "mean_gap": 284,
+        "maximum_gap": 376
+      },
+      "Code civil, art. 67": {
+        "instances": 3,
+        "positions": [
+          252,
+          418,
+          989
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 368.5,
+        "maximum_gap": 571
+      },
+      "Code civil, art. 1182": {
+        "instances": 3,
+        "positions": [
+          253,
+          419,
+          793
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 270,
+        "maximum_gap": 374
+      },
+      "Code civil, art. 16-14": {
+        "instances": 3,
+        "positions": [
+          254,
+          559,
+          737
+        ],
+        "minimum_gap": 178,
+        "mean_gap": 241.5,
+        "maximum_gap": 305
+      },
+      "Code civil, art. 229-1": {
+        "instances": 3,
+        "positions": [
+          255,
+          522,
+          867
+        ],
+        "minimum_gap": 267,
+        "mean_gap": 306,
+        "maximum_gap": 345
+      },
+      "Code civil, art. 214": {
+        "instances": 3,
+        "positions": [
+          256,
+          547,
+          713
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 228.5,
+        "maximum_gap": 291
+      },
+      "Code civil, art. 182": {
+        "instances": 3,
+        "positions": [
+          257,
+          452,
+          743
+        ],
+        "minimum_gap": 195,
+        "mean_gap": 243,
+        "maximum_gap": 291
+      },
+      "Code civil, art. 126": {
+        "instances": 3,
+        "positions": [
+          258,
+          424,
+          821
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 281.5,
+        "maximum_gap": 397
+      },
+      "Code civil, art. 227": {
+        "instances": 3,
+        "positions": [
+          259,
+          520,
+          901
+        ],
+        "minimum_gap": 261,
+        "mean_gap": 321,
+        "maximum_gap": 381
+      },
+      "Code civil, art. 335": {
+        "instances": 3,
+        "positions": [
+          260,
+          476,
+          779
+        ],
+        "minimum_gap": 216,
+        "mean_gap": 259.5,
+        "maximum_gap": 303
+      },
+      "Code civil, art. 9": {
+        "instances": 3,
+        "positions": [
+          261,
+          587,
+          937
+        ],
+        "minimum_gap": 326,
+        "mean_gap": 338,
+        "maximum_gap": 350
+      },
+      "Code civil, art. 336": {
+        "instances": 3,
+        "positions": [
+          262,
+          428,
+          993
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 365.5,
+        "maximum_gap": 565
+      },
+      "Code civil, art. 131": {
+        "instances": 3,
+        "positions": [
+          263,
+          429,
+          872
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 304.5,
+        "maximum_gap": 443
+      },
+      "Code civil, art. 171": {
+        "instances": 3,
+        "positions": [
+          264,
+          631,
+          797
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 266.5,
+        "maximum_gap": 367
+      },
+      "Code civil, art. 48": {
+        "instances": 3,
+        "positions": [
+          265,
+          474,
+          757
+        ],
+        "minimum_gap": 209,
+        "mean_gap": 246,
+        "maximum_gap": 283
+      },
+      "Code civil, art. 342-2": {
+        "instances": 3,
+        "positions": [
+          266,
+          432,
+          689
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 211.5,
+        "maximum_gap": 257
+      },
+      "Code civil, art. 330": {
+        "instances": 3,
+        "positions": [
+          267,
+          433,
+          681
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 207,
+        "maximum_gap": 248
+      },
+      "Code civil, art. 253": {
+        "instances": 3,
+        "positions": [
+          268,
+          461,
+          870
+        ],
+        "minimum_gap": 193,
+        "mean_gap": 301,
+        "maximum_gap": 409
+      },
+      "Code civil, art. 143": {
+        "instances": 3,
+        "positions": [
+          269,
+          435,
+          672
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 201.5,
+        "maximum_gap": 237
+      },
+      "Code civil, art. 21-1": {
+        "instances": 3,
+        "positions": [
+          270,
+          436,
+          702
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 216,
+        "maximum_gap": 266
+      },
+      "Code civil, art. 206": {
+        "instances": 3,
+        "positions": [
+          271,
+          437,
           955
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 342,
+        "maximum_gap": 518
       },
-      "Code civil, art. 366": {
+      "Code civil, art. 18": {
         "instances": 3,
         "positions": [
-          294,
-          625,
-          956
+          272,
+          558,
+          911
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 286,
+        "mean_gap": 319.5,
+        "maximum_gap": 353
       },
-      "Code civil, art. 259-2": {
+      "Code civil, art. 370-1": {
         "instances": 3,
         "positions": [
-          295,
-          626,
-          957
+          273,
+          544,
+          710
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 218.5,
+        "maximum_gap": 271
+      },
+      "Code civil, art. 189": {
+        "instances": 3,
+        "positions": [
+          274,
+          440,
+          760
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 243,
+        "maximum_gap": 320
+      },
+      "Code civil, art. 208": {
+        "instances": 3,
+        "positions": [
+          275,
+          441,
+          946
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 335.5,
+        "maximum_gap": 505
+      },
+      "Code civil, art. 216": {
+        "instances": 3,
+        "positions": [
+          276,
+          442,
+          909
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 316.5,
+        "maximum_gap": 467
+      },
+      "Code civil, art. 99": {
+        "instances": 3,
+        "positions": [
+          277,
+          443,
+          816
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 269.5,
+        "maximum_gap": 373
+      },
+      "Code civil, art. 345-2": {
+        "instances": 3,
+        "positions": [
+          278,
+          444,
+          890
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 306,
+        "maximum_gap": 446
+      },
+      "Code civil, art. 35": {
+        "instances": 3,
+        "positions": [
+          279,
+          608,
+          812
+        ],
+        "minimum_gap": 204,
+        "mean_gap": 266.5,
+        "maximum_gap": 329
       },
       "Code civil, art. 61-1": {
         "instances": 3,
         "positions": [
-          296,
-          627,
-          958
+          280,
+          546,
+          820
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 266,
+        "mean_gap": 270,
+        "maximum_gap": 274
       },
-      "Code civil, art. 70": {
+      "Code civil, art. 98-2": {
+        "instances": 3,
+        "positions": [
+          281,
+          447,
+          695
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 207,
+        "maximum_gap": 248
+      },
+      "Code civil, art. 318-1": {
+        "instances": 3,
+        "positions": [
+          282,
+          448,
+          729
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 223.5,
+        "maximum_gap": 281
+      },
+      "Code civil, art. 100": {
+        "instances": 3,
+        "positions": [
+          283,
+          485,
+          680
+        ],
+        "minimum_gap": 195,
+        "mean_gap": 198.5,
+        "maximum_gap": 202
+      },
+      "Code civil, art. 19": {
+        "instances": 3,
+        "positions": [
+          284,
+          516,
+          889
+        ],
+        "minimum_gap": 232,
+        "mean_gap": 302.5,
+        "maximum_gap": 373
+      },
+      "Code civil, art. 61": {
+        "instances": 3,
+        "positions": [
+          285,
+          620,
+          1002
+        ],
+        "minimum_gap": 335,
+        "mean_gap": 358.5,
+        "maximum_gap": 382
+      },
+      "Code civil, art. 16-1-1": {
+        "instances": 3,
+        "positions": [
+          286,
+          570,
+          885
+        ],
+        "minimum_gap": 284,
+        "mean_gap": 299.5,
+        "maximum_gap": 315
+      },
+      "Code civil, art. 23-1": {
+        "instances": 3,
+        "positions": [
+          287,
+          562,
+          728
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 220.5,
+        "maximum_gap": 275
+      },
+      "Code civil, art. 247-1": {
+        "instances": 3,
+        "positions": [
+          288,
+          588,
+          987
+        ],
+        "minimum_gap": 300,
+        "mean_gap": 349.5,
+        "maximum_gap": 399
+      },
+      "Code civil, art. 349": {
+        "instances": 3,
+        "positions": [
+          290,
+          456,
+          751
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 230.5,
+        "maximum_gap": 295
+      },
+      "Code civil, art. 21-24-1": {
+        "instances": 3,
+        "positions": [
+          291,
+          597,
+          978
+        ],
+        "minimum_gap": 306,
+        "mean_gap": 343.5,
+        "maximum_gap": 381
+      },
+      "Code civil, art. 254": {
+        "instances": 3,
+        "positions": [
+          292,
+          535,
+          927
+        ],
+        "minimum_gap": 243,
+        "mean_gap": 317.5,
+        "maximum_gap": 392
+      },
+      "Code civil, art. 1193": {
+        "instances": 3,
+        "positions": [
+          293,
+          657,
+          823
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 265,
+        "maximum_gap": 364
+      },
+      "Code civil, art. 337": {
+        "instances": 3,
+        "positions": [
+          294,
+          542,
+          865
+        ],
+        "minimum_gap": 248,
+        "mean_gap": 285.5,
+        "maximum_gap": 323
+      },
+      "Code civil, art. 223": {
+        "instances": 3,
+        "positions": [
+          295,
+          521,
+          720
+        ],
+        "minimum_gap": 199,
+        "mean_gap": 212.5,
+        "maximum_gap": 226
+      },
+      "Code civil, art. 251": {
+        "instances": 3,
+        "positions": [
+          296,
+          462,
+          761
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 232.5,
+        "maximum_gap": 299
+      },
+      "Code civil, art. 244": {
         "instances": 3,
         "positions": [
           297,
-          628,
-          959
+          463,
+          790
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 166,
+        "mean_gap": 246.5,
+        "maximum_gap": 327
       },
-      "Code civil, art. 191": {
+      "Code civil, art. 195": {
         "instances": 3,
         "positions": [
           298,
-          629,
-          960
+          545,
+          878
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 247,
+        "mean_gap": 290,
+        "maximum_gap": 333
       },
-      "Code civil, art. 16-7": {
-        "instances": 2,
+      "Code civil, art. 21-18": {
+        "instances": 3,
         "positions": [
           299,
-          660
+          630,
+          806
         ],
-        "minimum_gap": 361,
-        "mean_gap": 361,
-        "maximum_gap": 361
+        "minimum_gap": 176,
+        "mean_gap": 253.5,
+        "maximum_gap": 331
       },
-      "Code civil, art. 21-6": {
-        "instances": 2,
+      "Code civil, art. 260": {
+        "instances": 3,
         "positions": [
           300,
-          688
+          466,
+          847
         ],
-        "minimum_gap": 388,
-        "mean_gap": 388,
-        "maximum_gap": 388
+        "minimum_gap": 166,
+        "mean_gap": 273.5,
+        "maximum_gap": 381
       },
-      "Art. 515-14 C. civ.": {
-        "instances": 2,
+      "Code civil, art. 318": {
+        "instances": 3,
         "positions": [
           301,
-          655
+          495,
+          747
         ],
-        "minimum_gap": 354,
-        "mean_gap": 354,
-        "maximum_gap": 354
+        "minimum_gap": 194,
+        "mean_gap": 223,
+        "maximum_gap": 252
       },
-      "C. civ. art. 1172": {
-        "instances": 2,
+      "Code civil, art. 163": {
+        "instances": 3,
         "positions": [
           302,
-          633
+          576,
+          938
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 274,
+        "mean_gap": 318,
+        "maximum_gap": 362
       },
-      "C. civ. art. 317 (al. 3)": {
-        "instances": 2,
+      "Code civil, art. 144": {
+        "instances": 3,
         "positions": [
           303,
-          988
+          469,
+          719
         ],
-        "minimum_gap": 685,
-        "mean_gap": 685,
-        "maximum_gap": 685
+        "minimum_gap": 166,
+        "mean_gap": 208,
+        "maximum_gap": 250
       },
-      "Code civil 1644": {
-        "instances": 2,
+      "Code civil, art. 238": {
+        "instances": 3,
         "positions": [
           304,
-          684
+          592,
+          758
         ],
-        "minimum_gap": 380,
-        "mean_gap": 380,
-        "maximum_gap": 380
+        "minimum_gap": 166,
+        "mean_gap": 227,
+        "maximum_gap": 288
       },
-      "C. civ. art. 1358": {
-        "instances": 2,
+      "Code civil, art. 23-6": {
+        "instances": 3,
         "positions": [
           305,
-          810
+          563,
+          783
         ],
-        "minimum_gap": 505,
-        "mean_gap": 505,
-        "maximum_gap": 505
+        "minimum_gap": 220,
+        "mean_gap": 239,
+        "maximum_gap": 258
       },
-      "C. civ. art. 1360": {
-        "instances": 2,
-        "positions": [
-          306,
-          637
-        ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
-      },
-      "C. civ. art. 233": {
-        "instances": 2,
+      "Code civil, art. 320": {
+        "instances": 3,
         "positions": [
           307,
-          833
+          574,
+          740
         ],
-        "minimum_gap": 526,
-        "mean_gap": 526,
-        "maximum_gap": 526
+        "minimum_gap": 166,
+        "mean_gap": 216.5,
+        "maximum_gap": 267
       },
-      "Code civil 1129": {
-        "instances": 2,
+      "Code civil, art. 351": {
+        "instances": 3,
         "positions": [
           308,
-          653
+          578,
+          744
         ],
-        "minimum_gap": 345,
-        "mean_gap": 345,
-        "maximum_gap": 345
+        "minimum_gap": 166,
+        "mean_gap": 218,
+        "maximum_gap": 270
       },
-      "civ. art. 317 (al. 2)": {
-        "instances": 2,
+      "Code civil, art. 248": {
+        "instances": 3,
         "positions": [
           309,
-          920
+          475,
+          932
         ],
-        "minimum_gap": 611,
-        "mean_gap": 611,
-        "maximum_gap": 611
+        "minimum_gap": 166,
+        "mean_gap": 311.5,
+        "maximum_gap": 457
       },
-      "C. civ. art. 60 alinéa 1 et  2": {
-        "instances": 2,
+      "Code civil, art. 65": {
+        "instances": 3,
         "positions": [
           310,
-          681
+          591,
+          957
         ],
-        "minimum_gap": 371,
-        "mean_gap": 371,
-        "maximum_gap": 371
+        "minimum_gap": 281,
+        "mean_gap": 323.5,
+        "maximum_gap": 366
       },
-      "C. civ., art. 1240": {
+      "Code civil, art. 308": {
+        "instances": 3,
+        "positions": [
+          313,
+          479,
+          662
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 174.5,
+        "maximum_gap": 183
+      },
+      "Code civil, art. 104": {
+        "instances": 3,
+        "positions": [
+          314,
+          480,
+          754
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 220,
+        "maximum_gap": 274
+      },
+      "Code civil, art. 343": {
+        "instances": 3,
+        "positions": [
+          315,
+          481,
+          943
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 314,
+        "maximum_gap": 462
+      },
+      "Code civil, art. 299": {
+        "instances": 3,
+        "positions": [
+          316,
+          482,
+          923
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 303.5,
+        "maximum_gap": 441
+      },
+      "Code civil, art. 217": {
+        "instances": 3,
+        "positions": [
+          317,
+          483,
+          828
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 255.5,
+        "maximum_gap": 345
+      },
+      "Code civil, art. 118": {
+        "instances": 3,
+        "positions": [
+          318,
+          549,
+          808
+        ],
+        "minimum_gap": 231,
+        "mean_gap": 245,
+        "maximum_gap": 259
+      },
+      "Code civil, art. 311-15": {
+        "instances": 3,
+        "positions": [
+          319,
+          526,
+          856
+        ],
+        "minimum_gap": 207,
+        "mean_gap": 268.5,
+        "maximum_gap": 330
+      },
+      "Code civil, art. 20-4": {
+        "instances": 3,
+        "positions": [
+          320,
+          593,
+          759
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 219.5,
+        "maximum_gap": 273
+      },
+      "Code civil, art. 218": {
+        "instances": 3,
+        "positions": [
+          321,
+          598,
+          764
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 221.5,
+        "maximum_gap": 277
+      },
+      "Code civil, art. 370-1-2": {
+        "instances": 3,
+        "positions": [
+          322,
+          488,
+          684
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 181,
+        "maximum_gap": 196
+      },
+      "Code civil, art. 345-1": {
+        "instances": 3,
+        "positions": [
+          323,
+          648,
+          1001
+        ],
+        "minimum_gap": 325,
+        "mean_gap": 339,
+        "maximum_gap": 353
+      },
+      "Code civil, art. 21-16": {
+        "instances": 3,
+        "positions": [
+          324,
+          490,
+          726
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 201,
+        "maximum_gap": 236
+      },
+      "Code civil, art. 162": {
+        "instances": 3,
+        "positions": [
+          325,
+          518,
+          947
+        ],
+        "minimum_gap": 193,
+        "mean_gap": 311,
+        "maximum_gap": 429
+      },
+      "Code civil, art. 245-1": {
+        "instances": 3,
+        "positions": [
+          326,
+          492,
+          796
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 235,
+        "maximum_gap": 304
+      },
+      "Code civil, art. 1589, al. 1": {
+        "instances": 3,
+        "positions": [
+          327,
+          493,
+          791
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 232,
+        "maximum_gap": 298
+      },
+      "Code civil, art. 262": {
+        "instances": 3,
+        "positions": [
+          328,
+          494,
+          704
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 188,
+        "maximum_gap": 210
+      },
+      "Code civil, art. 348-2": {
+        "instances": 3,
+        "positions": [
+          329,
+          641,
+          807
+        ],
+        "minimum_gap": 166,
+        "mean_gap": 239,
+        "maximum_gap": 312
+      },
+      "Code civil, art. 2274": {
         "instances": 2,
         "positions": [
-          311,
-          705
+          341,
+          845
         ],
-        "minimum_gap": 394,
-        "mean_gap": 394,
-        "maximum_gap": 394
+        "minimum_gap": 504,
+        "mean_gap": 504,
+        "maximum_gap": 504
       },
-      "Code civil 2300": {
+      "Code civil, art. 1358": {
         "instances": 2,
         "positions": [
-          312,
-          801
+          352,
+          727
+        ],
+        "minimum_gap": 375,
+        "mean_gap": 375,
+        "maximum_gap": 375
+      },
+      "Code civil, art. 1359": {
+        "instances": 2,
+        "positions": [
+          367,
+          673
+        ],
+        "minimum_gap": 306,
+        "mean_gap": 306,
+        "maximum_gap": 306
+      },
+      "Jurisprudence (CE) / Code civil, art. 61": {
+        "instances": 2,
+        "positions": [
+          374,
+          863
         ],
         "minimum_gap": 489,
         "mean_gap": 489,
         "maximum_gap": 489
       },
-      "Code civil 1402": {
+      "Code civil, art. 1128": {
         "instances": 2,
         "positions": [
-          313,
-          781
+          397,
+          706
         ],
-        "minimum_gap": 468,
-        "mean_gap": 468,
-        "maximum_gap": 468
+        "minimum_gap": 309,
+        "mean_gap": 309,
+        "maximum_gap": 309
       },
-      "Code civil 515-14": {
+      "Code civil, art. 317, al. 3": {
         "instances": 2,
         "positions": [
-          314,
-          645
+          411,
+          881
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 470,
+        "mean_gap": 470,
+        "maximum_gap": 470
       },
-      "C. civ. art. 1128": {
+      "Code civil, art. 1402": {
         "instances": 2,
         "positions": [
-          315,
-          675
+          457,
+          888
         ],
-        "minimum_gap": 360,
-        "mean_gap": 360,
-        "maximum_gap": 360
+        "minimum_gap": 431,
+        "mean_gap": 431,
+        "maximum_gap": 431
       },
-      "Code civil Art.320": {
+      "Code civil, art. 233": {
         "instances": 2,
         "positions": [
-          316,
-          654
+          510,
+          827
         ],
-        "minimum_gap": 338,
-        "mean_gap": 338,
-        "maximum_gap": 338
+        "minimum_gap": 317,
+        "mean_gap": 317,
+        "maximum_gap": 317
       },
-      "C. civ. art. 1242": {
+      "Code civil, art. 1242, al. 4": {
         "instances": 2,
         "positions": [
-          317,
-          973
+          553,
+          723
         ],
-        "minimum_gap": 656,
-        "mean_gap": 656,
-        "maximum_gap": 656
+        "minimum_gap": 170,
+        "mean_gap": 170,
+        "maximum_gap": 170
       },
-      "C. civ. art. 1143": {
+      "Code civil, art. 317, al. 2": {
         "instances": 2,
         "positions": [
-          318,
-          735
+          584,
+          750
         ],
-        "minimum_gap": 417,
-        "mean_gap": 417,
-        "maximum_gap": 417
+        "minimum_gap": 166,
+        "mean_gap": 166,
+        "maximum_gap": 166
       },
-      "Code civil 1242": {
+      "Code civil, art. 1360": {
         "instances": 2,
         "positions": [
-          319,
-          650
+          629,
+          990
         ],
-        "minimum_gap": 331,
-        "mean_gap": 331,
-        "maximum_gap": 331
+        "minimum_gap": 361,
+        "mean_gap": 361,
+        "maximum_gap": 361
       },
-      "C. civ. art. 2274": {
+      "Code civil, art. 60, al. 1 et 2": {
         "instances": 2,
         "positions": [
-          320,
-          678
+          650,
+          967
         ],
-        "minimum_gap": 358,
-        "mean_gap": 358,
-        "maximum_gap": 358
-      },
-      "C. civ. art. 1242 al. 4": {
-        "instances": 2,
-        "positions": [
-          321,
-          715
-        ],
-        "minimum_gap": 394,
-        "mean_gap": 394,
-        "maximum_gap": 394
-      },
-      "Code civil 1195": {
-        "instances": 2,
-        "positions": [
-          322,
-          773
-        ],
-        "minimum_gap": 451,
-        "mean_gap": 451,
-        "maximum_gap": 451
-      },
-      "C. civ. art. 1242 al. 1": {
-        "instances": 2,
-        "positions": [
-          323,
-          659
-        ],
-        "minimum_gap": 336,
-        "mean_gap": 336,
-        "maximum_gap": 336
+        "minimum_gap": 317,
+        "mean_gap": 317,
+        "maximum_gap": 317
       }
     }
   },
   "position_displacement": {
     "unchanged_positions": 0,
-    "positions_below_target": 38,
+    "positions_below_target": 22,
     "target_min_displacement": 20,
     "minimum_absolute_shift": 2,
-    "mean_absolute_shift": 343.63473053892216,
-    "median_absolute_shift": 309.0,
+    "mean_absolute_shift": 342.42914171656685,
+    "median_absolute_shift": 302.5,
     "maximum_absolute_shift": 978,
     "moved_at_least_10": {
-      "count": 982,
-      "share": 0.9800399201596807
+      "count": 988,
+      "share": 0.9860279441117764
     },
     "moved_at_least_20": {
-      "count": 964,
-      "share": 0.9620758483033932
+      "count": 980,
+      "share": 0.9780439121756487
     },
     "moved_at_least_50": {
-      "count": 916,
-      "share": 0.9141716566866267
+      "count": 933,
+      "share": 0.9311377245508982
     },
     "moved_at_least_100": {
-      "count": 839,
-      "share": 0.8373253493013972
+      "count": 848,
+      "share": 0.846307385229541
     },
     "moved_at_least_200": {
-      "count": 684,
-      "share": 0.6826347305389222
+      "count": 662,
+      "share": 0.6606786427145709
     }
   }
 }

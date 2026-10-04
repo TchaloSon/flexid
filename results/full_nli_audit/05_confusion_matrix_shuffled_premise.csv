@@ -1,4 +1,0 @@
-,pred_entailment,pred_contradiction,pred_neutral
-gold_entailment,109,113,115
-gold_contradiction,49,175,109
-gold_neutral,29,50,253

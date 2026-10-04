@@ -38,7 +38,7 @@ from sklearn.utils.validation import check_is_fitted
 
 INPUT_FILE = Path("data/flexid.jsonl")
 PREDICT_FILE = Path("data/pairs_to_predict.jsonl")
-OUTPUT_DIR = Path("results/full_nli_audit")
+OUTPUT_DIR = Path("results/full_nli_audit_final")
 
 RUN_EXTERNAL_PREDICTION = True
 RUN_HYPOTHESIS_ONLY_CONTROL = True  # Déjà évalué dans hypothesis_only_classifier.py
@@ -57,8 +57,8 @@ EXPECTED_LABEL_COUNTS = {
     "contradiction": 333,
     "neutral": 332,
 }
-EXPECTED_GROUP_COUNT = 339
-PROTOCOL_VERSION = "FLEXID-PARTIAL-RELATIONAL-AUDIT-v1"
+EXPECTED_GROUP_COUNT = 335
+PROTOCOL_VERSION = "FLEXID-FINAL-RELATIONAL-AUDIT-v2"
 
 OUTER_FOLDS = 5
 OUTER_SEEDS = [1701, 2718, 3141]
@@ -294,6 +294,11 @@ def build_groups(
     diagnostics = {
         "instances": len(records),
         "groups": len(sizes),
+        "grouping_method": (
+            "transitive Union-Find over normalized law_ref OR normalized "
+            "premise OR normalized hypothesis"
+        ),
+        "normalization": "NFKC + casefold + whitespace collapse",
         "minimum_group_size": min(sizes.values()),
         "maximum_group_size": max(sizes.values()),
         "mean_group_size": float(np.mean(list(sizes.values()))),
