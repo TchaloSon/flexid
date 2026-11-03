@@ -8,7 +8,7 @@ This supplementary package contains the preparation, training, evaluation and au
 
 ## Installation and execution
 
-The scripts use Python 3.10+ syntax. Machine-learning runs also require compatible versions of the packages in [requirements.txt](requirements.txt). This file declares dependencies; it is not a frozen environment from the original experiments. The desktop annotation interface uses Tkinter, supplied separately on some Python installations.
+The scripts use Python 3.13 syntax. Machine-learning runs also require compatible versions of the packages in [requirements.txt](requirements.txt). This file declares dependencies; it is not a frozen environment from the original experiments. The desktop annotation interface uses Tkinter, supplied separately on some Python installations.
 
 Run commands from the FLEXID project root, with `scripts/` and the corpus directory `data/` at that level:
 
